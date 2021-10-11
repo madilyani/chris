@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+
+  &__link {
+    display: block;
+    color: $text2;
+    font-family: $font_main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1;
+    padding: 10px 15px;
+    @include transition;
+    box-sizing: border-box;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    &.active {
+      color: $text;
+    }
+  }
+
+  &__dropdown {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      .nav__dropdown-title {
+        opacity: 0.7;
+      }
+    }
+
+    &-title {
+      color: $text2;
+      font-family: $font_main;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 1;
+      padding: 10px 15px;
+      @include transition;
+
+      span {
+        display: inline-block;
+        margin-left: 10px;
+        @include transition;
+      }
+    }
+
+    &-content {
+      display: block;
+      position: absolute;
+      border-radius: 5px;
+      background: $bgcolor2;
+      z-index: 1;
+      opacity: 0;
+      top: calc(100% + 10px);
+
+      width: 0;
+
+      padding: 0;
+      overflow: hidden;
+      @include transition;
+      transition-property: top, opacity;
+
+      .nav__link {
+        padding: 15px;
+
+        &:hover {
+          background: $bgcolor;
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+      .nav__dropdown {
+        &-content {
+          display: block;
+          left: 0;
+          top: 100%;
+          width: max-content;
+
+          opacity: 1;
+        }
+
+        &-title {
+          opacity: 0.7;
+
+          span {
+            @include rotate180deg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin nav1024 {
+  .nav {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+
+    &__dropdown {
+      &:hover {
+        .nav__dropdown-content {
+          width: 100%;
+          max-height: 600px;
+        }
+      }
+
+      &-content {
+        position: unset;
+        max-height: 0;
+        overflow: hidden;
+      }
+    }
+
+    &__link {
+      border: none;
+      padding: 15px;
+      display: block;
+      text-align: left;
+      width: unset;
+      margin-right: 0;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+}

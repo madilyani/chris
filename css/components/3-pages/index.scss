@@ -1,0 +1,826 @@
+.games {
+  &__inner {
+    max-width: 1057px;
+    margin: 0 auto;
+    padding: 10px 0 85px 0;
+
+    &-title {
+      display: block;
+      text-align: center;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+
+    &-para {
+      // color: ;
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px auto;
+    }
+
+    &-row {
+      display: flex;
+      margin: 0 -20px;
+    }
+
+    &-column {
+      width: calc(100% / 3 - 40px);
+      margin: 0 20px;
+      &:nth-child(1) {
+        .cardSimple {
+          background: rgba($diffRGB, 8%);
+          background: $card-grd-1;
+        }
+      }
+      &:nth-child(2) {
+        .cardSimple {
+          background: rgba($diffRGB, 8%);
+          background: $card-grd-2;
+        }
+      }
+      &:nth-child(3) {
+        .cardSimple {
+          background: rgba($diffRGB, 8%);
+          background: $card-grd-3;
+        }
+      }
+    }
+  }
+}
+
+.fav {
+  &__inner {
+    position: relative;
+    padding: 60px 0;
+    border-top: 1px solid $border-color;
+
+    &-header {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      max-width: 650px;
+
+      &-ico {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: rgba($color: $main, $alpha: 0.2);
+        margin-right: 20px;
+
+        html[data-theme="dark"] & {
+          background-color: rgba($color: $bgcolorAdd, $alpha: 0.7);
+        }
+
+        img {
+          width: 55%;
+        }
+      }
+
+      &-content {
+        &-title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-row {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+
+    &-column {
+      width: calc(100% / 4 - 30px);
+      margin: 0 15px 30px 15px;
+    }
+
+    &-footer {
+      position: absolute;
+      top: 62px;
+      right: 0;
+
+      .button--secondary {
+        border-color: $main;
+        svg {
+          margin-left: 10px;
+          height: auto;
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+@include light {
+  .how::before {
+    display: none;
+  }
+  .how {
+    background: linear-gradient(
+      197.54deg,
+      rgba(240, 251, 255, 0.4) 2.52%,
+      rgba(255, 255, 255, 0) 44.27%
+    );
+  }
+}
+.how {
+  padding: 80px 0 110px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &__lines {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  &__salut {
+    &-right {
+      position: absolute;
+      right: 0;
+      &.top {
+        top: 30%;
+      }
+      &.bottom {
+        bottom: 20%;
+      }
+    }
+    &-left {
+      position: absolute;
+      left: 0;
+      &.top {
+        top: 40%;
+      }
+      &.bottom {
+        bottom: 0;
+      }
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bgGrad.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &__inner {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    &-header {
+      max-width: 680px;
+      margin: 0 auto 100px auto;
+      text-align: center;
+
+      &-title {
+        margin-bottom: 15px;
+      }
+
+      &-para {
+      }
+    }
+
+    &-row {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 100px;
+
+      &:nth-child(3) {
+        padding-bottom: 50px;
+
+        .how__inner {
+          &-line {
+            top: 65%;
+            left: 51%;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        padding-bottom: 130px;
+
+        .how__inner {
+          &-line {
+            top: 60%;
+            left: 50%;
+          }
+        }
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &-column {
+      position: relative;
+      max-width: 530px;
+      width: calc(50% - 60px);
+      z-index: 1;
+      &-salut {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+      }
+      &-ico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background-color: $bgcolor2;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        &-salut {
+          position: absolute;
+          left: 160px;
+          top: 0;
+        }
+        &.yellow {
+          background-color: rgba($color: #f9dd99, $alpha: 15%);
+        }
+
+        &.blue {
+          background-color: rgba($color: #46a6f8, $alpha: 15%);
+        }
+
+        &.green {
+          background-color: rgba($color: #12d589, $alpha: 15%);
+        }
+
+        &.red {
+          background-color: rgba($color: #fc6647, $alpha: 15%);
+        }
+
+        img {
+          width: 55%;
+        }
+      }
+
+      &-title {
+        margin-bottom: 20px;
+      }
+
+      &-para {
+        font-weight: 600;
+        padding-bottom: 40px;
+      }
+    }
+
+    &-line {
+      position: absolute;
+      top: 40%;
+      left: 55%;
+      @include transformX;
+      // z-index: -1;
+    }
+  }
+}
+
+.questions {
+  padding: 70px 0 100px 0;
+  &__inner {
+    max-width: 1060px;
+    margin: 0 auto;
+
+    &-header {
+      max-width: 700px;
+      margin: 0 auto 55px auto;
+      text-align: center;
+
+      &-title {
+        margin-bottom: 20px;
+      }
+    }
+    &-body {
+      margin-bottom: 50px;
+
+      .cardAcc {
+        margin-bottom: 20px;
+        &__para {
+          font-size: 22px;
+        }
+      }
+    }
+    &-footer {
+      &-btns {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .button {
+          width: 230px;
+          &--primary {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.fun {
+  background: $bgcolor2;
+  padding: 50px 0 80px 0;
+
+  &.fun--transparent {
+    background: transparent;
+  }
+  &__inner {
+    &-header {
+      max-width: 680px;
+      text-align: center;
+      margin: 0 auto 55px auto;
+
+      &-title {
+        margin-bottom: 20px;
+      }
+    }
+    &-body {
+      max-width: 1025px;
+      &-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 50px;
+      }
+      &-ico {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-right: 30px;
+
+        &.green {
+          background: rgba($color: #12d589, $alpha: 15%);
+        }
+        &.darkblue {
+          background: rgba($color: #2b4568, $alpha: 70%);
+        }
+        &.red {
+          background: rgba($color: #fc6647, $alpha: 15%);
+        }
+        img {
+          max-width: 50%;
+        }
+      }
+      &-content {
+        &-title {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        &-para {
+        }
+      }
+    }
+  }
+}
+
+@mixin index1180 {
+  .how {
+    &__inner {
+      &-row {
+        &:nth-child(2) {
+          .how__inner {
+            &-line {
+              top: 50%;
+              left: 55%;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          .how__inner {
+            &-line {
+              top: 45%;
+              left: 55%;
+            }
+          }
+        }
+      }
+
+      &-line {
+        width: 400px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-column {
+        width: calc(50% - 40px);
+      }
+    }
+  }
+}
+
+@mixin index1024 {
+  .games {
+    &__inner {
+      &-title {
+        margin-bottom: 15px;
+      }
+
+      &-para {
+        margin-bottom: 35px;
+      }
+
+      &-row {
+        display: flex;
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+      }
+
+      &-column {
+        width: calc(100% / 3 - 20px);
+        margin: 0 10px;
+
+        .cardSimple {
+          box-sizing: border-box;
+          height: 100%;
+
+          &__title {
+            font-size: 20px;
+          }
+
+          &__para {
+            height: 88px;
+            overflow: hidden;
+            @include ellipsis(4);
+          }
+        }
+      }
+    }
+  }
+
+  .fav {
+    &__inner {
+      &-row {
+        margin: 0 -10px;
+      }
+
+      &-column {
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+
+        &:nth-of-type(n + 7) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .how {
+    &__lines {
+      display: none;
+    }
+    &__salut {
+      &-right {
+        display: none;
+      }
+      &-left {
+        display: none;
+      }
+    }
+    &__inner {
+      &-line {
+        display: none;
+      }
+
+      &-header {
+        margin-bottom: 60px;
+      }
+
+      &-column {
+        width: calc(50% - 20px);
+        &-salut {
+          display: none;
+        }
+        &-ico {
+          &-salut {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .fun {
+    padding: 40px 0 70px 0;
+    &__inner {
+      &-header {
+        margin: 0 auto 45px auto;
+        &-title {
+          margin-bottom: 15px;
+        }
+      }
+      &-body {
+        &-row {
+          margin-bottom: 40px;
+        }
+        &-ico {
+          width: 70px;
+          height: 70px;
+          margin-right: 25px;
+        }
+        &-content {
+          &-title {
+            font-size: 26px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin index840 {
+  .games {
+    &__inner {
+      &-row {
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      &-column {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+
+        .cardSimple {
+          box-sizing: border-box;
+          height: 100%;
+
+          &__title {
+            font-size: 20px;
+          }
+
+          &__para {
+            display: block;
+            height: unset;
+            overflow: unset;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .how {
+    &__inner {
+      &-line {
+        display: none;
+      }
+
+      &-header {
+        margin-bottom: 60px;
+      }
+
+      &-row {
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 !important;
+
+        &:nth-child(odd) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &-column {
+        width: 100%;
+        margin: 0;
+
+        &-ico {
+          display: none;
+        }
+
+        &-title {
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        &-para {
+          text-align: center;
+          padding: 0;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  .fav {
+    &__inner {
+      &-footer {
+        margin-top: 30px;
+        position: unset;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@mixin index768 {
+  .fav {
+    &__inner {
+      &-column {
+        width: calc(100% / 2 - 20px);
+      }
+    }
+  }
+
+  .questions {
+    padding: 60px 0 80px 0;
+    &__inner {
+      &-header {
+        margin-bottom: 35px;
+        &-title {
+          margin-bottom: 20px;
+        }
+      }
+      &-body {
+        margin-bottom: 35px;
+        .cardAcc {
+          margin-bottom: 15px;
+          &__para {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .fun {
+    padding: 20px 0 50px 0;
+    &__inner {
+      &-header {
+        margin-bottom: 40px;
+      }
+      &-body {
+        &-row {
+          margin-bottom: 30px;
+        }
+        &-ico {
+          width: 55px;
+          height: 55px;
+          margin-right: 20px;
+        }
+        &-content {
+          &-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin index540 {
+  .games {
+    &__inner {
+      padding: 10px 0;
+
+      &-title {
+        text-align: left;
+      }
+
+      &-para {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+  }
+
+  .fav {
+    &__inner {
+      border: 0;
+      padding: 40px 0;
+
+      &-row {
+        margin: 0;
+      }
+
+      &-column {
+        width: 100%;
+        margin: 5px 0;
+
+        &:nth-of-type(n + 4) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .how {
+    &__inner {
+      &-header {
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+      &-column {
+        &-title {
+          margin: 15px 0 7px 0;
+        }
+
+        &-para {
+          margin-bottom: 40px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  .questions {
+    padding: 40px 0 25px 0;
+    &__inner {
+      &-header {
+        margin-bottom: 20px;
+        &-title {
+          margin-bottom: 10px;
+        }
+      }
+      &-body {
+        margin-bottom: 20px;
+        .cardAcc {
+          padding: 14px 10px;
+          margin-bottom: 10px;
+          &__title {
+            font-size: 14px;
+            line-height: 140%;
+            padding-right: 20px;
+            &::after {
+              width: 24px;
+              height: 24px;
+            }
+
+            &.active + .cardAcc__para {
+              margin-top: 10px;
+            }
+          }
+          &__para {
+            font-size: 14px;
+          }
+        }
+      }
+      &-footer {
+        &-btns {
+          flex-direction: column;
+
+          .button {
+            width: 90%;
+            margin: 0 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .fun {
+    padding: 15px 0 30px 0;
+    &__inner {
+      &-header {
+        text-align: left;
+        margin-bottom: 30px;
+        &-title {
+          margin-bottom: 10px;
+        }
+      }
+      &-body {
+        &-row {
+          margin-bottom: 20px;
+        }
+        &-ico {
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+        }
+        &-content {
+          &-title {
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

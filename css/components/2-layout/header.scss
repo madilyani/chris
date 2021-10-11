@@ -1,0 +1,236 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 25px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      display: flex;
+      width: 50px;
+      height: 50px;
+
+      img {
+        @include fullImage;
+      }
+    }
+  }
+  &.sticky {
+    position: fixed;
+    background: $bgcolor2;
+    animation: sticky 0.2s linear;
+    z-index: 100;
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.burger {
+  display: none;
+}
+@include light {
+  .header__inner-logo {
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(
+      191.31deg,
+      #464961 17.14%,
+      #417d8e 46.62%,
+      #3bbec6 83.41%
+    );
+  }
+}
+.menu {
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 75px;
+
+    &-btns {
+      display: flex;
+      align-items: center;
+
+      .switch {
+        margin-right: 25px;
+      }
+
+      .button--primary {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+@mixin header1340 {
+  .header {
+    padding: 15px 0;
+    top: 0;
+  }
+
+  .menu {
+    &__inner {
+      margin-left: 40px;
+
+      &-btns {
+        display: flex;
+        align-items: center;
+
+        .switch {
+          margin-right: 15px;
+        }
+
+        .button--primary {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@mixin header1024 {
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+    border-bottom: 1px solid $border-color;
+  }
+
+  // // nav start
+  .menu {
+    position: fixed;
+    top: 80px;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    z-index: 100;
+    background: rgba($color: #000000, $alpha: 0.4);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    @include transition;
+
+    &.active {
+      @include transformReset;
+    }
+
+    &__inner {
+      position: absolute;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      top: 0;
+      right: 0;
+      width: 250px;
+      padding: 0;
+      z-index: 1;
+      padding: 50px 20px 20px 20px;
+      height: calc(100% - 70px);
+      overflow-y: auto;
+      background: $bgcolor2;
+      margin: 0;
+
+      &-btns {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin-top: 20px;
+        .button--primary {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .body.active {
+    overflow: hidden;
+  }
+
+  .switch {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::before {
+      top: 20%;
+      width: calc(100% - 0.4rem);
+      height: 4px;
+      background-color: $text2;
+      border-radius: 0.125rem;
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      left: 50%;
+      @include transformX;
+    }
+
+    &::after {
+      bottom: 20%;
+      width: calc(100% - 0.4rem);
+      height: 4px;
+      background-color: $text2;
+      border-radius: 0.125rem;
+      transition: all 0.3s ease;
+      content: "";
+      position: absolute;
+      left: 50%;
+      @include transformX;
+    }
+
+    &.active {
+      &::before {
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: 50%;
+        -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+        transform: translate(-50%, 50%) rotate(-45deg);
+      }
+    }
+  }
+
+  // // nav end
+}
+@mixin header768 {
+  .header {
+    &__inner {
+      &-logo {
+        width: 37px;
+        height: 37px;
+      }
+    }
+  }
+  .menu {
+    top: 67px;
+    height: calc(100% - 67px);
+  }
+}

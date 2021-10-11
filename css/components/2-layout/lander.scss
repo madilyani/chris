@@ -1,0 +1,527 @@
+.lander {
+  background: rgba($diffRGB, 8%);
+  background: $lander-grd;
+  padding: 160px 0 100px 0;
+  position: relative;
+  &__salut {
+    position: absolute;
+    &.left {
+      left: 0;
+      bottom: 10px;
+    }
+    &.right {
+      right: 0;
+      bottom: 30px;
+    }
+  }
+  &.index {
+    background: none;
+    .lander {
+      &__salut {
+        position: absolute;
+        &.left {
+          left: 0;
+          top: 0%;
+          width: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 100%;
+          }
+        }
+        &.right {
+          right: 0;
+          top: 0%;
+          width: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &__inner {
+        &-para {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+    }
+    &::before {
+      @include contentAbsolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      background: rgba($diffRGB, 8%);
+      background: $lander-grd;
+    }
+  }
+  &__inner {
+    position: relative;
+    &-title {
+      color: $text;
+      font-family: $font_main;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &-para {
+      color: $text2;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35px;
+
+      .button {
+        padding-left: 0;
+        padding-right: 0;
+        width: 230px;
+        &--primary {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 65px auto 0 auto;
+      max-width: 1038px;
+      background: none;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 7.3%;
+        left: 12.1%;
+        height: 82%;
+        width: calc(100% - 24.2%);
+        border-radius: 10px;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 1;
+        @include transition;
+        z-index: 2;
+      }
+      &.paused {
+        &::before {
+          opacity: 0;
+        }
+      }
+      .videoPlay {
+        background: #fff;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        @include transform;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @include transition;
+        z-index: 3;
+        &::before {
+          z-index: -1;
+          width: 85px;
+          height: 85px;
+          position: absolute;
+          content: "";
+          left: 50%;
+          top: 50%;
+          @include transform;
+          background: rgba($color: #fff, $alpha: 0.3);
+          border-radius: 50%;
+        }
+        span {
+          margin-left: 3px;
+          border: 0;
+          background: transparent;
+          box-sizing: border-box;
+          width: 0;
+          height: 20px;
+          display: block;
+          border-color: transparent transparent transparent #397ef6;
+          transition: 100ms all ease;
+          pointer-events: none;
+          border-style: solid;
+          border-width: 10px 0 10px 20px;
+        }
+        &.paused {
+          opacity: 0;
+          span {
+            margin-left: 0;
+            border-style: double;
+            border-width: 0px 0 0px 15px;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+      video {
+        position: absolute;
+        top: 7.3%;
+        left: 12.1%;
+        height: 82%;
+        width: calc(100% - 24.2%);
+        border-radius: 10px;
+        overflow: hidden;
+        background: $bgcolor2;
+      }
+      video[poster] {
+        object-fit: fill;
+      }
+    }
+  }
+  &.other {
+    .lander {
+      &__inner {
+        max-width: 735px;
+        margin: 0 auto;
+        &-title {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    ul {
+      li {
+        display: flex;
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .li {
+          &__icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 18px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &__text {
+            width: calc(100% - 40px);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: $text2;
+          }
+        }
+      }
+    }
+  }
+  &.other-2 {
+    padding: 165px 0 140px 0;
+    p {
+      max-width: 525px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .lander {
+      &__salut {
+        &.left {
+          width: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 50%;
+          @include transformY;
+          img {
+            width: 100%;
+          }
+        }
+        &.right {
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 50%;
+          @include transformY;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &__inner {
+        &-person {
+          position: absolute;
+          left: 0;
+          bottom: -140px;
+          width: 230px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@mixin lander1340 {
+  .lander {
+    padding: 140px 0 80px 0;
+    overflow: hidden;
+    &__inner {
+      &-btns {
+        margin-top: 25px;
+      }
+
+      &-banner {
+        margin-top: 50px;
+      }
+    }
+    &.other {
+      .lander {
+        &__salut {
+          &.left {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 100%;
+            }
+          }
+          &.right {
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin lander1024 {
+  .lander {
+    &.index {
+      background: none;
+      &::before {
+        height: 600px;
+      }
+    }
+    &__inner {
+      &-btns {
+        .button {
+          width: 200px;
+          &--primary {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    &.other {
+      .lander {
+        &__salut {
+          &.left {
+            width: 80px;
+          }
+          &.right {
+            width: 80px;
+          }
+        }
+        &__inner {
+          &-title {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+    &.other-2 {
+      padding: 100px 0 0 0;
+      .lander {
+        &__inner {
+          &-person {
+            position: unset;
+            width: 220px;
+            margin: 8px auto 0 auto;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin lander768 {
+  .lander {
+    &.index {
+      &::before {
+        height: 520px;
+      }
+      .lander {
+        &__salut {
+          position: absolute;
+          &.left {
+            bottom: -20px;
+            width: 50px;
+            top: unset;
+          }
+          &.right {
+            width: 50px;
+            top: -100px;
+          }
+        }
+      }
+    }
+    &__inner {
+      &-btns {
+        .button {
+          width: 200px;
+          &--primary {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    &.other {
+      .lander {
+        &__salut {
+          &.right {
+            @include transformReset;
+            top: 0;
+            width: 40px;
+          }
+          &.left {
+            @include transformReset;
+            bottom: -20px;
+            width: 40px;
+          }
+        }
+        &__inner {
+          &-title {
+            text-align: left;
+          }
+          &-para {
+            text-align: left;
+            width: 90%;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          .li {
+            &__icon {
+              width: 30px;
+              height: 30px;
+            }
+            &__text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin lander540 {
+  .lander {
+    &__inner {
+      &-title {
+        text-align: left;
+      }
+      &-para {
+        text-align: left;
+      }
+      &-btns {
+        flex-direction: column;
+        .button {
+          width: 100%;
+          margin: 0 0 15px 0;
+
+          &--outline {
+            border-color: $main;
+          }
+        }
+      }
+    }
+    &.other {
+      .lander {
+        &__inner {
+          &-title {
+            text-align: left;
+          }
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 18px;
+          .li {
+            &__icon {
+              width: 24px;
+              height: 24px;
+              margin-right: 8px;
+            }
+            &__text {
+              font-size: 14px;
+              line-height: 18px;
+              width: calc(100% - 32px);
+            }
+          }
+        }
+      }
+    }
+    &.other-2 {
+      h1 {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      p {
+        max-width: unset;
+        text-align: left;
+      }
+      .lander {
+        &__salut {
+          &.right {
+            @include transformReset;
+            top: 0;
+            width: 40px;
+          }
+          &.left {
+            @include transformReset;
+            bottom: 20px;
+            width: 40px;
+          }
+        }
+        &__inner {
+          &-person {
+            width: 145px;
+          }
+        }
+      }
+    }
+  }
+}

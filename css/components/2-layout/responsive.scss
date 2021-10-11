@@ -1,0 +1,222 @@
+// max-width: 1340px
+@include xxlg-xxxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+
+  @include header1340;
+  @include lander1340;
+
+  /* Typography */
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  // h6 {
+  //     font-size: 18px;
+  // }
+  // p {
+  //     position: relative;
+  //     line-height: 1.8em;
+  // }
+}
+
+// max-width: 1180px
+@include xlg-xxlg {
+  @include index1180;
+  @include card1180;
+  @include footer1180;
+}
+
+// max-width: 1024px
+@include lg-xlg {
+  @include header1024;
+  @include nav1024;
+  @include lander1024;
+  @include card1024;
+  @include index1024;
+  @include soon1024;
+
+  .button {
+    font-size: 16px;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    &.sm {
+      font-size: 18px;
+    }
+    &.lg {
+      font-size: 18px;
+    }
+  }
+}
+
+// max-width: 840px
+@include md-lg {
+  @include index840;
+  @include card840;
+  @include blog840;
+}
+
+// max-width: 768px
+@include md-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include lander768;
+  @include card768;
+  @include index768;
+  @include header768;
+  @include footer768;
+  @include blog768;
+
+  // @include
+
+  /* Typography */
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+}
+
+// max-width: 700px
+@include sm-md {
+}
+
+// max-width: 540px
+@include xsm-sm {
+  @include lander540;
+  @include card540;
+  @include index540;
+  @include footer540;
+  @include soon540;
+  @include blog540;
+
+  /* Typography */
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    &.sm {
+      font-size: 14px;
+    }
+
+    &.lg {
+      font-size: 16px;
+    }
+  }
+  .button {
+    // &--primary {
+    //     color: $white;
+    //     padding-left: 44px;
+    //     padding-right: 44px;
+    //     background: $main;
+    //     border: 1px solid $main;
+
+    // }
+
+    &--outline {
+      border: 1px solid $main;
+    }
+
+    // &--secondary{
+    //   color: $main;
+    //   padding-right: 30px;
+    //   padding-left: 30px;
+    //   background-color: $bgcolor3;
+    //   border: 1px solid $bgcolor3;
+
+    //   &:hover{
+    //     // color: $main;
+    //     // border: 1px solid $main;
+    //   }
+    // }
+
+    // &:hover {
+    //     box-shadow: 0 4px 15px rgba($color: $main, $alpha: .45);
+    // }
+  }
+}

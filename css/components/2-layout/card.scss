@@ -1,0 +1,1050 @@
+.card {
+  &Simple {
+    box-sizing: border-box;
+
+    border-radius: 8px;
+    padding: 30px 25px;
+    height: 100%;
+    &__title {
+      font-size: 24px;
+      line-height: 120.6%;
+      margin-bottom: 10px;
+    }
+    &__para {
+      font-style: normal;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    &__btn {
+    }
+  }
+  &Game {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid $border-color;
+
+    &::after {
+      @include contentAbsolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba($color: $black, $alpha: 0.4);
+      @include transition;
+    }
+    &:hover {
+      .cardGame__btn {
+        bottom: 25px;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      img {
+        @include fullImage;
+        border-radius: 12px;
+      }
+    }
+    &__btn {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: -100px;
+      left: 15px;
+      width: calc(100% - 30px);
+      position: absolute;
+      @include transition;
+      transition-property: bottom;
+      z-index: 1;
+      .button {
+        width: 100%;
+        max-width: 185px;
+        padding: 11px 0;
+      }
+    }
+  }
+  &Logo {
+    position: relative;
+    padding: 20px 0 20px 40px;
+
+    &__ico {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      width: 110px;
+      height: 110px;
+      border-radius: 10px;
+      border: 1px solid $border-color;
+      background-color: $bgcolor;
+      .logo {
+        width: 60%;
+        height: 60%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      & > img {
+        width: 40%;
+      }
+    }
+    &__inner {
+      border: 1px solid $border-color;
+      background-color: $bgcolor2;
+      border-radius: 28px;
+      padding: 40px 0 50px 0;
+      box-shadow: 5px 0 48px 6px rgba(0, 0, 0, 4%);
+      min-height: 410px;
+      box-sizing: border-box;
+
+      &-header {
+        padding: 0 20px 20px 25%;
+        border-bottom: 1px solid $border-color;
+        display: flex;
+        align-items: center;
+
+        &-ico {
+          width: 30%;
+          display: flex;
+          justify-content: center;
+
+          &-image {
+            display: block;
+            margin: 0 auto;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            border: 1px solid $white-1;
+            margin: 0 auto;
+            img {
+              @include fullImage;
+            }
+          }
+        }
+
+        &-content {
+          width: 70%;
+        }
+        &-title {
+          color: $text2;
+          font-family: $font_mainSans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 140%;
+          margin-bottom: 10px;
+        }
+      }
+      &-body {
+        position: relative;
+        padding: 40px 0 45px 0;
+
+        &-ico {
+          position: absolute;
+          left: calc(25% - 45px - 25px);
+          top: 42px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            @include fullImage;
+          }
+        }
+        &-content {
+          padding: 0 20px 0 25%;
+          .placeholder {
+            margin-top: 20px;
+            &.sm {
+              margin-top: 35px;
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+
+        &-content2 {
+          padding: 0 45px;
+
+          .placeholder {
+            margin-top: 9px;
+            &.sm {
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+      &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button {
+          font-family: $font_mainSans;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &Acc {
+    padding: 25px 35px;
+    background: $bgcolor2;
+    border-radius: 10px;
+
+    &__title {
+      position: relative;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 1;
+      padding-right: 25px;
+
+      &::after {
+        @include contentAbsolute;
+        display: block;
+        right: 0;
+        top: -2px;
+        width: 28px;
+        height: 28px;
+        background: url("../images/icons/downArrMain.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        @include transition;
+      }
+
+      &.active {
+        &::after {
+          transform: rotateX(180deg) rotateY(180deg);
+        }
+        & + .cardAcc__para {
+          margin-top: 20px;
+          max-height: 600px;
+        }
+      }
+    }
+
+    &__para {
+      max-height: 0;
+      overflow: hidden;
+      @include transition;
+    }
+  }
+  &Escape {
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 1px solid $border-color3;
+    &:first-child {
+      border-top: none;
+    }
+    &__image {
+      width: 50%;
+      border-radius: 12px;
+      border: 3px solid $border-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      img {
+        @include fullImage;
+        border-radius: 12px;
+      }
+    }
+    &__content {
+      width: calc(50% - 50px);
+      padding-left: calc(50% + 50px);
+      position: relative;
+    }
+    &__header {
+      &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120.6%;
+        color: $text;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 16px;
+        span {
+          background: #fc6647;
+          border-radius: 10px;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 16px;
+          line-height: 22px;
+          color: #ffffff;
+          padding: 7px 14px;
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+      &-para {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: $text2;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -28px;
+      padding: 10px 0;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 28px;
+        width: calc(100% - 56px);
+        height: 1px;
+        background: $border-color;
+      }
+      &-detail {
+        padding: 0 28px;
+        margin: 13px 0;
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        &:nth-child(1) {
+          border-right: 1px solid $border-color;
+        }
+        &:nth-child(2) {
+          border-right: 1px solid $border-color;
+        }
+        &-icon {
+          width: 42px;
+          height: 42px;
+          border: 1px solid $border-color;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          margin-right: 12px;
+        }
+        &-text {
+          width: calc(100% - 54px);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: $text;
+          span {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $text2;
+            display: block;
+          }
+        }
+      }
+    }
+    &__oc {
+      margin-top: 26px;
+      &-detail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 5px;
+          background: $bgcolor2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            fill: $text;
+          }
+          margin-right: 16px;
+        }
+        &-content {
+          width: calc(100% - 245px);
+          &-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $text;
+            margin-bottom: 8px;
+          }
+          &-text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $text2;
+          }
+        }
+        .button--primary {
+          width: 165px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 0;
+          font-size: 18px;
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    &__available {
+      margin-top: 26px;
+      display: flex;
+      align-items: center;
+      &-btn {
+        width: 50%;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      &-side {
+        display: flex;
+        align-items: center;
+        width: calc(77% - 20px);
+        padding-right: 20px;
+        border-right: 1px solid $border-color;
+      }
+      &-cast {
+        width: calc(33.3% - 20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__attent {
+      margin-top: 26px;
+      padding: 10px 16px;
+      background: $bgcolor2;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-start;
+      &-icon {
+        width: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        margin-top: 5px;
+        img {
+          width: 100%;
+        }
+      }
+      &-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $text2;
+        width: calc(100% - 22px);
+        span {
+          a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            text-decoration-line: underline;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &__guide {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $text2;
+      text-align: center;
+      margin-top: 26px;
+      padding: 10px 16px;
+      background: $bgcolor2;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        margin-right: 7px;
+      }
+      a {
+        color: $text;
+      }
+    }
+    &__sale {
+      margin-top: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 12px;
+      background: rgba($color: #46a6f8, $alpha: 0.09);
+      border-radius: 9px;
+      box-sizing: border-box;
+      border: 1px solid #46a6f8;
+      &-price {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: rgba(70, 166, 248, 0.7);
+        span {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          text-decoration-line: underline;
+          color: #46a6f8;
+        }
+      }
+      &-link {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #46a6f8;
+      }
+    }
+    &.hor {
+      .card {
+        &Escape {
+          align-items: center;
+          &__info {
+            padding: 20px 0;
+            &::before {
+              display: none;
+            }
+          }
+          &__header {
+            padding: 25px 0;
+            .button--primary {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 10px 0;
+              width: 100%;
+              max-width: 340px;
+              img {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin card1340 {
+  .card {
+    &Escape {
+      &__content {
+        width: calc(50% - 25px);
+        padding-left: calc(50% + 25px);
+      }
+      fo {
+        margin: 0 -12px;
+        &::before {
+          left: 12px;
+          width: calc(100% - 24px);
+        }
+        &-detail {
+          padding: 0 12px;
+        }
+      }
+    }
+  }
+}
+@mixin card1180 {
+  .card {
+    &Logo {
+      &__inner {
+        .placeholder {
+          &__column {
+            width: calc(30% - 16px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin card1024 {
+  .card {
+    &Logo {
+      padding: 15px 0 15px 25px;
+
+      &__ico {
+        width: 90px;
+        height: 90px;
+      }
+      &__inner {
+        border-radius: 25px;
+        padding: 20px 0 30px 0;
+        min-height: 320px;
+
+        &-header {
+          padding: 0 20px 20px 20%;
+          &-ico {
+            &-image {
+              height: 40px;
+              width: 40px;
+            }
+          }
+        }
+        &-body {
+          padding: 20px 0 25px 0;
+          &-ico {
+            left: calc(20% - 45px - 15px);
+            top: 22px;
+            width: 40px;
+            height: 40px;
+          }
+          &-content {
+            padding: 0 20px 0 20%;
+            .placeholder {
+              margin-top: 15px;
+              &.sm {
+                margin-top: 25px;
+              }
+            }
+          }
+
+          &-content2 {
+            padding: 0 35px;
+
+            .placeholder {
+              margin-top: 9px;
+              &.sm {
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .placeholder {
+        &__column {
+          width: calc(33% - 16px);
+        }
+      }
+    }
+    &Escape {
+      &__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+      }
+      &__image {
+        position: unset;
+        height: unset;
+        width: calc(40% - 10px);
+        margin-right: 10px;
+        box-sizing: border-box;
+        height: 305px;
+      }
+      &__header {
+        margin-left: 10px;
+        width: calc(60% - 10px);
+        &-title {
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          strong {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+          }
+          span {
+            white-space: nowrap;
+          }
+        }
+        &-para {
+          font-size: 16px;
+          line-height: 22px;
+          max-height: 88px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      &__body {
+        margin-top: 30px;
+        width: 80%;
+      }
+      &__info {
+        margin: 0 -20px;
+        &::before {
+          left: 20px;
+          width: calc(100% - 40px);
+        }
+        &-detail {
+          width: 50%;
+          padding: 0 20px;
+          &:nth-child(2) {
+            border: none;
+          }
+          &:nth-child(3) {
+            border-right: 1px solid $border-color;
+          }
+        }
+      }
+      &.hor {
+        .cardEscape {
+          &__image {
+            position: absolute;
+            height: 100%;
+            width: calc(40% - 10px);
+            margin-right: 10px;
+          }
+          &__content {
+            margin-left: 0;
+            padding-left: calc(40% + 10px);
+            width: calc(60% - 10px);
+          }
+          &__header {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          &__info {
+            &-detail {
+              &:nth-child(2) {
+                border: none;
+              }
+              &:nth-child(3) {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin card840 {
+  .card {
+    &Logo {
+      &__inner {
+        &-body {
+          .placeholder {
+            &__row {
+              margin: 0;
+            }
+            &__column {
+              margin: 0 16px 0 0;
+              width: 96px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin card768 {
+  .card {
+    &Escape {
+      padding: 22px 0;
+      &__content {
+        flex-direction: column;
+        -ms-flex-direction: column;
+      }
+      &__image {
+        margin: 0;
+        width: 100%;
+        height: unset;
+      }
+      &__header {
+        margin: 16px 0 0 0;
+        width: 100%;
+      }
+      &__body {
+        width: 100%;
+        margin: 0;
+      }
+      &.hor {
+        .cardEscape {
+          &__image {
+            position: unset;
+            height: unset;
+            width: 100%;
+            margin: 0;
+          }
+          &__content {
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+          }
+          &__header {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin card540 {
+  .card {
+    &Logo {
+      position: relative;
+      padding: 25px 15px 0 15px;
+
+      &__ico {
+        width: 70px;
+        height: 70px;
+      }
+      &__inner {
+        border-radius: 15px;
+        padding: 15px 0;
+        min-height: unset;
+
+        &-header {
+          padding: 0 0 15px 20%;
+
+          &-ico {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+
+            &-image {
+              height: 37px;
+              width: 37px;
+            }
+          }
+
+          &-content {
+            width: 70%;
+          }
+          &-title {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        &-body {
+          padding: 15px 0 20px 0;
+
+          &-ico {
+            position: absolute;
+            left: calc(20% - 30px - 15px);
+            top: 17px;
+            width: 30px;
+            height: 30px;
+          }
+          &-content {
+            padding: 0 15px 0 20%;
+            .placeholder {
+              margin-top: 10px;
+              width: 75%;
+              &.sm {
+                width: 25%;
+                margin-top: 20px;
+                &:first-child {
+                  margin-top: 0;
+                }
+              }
+            }
+          }
+
+          &-content2 {
+            padding: 0 15px;
+          }
+          .placeholder {
+            &__row {
+              box-sizing: border-box;
+              width: 100%;
+              margin: 0;
+              padding: 0 15px;
+            }
+            &__column {
+              margin: 0 10px 0 0;
+              width: 70px;
+              height: 80px;
+            }
+            &__outer {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        &-footer {
+          .button {
+            font-size: 14px;
+            border-radius: 8px;
+          }
+        }
+        .placeholder {
+          height: 7px;
+        }
+      }
+    }
+    &Acc {
+      padding: 25px 35px;
+      background: $bgcolor2;
+      border-radius: 5px;
+    }
+    &Escape {
+      &__header {
+        &-title {
+          font-size: 20px;
+          margin-bottom: 5px;
+          strong {
+            overflow: unset;
+            white-space: unset;
+          }
+          span {
+            font-size: 12px;
+            line-height: 16px;
+            padding: 5px 10px;
+          }
+        }
+        &-para {
+          overflow: unset;
+          max-height: unset;
+        }
+      }
+      &__info {
+        margin: 0;
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+        &-detail {
+          width: 50%;
+          box-sizing: border-box;
+          padding: 0;
+          &:nth-child(even) {
+            padding: 0 0 0 14px;
+          }
+          &-icon {
+            width: 34px;
+            height: 34px;
+            margin-right: 8px;
+            img {
+              width: 22px;
+            }
+          }
+          &-text {
+            font-size: 14px;
+            width: calc(100% - 46px);
+            line-height: 19px;
+            span {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+      &__oc {
+        &-detail {
+          &-icon {
+            margin-top: -10px;
+            width: 42px;
+            height: 42px;
+            margin-right: 16px;
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          &-content {
+            width: calc(100% - 165px);
+            &-title {
+              font-size: 14px;
+              line-height: 19px;
+            }
+            &-text {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+          .button--primary {
+            width: 90px;
+            font-size: 12px;
+            line-height: 1;
+            margin-left: 15px;
+            img {
+              width: 12px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+      &__available {
+        display: none;
+      }
+      &__guide {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &__attent {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      &__sale {
+        &-price {
+          font-size: 14px;
+          span {
+            font-size: 16px;
+            line-height: 1;
+          }
+        }
+        &-link {
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
