@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Dashboard | Profile</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <header class="dashHeader" id="header">
+        <div class="dash__container">
+            <div class="dashHeader__inner">
+                <a href="index.html" class="dashHeader__inner-logo logo">
+                    <img src="../images/Gaggle-logo.png" alt="">
+                </a>
+                <div class="burger" id="menuBtn"></div>
+                <div class="dashHeader__inner-menu">
+                    <nav class="nav">
+                        <a href="escape.html" class="nav__link">Escape Rooms</a>
+                        <div class="nav__dropdown active">
+                            <div class="nav__dropdown-title">
+                                Games
+                                <span><img src="../images/icons/downArr.svg" alt=""></span>
+                            </div>
+                            <div class="nav__dropdown-content">
+                                <div class="nav__dropdown-content-inner">
+                                    <a class="nav__link">dropdown link 1</a>
+                                    <a class="nav__link">dropdown link 2</a>
+                                    <a class="nav__link">dropdown link 3</a>
+                                    <a class="nav__link">dropdown link 4</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="FAQ.html" class="nav__link">FAQ</a>
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </nav>
+                    <div class="profilePhoto__outer">
+                        <div class="profilePhoto">
+                            <img src="../images/dashboard/avatars/elayamani.png" alt="">
+                        </div>
+                        <div class="title">
+                            Elayamani
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!-- header end
+    =========================================== -->
+
+
+    <!-- sidebar
+    =========================================== -->
+    <aside class="sidebar" id="menu">
+        <div class="sidebar__inner">
+
+            <div class="sidebar__inner-logo">
+                <div class="logo">
+                    <img src="../images/Gaggle-logo.png" alt="">
+                </div>
+                <button class="close" id="menuClose">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.2497 0.395459C15.7622 -0.0920407 14.9747 -0.0920407 14.4872 0.395459L8.37466 6.49546L2.26216 0.382959C1.77466 -0.104541 0.987158 -0.104541 0.499658 0.382959C0.0121582 0.870459 0.0121582 1.65796 0.499658 2.14546L6.61216 8.25796L0.499658 14.3705C0.0121582 14.858 0.0121582 15.6455 0.499658 16.133C0.987158 16.6205 1.77466 16.6205 2.26216 16.133L8.37466 10.0205L14.4872 16.133C14.9747 16.6205 15.7622 16.6205 16.2497 16.133C16.7372 15.6455 16.7372 14.858 16.2497 14.3705L10.1372 8.25796L16.2497 2.14546C16.7247 1.67046 16.7247 0.870459 16.2497 0.395459Z" fill="currentColor"/>
+                        <path d="M16.2497 0.395459C15.7622 -0.0920407 14.9747 -0.0920407 14.4872 0.395459L8.37466 6.49546L2.26216 0.382959C1.77466 -0.104541 0.987158 -0.104541 0.499658 0.382959C0.0121582 0.870459 0.0121582 1.65796 0.499658 2.14546L6.61216 8.25796L0.499658 14.3705C0.0121582 14.858 0.0121582 15.6455 0.499658 16.133C0.987158 16.6205 1.77466 16.6205 2.26216 16.133L8.37466 10.0205L14.4872 16.133C14.9747 16.6205 15.7622 16.6205 16.2497 16.133C16.7372 15.6455 16.7372 14.858 16.2497 14.3705L10.1372 8.25796L16.2497 2.14546C16.7247 1.67046 16.7247 0.870459 16.2497 0.395459Z" stroke="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        
+            <div class="sidebar__inner-profile">
+                <div class="profilePhoto__outer">
+                    <div class="profilePhoto">
+                        <img src="../images/dashboard/avatars/elayamani.png" alt="">
+                    </div>
+                    <div class="title">
+                        Elayamani
+                    </div>
+                </div>
+                <div class="profileStatus">
+                    <div class="profileStatus__btns">
+                        <button class="buttonCircle ">
+                            <div class="buttonCircle__img orange">
+                                <img src="../images/dashboard/icons/coin.svg" alt="">
+                            </div>
+                            <div class="buttonCircle__text">40</div>
+                        </button>
+                        <button class="buttonCircle ">
+                            <div class="buttonCircle__img light">
+                                <img src="../images/dashboard/icons/euro.svg" alt="">
+                            </div>
+                            <div class="buttonCircle__text">0</div>
+                        </button>
+                    </div>
+                    <div class="profileStatus__buy">
+                        <a href="#" class="link--primary">
+                            Buy coins
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar__inner-body">
+                <ul class="navSidebar">
+                    <li>
+                        <a href="index.html" class="navSidebar__item active">
+                        <div class="navSidebar__item-ico">
+                            <svg width="19" height="22" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.7318 15.4897H10.2989V14.0567C10.2989 13.4867 10.0724 12.94 9.66931 12.5369C9.26622 12.1338 8.71951 11.9073 8.14946 11.9073H3.85065C3.28059 11.9073 2.73388 12.1338 2.33079 12.5369C1.9277 12.94 1.70125 13.4867 1.70125 14.0567V15.4897H0.268311V14.0567C0.268311 13.1066 0.645734 12.1955 1.31755 11.5236C1.98937 10.8518 2.90055 10.4744 3.85065 10.4744H8.14946C9.09955 10.4744 10.0107 10.8518 10.6826 11.5236C11.3544 12.1955 11.7318 13.1066 11.7318 14.0567V15.4897ZM6.00005 9.04146C5.43553 9.04146 4.87653 8.93027 4.35497 8.71424C3.83342 8.4982 3.35952 8.18155 2.96034 7.78237C2.56116 7.38319 2.24451 6.90929 2.02847 6.38774C1.81244 5.86618 1.70125 5.30718 1.70125 4.74266C1.70125 4.17813 1.81244 3.61913 2.02847 3.09757C2.24451 2.57602 2.56116 2.10212 2.96034 1.70294C3.35952 1.30376 3.83342 0.98711 4.35497 0.771075C4.87653 0.55504 5.43553 0.443848 6.00005 0.443848C7.14017 0.443848 8.23359 0.896756 9.03977 1.70294C9.84595 2.50912 10.2989 3.60254 10.2989 4.74266C10.2989 5.88277 9.84595 6.97619 9.03977 7.78237C8.23359 8.58855 7.14017 9.04146 6.00005 9.04146ZM6.00005 7.60853C6.76013 7.60853 7.48907 7.30659 8.02653 6.76913C8.56398 6.23168 8.86592 5.50273 8.86592 4.74266C8.86592 3.98258 8.56398 3.25363 8.02653 2.71618C7.48907 2.17872 6.76013 1.87678 6.00005 1.87678C5.23998 1.87678 4.51103 2.17872 3.97358 2.71618C3.43612 3.25363 3.13418 3.98258 3.13418 4.74266C3.13418 5.50273 3.43612 6.23168 3.97358 6.76913C4.51103 7.30659 5.23998 7.60853 6.00005 7.60853Z" fill="currentColor"/>
+                            </svg>                                    
+                        </div>
+                        <span>Profile</span>
+                        
+                    </a>
+                    </li>
+                    <li>
+                        <a href="purchase.html" class="navSidebar__item">
+                        <div class="navSidebar__item-ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99992 0.596191C15.0627 0.596191 19.1666 4.70011 19.1666 9.76286C19.1666 14.8256 15.0627 18.9295 9.99992 18.9295C4.93717 18.9295 0.833252 14.8256 0.833252 9.76286H2.66659C2.66659 13.8127 5.95009 17.0962 9.99992 17.0962C14.0498 17.0962 17.3333 13.8127 17.3333 9.76286C17.3333 5.71302 14.0498 2.42952 9.99992 2.42952C7.74125 2.42952 5.72092 3.45069 4.37617 5.05577L6.33325 7.01286H0.833252V1.51286L3.07634 3.75502C4.75659 1.82086 7.23525 0.596191 9.99992 0.596191ZM10.9166 5.17952V9.38244L13.8893 12.3552L12.5923 13.6523L9.08325 10.1414V5.17952H10.9166Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Purchase history</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="keys.html" class="navSidebar__item">
+                        <div class="navSidebar__item-ico">
+                            <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9998 0.762695C17.5911 0.762695 19.1172 1.39484 20.2424 2.52005C21.3676 3.64527 21.9998 5.1714 21.9998 6.7627V10.7627C21.9998 12.354 21.3676 13.8801 20.2424 15.0053C19.1172 16.1306 17.5911 16.7627 15.9998 16.7627H5.99975C4.40846 16.7627 2.88233 16.1306 1.75711 15.0053C0.631897 13.8801 -0.000244141 12.354 -0.000244141 10.7627V6.7627C-0.000244141 5.1714 0.631897 3.64527 1.75711 2.52005C2.88233 1.39484 4.40846 0.762695 5.99975 0.762695H15.9998ZM15.9998 2.7627H5.99975C4.97351 2.76269 3.98653 3.15713 3.24294 3.86442C2.49936 4.57171 2.05607 5.53774 2.00476 6.5627L1.99976 6.7627V10.7627C1.99975 11.7889 2.39419 12.7759 3.10148 13.5195C3.80877 14.2631 4.7748 14.7064 5.79975 14.7577L5.99975 14.7627H15.9998C17.026 14.7627 18.013 14.3683 18.7566 13.661C19.5001 12.9537 19.9434 11.9877 19.9948 10.9627L19.9998 10.7627V6.7627C19.9998 5.73645 19.6053 4.74947 18.898 4.00588C18.1907 3.2623 17.2247 2.81901 16.1998 2.7677L15.9998 2.7627ZM8.99975 5.7627V7.7627H10.9998V9.7627H8.99875L8.99975 11.7627H6.99975L6.99875 9.7627H4.99975V7.7627H6.99975V5.7627H8.99975ZM16.9998 9.7627V11.7627H14.9998V9.7627H16.9998ZM14.9998 5.7627V7.7627H12.9998V5.7627H14.9998Z" fill="currentColor"/>
+                            </svg>                                
+                        </div>
+                        <span>Game keys</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="redeem.html" class="navSidebar__item">
+                        <div class="navSidebar__item-ico">
+                            <svg width="20" height="22" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.3851 0.80127L13.048 1.75368L13.9997 8.41721L7.81271 14.6042C7.68648 14.7304 7.51531 14.8013 7.33684 14.8013C7.15836 14.8013 6.98719 14.7304 6.86097 14.6042L0.197436 7.94067C0.0712523 7.81445 0.000366211 7.64328 0.000366211 7.4648C0.000366211 7.28632 0.0712523 7.11515 0.197436 6.98893L6.3851 0.80127ZM6.86097 2.22955L1.62505 7.4648L7.33684 13.1759L12.5721 7.94067L11.8586 2.94302L6.86097 2.22955ZM8.2879 6.51306C8.0354 6.26046 7.89358 5.91791 7.89364 5.56074C7.89367 5.3839 7.92853 5.20879 7.99624 5.04541C8.06395 4.88204 8.16317 4.7336 8.28824 4.60857C8.41331 4.48354 8.56179 4.38437 8.72519 4.31672C8.88859 4.24907 9.06371 4.21427 9.24056 4.2143C9.59772 4.21437 9.94022 4.35631 10.1927 4.6089C10.4452 4.8615 10.5871 5.20406 10.587 5.56122C10.5869 5.91838 10.445 6.26089 10.1924 6.5134C9.9398 6.7659 9.59724 6.90772 9.24008 6.90766C8.88292 6.9076 8.54041 6.76566 8.2879 6.51306Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Redeem code</span>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="twitch.html" class="navSidebar__item">
+                        <div class="navSidebar__item-ico">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 0.762695V12.5027L13.304 17.1977H9.391L6.954 19.5457H3.913V17.1977H0V3.8927L1.227 0.762695H18ZM16.435 2.3277H3.13V14.0677H6.26V16.4147L8.609 14.0667H13.304L16.434 10.9367V2.3277H16.435ZM13.305 5.4577V10.1537H11.739V5.4587H13.304L13.305 5.4577ZM9.391 5.4577V10.1537H7.826V5.4587H9.391V5.4577Z" fill="currentColor"/>
+                            </svg>                                
+                        </div>
+                        <span>Twitch drops</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="twitch-link.html" class="navSidebar__item">
+                        <div class="navSidebar__item-ico">
+                            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9724 6.19667L12.2695 7.49375C12.8654 8.0896 13.3381 8.797 13.6606 9.57555C13.9831 10.3541 14.1491 11.1885 14.1491 12.0313C14.1491 12.874 13.9831 13.7084 13.6606 14.487C13.3381 15.2655 12.8654 15.9729 12.2695 16.5688L11.945 16.8923C10.7416 18.0958 9.10937 18.7718 7.40747 18.7718C5.70558 18.7718 4.07339 18.0958 2.86997 16.8923C1.66655 15.6889 0.990479 14.0567 0.990479 12.3548C0.990479 10.6529 1.66655 9.02076 2.86997 7.81734L4.16706 9.11442C3.7384 9.53934 3.39788 10.0447 3.16507 10.6016C2.93226 11.1585 2.81174 11.7559 2.81042 12.3595C2.80909 12.963 2.927 13.5609 3.15737 14.1188C3.38774 14.6767 3.72604 15.1836 4.15283 15.6104C4.57963 16.0372 5.08652 16.3755 5.64441 16.6059C6.2023 16.8362 6.8002 16.9541 7.40377 16.9528C8.00735 16.9515 8.60473 16.831 9.1616 16.5982C9.71848 16.3653 10.2239 16.0248 10.6488 15.5962L10.9733 15.2717C11.8326 14.4122 12.3152 13.2466 12.3152 12.0313C12.3152 10.8159 11.8326 9.65034 10.9733 8.79083L9.67622 7.49375L10.9733 6.19759L10.9724 6.19667ZM17.1306 11.7068L15.8344 10.4106C16.2631 9.98566 16.6036 9.48026 16.8364 8.92338C17.0692 8.36651 17.1897 7.76913 17.191 7.16555C17.1924 6.56197 17.0744 5.96408 16.8441 5.40619C16.6137 4.8483 16.2754 4.34141 15.8486 3.91461C15.4218 3.48781 14.9149 3.14952 14.357 2.91915C13.7992 2.68878 13.2013 2.57087 12.5977 2.57219C11.9941 2.57352 11.3967 2.69404 10.8398 2.92685C10.283 3.15966 9.77756 3.50017 9.35264 3.92883L9.02814 4.25333C8.1689 5.11284 7.6862 6.27842 7.6862 7.49375C7.6862 8.70909 8.1689 9.87467 9.02814 10.7342L10.3252 12.0313L9.02814 13.3274L7.73197 12.0313C7.13606 11.4354 6.66335 10.728 6.34085 9.94946C6.01834 9.17091 5.85234 8.33646 5.85234 7.49375C5.85234 6.65105 6.01834 5.8166 6.34085 5.03805C6.66335 4.2595 7.13606 3.5521 7.73197 2.95625L8.05647 2.63267C9.25989 1.42925 10.8921 0.753174 12.594 0.753174C14.2959 0.753174 15.9281 1.42925 17.1315 2.63267C18.3349 3.83609 19.011 5.46828 19.011 7.17017C19.011 8.87206 18.3349 10.5042 17.1315 11.7077L17.1306 11.7068Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Account linking</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- sidebar end
+    =========================================== -->
+
+    <!-- dashBody 
+    =========================================== -->
+    <section class="dashBody">
+        <div class="dash__container">
+            <div class="dashBody__inner">
+                <div class="profileStatus">
+                    <div class="profileStatus__btns">
+                        <button class="buttonCircle ">
+                            <div class="buttonCircle__img orange">
+                                <img src="../images/dashboard/icons/coin.svg" alt="">
+                            </div>
+                            <div class="buttonCircle__text">40</div>
+                        </button>
+                        <button class="buttonCircle ">
+                            <div class="buttonCircle__img light">
+                                <img src="../images/dashboard/icons/euro.svg" alt="">
+                            </div>
+                            <div class="buttonCircle__text">0</div>
+                        </button>
+                    </div>
+                    <div class="profileStatus__buy">
+                        <a href="#" class="link--primary">
+                            Buy coins
+                        </a>
+                    </div>
+                </div>
+                <div class="dashBody__inner-header">
+                    <h3 class="dashBody__inner-header-title">Profile</h3>
+                    <div class="dashBody__inner-header-btn">
+                        <a href="profile-edit.html" class="button button--primary">
+                            <img src="../images/dashboard/icons/pen.svg" class="left" alt="">
+                            <span>Edit profile</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashBody__inner-body">
+                    <div class="profile">
+                        <div class="profile__row">
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/person.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Full name
+                                </div>
+                                <div class="profile__column-text">
+                                    Elayamani K
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/call.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Phone number
+                                </div>
+                                <div class="profile__column-text">
+                                    678 900 900
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/email.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Email
+                                </div>
+                                <div class="profile__column-text">
+                                    elaya@gaggle.fun
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/smile.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Nick name
+                                </div>
+                                <div class="profile__column-text">
+                                    Elay
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/calendar.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Birthday
+                                </div>
+                                <div class="profile__column-text">
+                                    22/07/2001
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/male.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Gender
+                                </div>
+                                <div class="profile__column-text">
+                                    Male
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/network.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Country
+                                </div>
+                                <div class="profile__column-text">
+                                    Canada
+                                </div>
+                            </div>
+                            <div class="profile__column">
+                                <div class="profile__column-ico">
+                                    <img src="../images/dashboard/icons/orange/tag.svg" alt="">
+                                </div>
+                                <div class="profile__column-label">
+                                    Receive offers from Gaggle.fun
+                                </div>
+                                <div class="profile__column-text">
+                                    Yes
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dashBody end
+    =========================================== -->
+    <!-- scripts -->
+    <script src="../js/main.js"></script>
+    
+</body>
+
+</html>

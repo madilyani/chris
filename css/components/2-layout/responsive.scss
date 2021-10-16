@@ -1,11 +1,30 @@
+// max-width: 1860px
+@include xxxlg-xxxxlg {
+  
+  .dash__container {
+    max-width: 1010px;
+    width: calc(100% - 400px);
+    padding: 0 25px 0 375px;
+  }
+
+}
+
 // max-width: 1340px
 @include xxlg-xxxlg {
+
   .auto__container {
     padding: 0 30px;
+  }
+  .dash__container{
+    padding: 0 25px 0 345px;
+    width: calc(100% - 370px);
   }
 
   @include header1340;
   @include lander1340;
+  @include checkout1340;
+  @include sidebar1340;
+  @include dashboard1340;
 
   /* Typography */
   h1 {
@@ -18,6 +37,10 @@
 
   h3 {
     font-size: 32px;
+
+    &.sm {
+      font-size: 28px;
+    }
   }
 
   h4 {
@@ -28,13 +51,7 @@
     font-size: 20px;
   }
 
-  // h6 {
-  //     font-size: 18px;
-  // }
-  // p {
-  //     position: relative;
-  //     line-height: 1.8em;
-  // }
+
 }
 
 // max-width: 1180px
@@ -42,6 +59,8 @@
   @include index1180;
   @include card1180;
   @include footer1180;
+  @include dashboard1180;
+  @include checkout1180;
 }
 
 // max-width: 1024px
@@ -52,9 +71,96 @@
   @include card1024;
   @include index1024;
   @include soon1024;
+  @include login1024;
+  @include sidebar1024;
+  @include dashboard1024;
+  @include checkout1024;
+
+  .dash__container {
+    width: unset;
+    padding: 0 30px;
+  }
 
   .button {
     font-size: 16px;
+  }
+
+
+  .input {
+    &__item {
+      margin-bottom: 20px;
+    }
+
+    &__outer {
+      &.icoRight{
+        input{
+          padding: 14px 40px 14px 20px;
+        }
+      }
+      &.btnRight{
+        input{
+          padding: 14px 85px 14px 20px;
+        }
+      }
+
+      input {
+        font-size: 18px;
+        padding: 14px 20px;
+
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+
+      svg {
+        right: 18px;
+      }
+      button{
+        font-size: 18px;
+      }
+    }
+
+    &__item {
+
+      label {
+        font-size: 18px;
+        line-height: 140%;
+        margin-bottom: 12px;
+      }
+
+      .message {
+        margin-top: 12px;
+
+        label {
+          font-size: 18px;
+          line-height: 140%;
+          padding-left: 25px;
+
+          &::before {
+            top: 3px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .select__outer {
+    label {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 12px;
+    }
+  }
+
+  .select-selected {
+    font-size: 18px;
+  }
+
+  .select-items div {
+    font-size: 18px;
+    padding: 12px 20px;
   }
 
   /* Typography */
@@ -68,6 +174,10 @@
 
   h3 {
     font-size: 28px;
+
+    &.sm {
+      font-size: 28px;
+    }
   }
 
   h4 {
@@ -84,8 +194,9 @@
 
   p {
     &.sm {
-      font-size: 18px;
+      font-size: 16px;
     }
+
     &.lg {
       font-size: 18px;
     }
@@ -97,6 +208,7 @@
   @include index840;
   @include card840;
   @include blog840;
+  @include dashboard840;
 }
 
 // max-width: 768px
@@ -104,14 +216,67 @@
   .auto__container {
     padding: 0 20px;
   }
+  
+  .dash__container{
+    padding: 0 20px;
+  }
+
+  @include header768;
+  @include footer768;
+  @include sidebar768;
   @include lander768;
   @include card768;
   @include index768;
-  @include header768;
-  @include footer768;
   @include blog768;
+  @include login768;
+  @include dashboard768;
+  @include checkout768;
 
-  // @include
+
+  .input {
+    &__item {
+      margin-bottom: 16px;
+    }
+
+    &__outer {
+      &.icoRight{
+        input{
+          padding: 14px 40px 14px 18px;
+        }
+      }
+      &.btnRight{
+        input{
+          padding: 14px 78px 14px 18px;
+        }
+      }
+      input {
+        font-size: 16px;
+        padding: 14px 18px;
+
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+
+      svg {
+        right: 16px;
+      }
+      
+      button{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .select-selected {
+    font-size: 16px;
+    padding: 17px 18px;
+  }
+
+  .select-items div {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
 
   /* Typography */
   h1 {
@@ -124,6 +289,10 @@
 
   h3 {
     font-size: 24px;
+
+    &.sm {
+      font-size: 24px;
+    }
   }
 
   h4 {
@@ -139,18 +308,24 @@
   }
 }
 
-// max-width: 700px
+// max-width: 660px
 @include sm-md {
+  @include dashboard660;
+  @include checkout660;
 }
 
 // max-width: 540px
 @include xsm-sm {
+  @include sidebar540;
+  @include footer540;
   @include lander540;
   @include card540;
   @include index540;
-  @include footer540;
   @include soon540;
   @include blog540;
+  @include login540;
+  @include dashboard540;
+  @include checkout540;
 
   /* Typography */
   h1 {
@@ -163,6 +338,10 @@
 
   h3 {
     font-size: 20px;
+
+    &.sm {
+      font-size: 20px;
+    }
   }
 
   h4 {
@@ -180,6 +359,7 @@
   p {
     font-size: 14px;
     font-weight: 600;
+
     &.sm {
       font-size: 14px;
     }
@@ -188,6 +368,110 @@
       font-size: 16px;
     }
   }
+
+
+  .aloneCard {
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+
+    &.bg--grd {
+      background: $bgcolor;
+
+      @include lightIn {
+        background: $bgcolor;
+      }
+    }
+
+    &__inner {
+      width: 100%;
+      border-radius: 0;
+      padding: 25px 0px;
+      border: 0 !important;
+      box-shadow: unset;
+    }
+  }
+
+  .input {
+
+    &__outer {
+      &.icoRight{
+        input{
+          padding: 10px 38px 10px 12px;
+        }
+      }
+      &.btnRight{
+        input{
+          padding: 10px 70px 10px 12px;
+        }
+      }
+      input {
+        font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 8px;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      svg {
+        right: 14px;
+      }
+      
+      button{
+        font-size: 14px;
+      }
+    }
+
+    &__item {
+      margin-bottom: 10px;
+
+      label {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .message {
+        margin-top: 8px;
+
+        label {
+          font-size: 16px;
+          padding-left: 22px;
+
+          &::before {
+            top: 2px;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .select__outer {
+    label {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .select-items div {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .select-selected {
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 13px 12px;
+
+    &::after {
+      width: 6px;
+      height: 6px;
+      right: 16px;
+    }
+  }
+
   .button {
     // &--primary {
     //     color: $white;

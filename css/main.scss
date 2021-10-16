@@ -11,14 +11,16 @@
 @import "./components/2-layout/lander.scss"; 
 @import "./components/2-layout/footer.scss";  
 @import "./components/2-layout/card.scss";
-// @import "./components/2-layout/stack.scss";
-
+@import "./components/2-layout/sidebar.scss";
+@import "./components/2-layout/select.scss";  
+@import "./components/2-layout/dashboard.scss"; 
+@import "./components/2-layout/checkout.scss";  
+ 
 // 3-pages components
-@import "./components/3-pages/index.scss";
+@import "./components/3-pages/index.scss"; 
 @import "./components/3-pages/soon.scss";  
 @import "./components/3-pages/blog.scss";  
-
-// @import "./components/3-pages/congrut.scss";
+@import "./components/3-pages/login.scss";  
 
 // responsive
 @import "./components/2-layout/responsive.scss";

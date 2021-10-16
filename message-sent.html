@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Log in</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <header class="header header--noborder" id="header">
+        <div class="auto__container">
+            <div class="header__inner">
+                <a href="index.html" class="header__inner-logo">
+                    <img src="images/Gaggle-logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header end
+    =========================================== -->
+    
+    <!-- login 
+    =========================================== -->
+    <section class="aloneCard  bg--grd">
+        <div class="auto__container">
+            <div class="aloneCard__inner">
+                <div class="login">
+                    <div class="login__messageImage">
+                    </div>
+                    <div class="login__header">
+                        <h3 class="login__header-title sm">
+                            Email sent!
+                        </h3>
+                        <p class="login__header-para sm">
+                            We will send you an email that will allow you to reset your password.
+                        </p>
+                        <div class="login__header-btn">
+                            <a href="new-password.html" class="button button--primary">
+                                That’s great!
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- login end
+    =========================================== -->
+
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/form-validation.js"></script> -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        $("form").validate({
+            errorPlacement: function(error, element) {
+                error.appendTo( element.parent().parent().find('.message') );
+            },
+            highlight: function(element) {
+                $(element).parent().parent().addClass("error");
+            },
+            unhighlight: function(element) {
+                $(element).parent().parent().removeClass("error");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -24,8 +24,8 @@
                         <div class="menu__inner-nav">
                             <nav class="nav">
                                 <a href="escape.html" class="nav__link">Escape Rooms</a>
-                                <div class="nav__dropdown active">
-                                    <div class="nav__dropdown-title">
+                                <div class="nav__dropdown radioBtn">
+                                    <div class="nav__dropdown-title ">
                                         Games
                                         <span><img src="images/icons/downArr.svg" alt=""></span>
                                     </div>
@@ -47,8 +47,8 @@
                                 <input type="checkbox">
                                 <label for=""></label>
                             </div>
-                            <a href="#" class="button button--primary">Sign up </a>
-                            <a href="#" class="button button--outline">Log in</a>
+                            <a href="sign-up.html" class="button button--primary">Sign up </a>
+                            <a href="login.html" class="button button--outline">Log in</a>
                         </div>
                     </div>
                 </div>
@@ -77,9 +77,8 @@
                     <a href="#" class="button button--primary">Try for free</a>
                     <a href="#" class="button button--outline">Log in</a>
                 </div>
-                <a href="" class="anchorPoint" id="anchorPoint"></a>
                 <div class="lander__inner-banner" id="videoOuter">
-                    <img src="images/mac.svg" alt="">
+                    <img src="images/laptop.png" alt="">
                     <button class="videoPlay">
                         <span></span>
                     </button>
@@ -87,7 +86,10 @@
                 </div>
             </div>
         </div>
+        <a href="" class="anchorPoint" id="anchorPoint"></a>
+
     </section>
+    
     <!-- games start
     =========================================== -->
     <section class="games">
@@ -644,14 +646,14 @@
                 </div>
                 <div class="questions__inner-body" id="radioTab">
                     <div class="cardAcc">
-                        <h4 class="cardAcc__title radioTab__item active" data-parent="#radioTab">What is gaggle.fun?
+                        <h4 class="cardAcc__title radioBtn active" data-parent="#radioTab">What is gaggle.fun?
                         </h4>
                         <p class="cardAcc__para">
                             A place to play video-chat integrated party games and have adventures with your friends.
                         </p>
                     </div>
                     <div class="cardAcc ">
-                        <h4 class="cardAcc__title radioTab__item" data-parent="#radioTab">What do I need?</h4>
+                        <h4 class="cardAcc__title radioBtn" data-parent="#radioTab">What do I need?</h4>
                         <p class="cardAcc__para">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit nostrum placeat
                             earum error? Deleniti ad beatae debitis illo minima accusamus ab reiciendis a consequatur
@@ -659,7 +661,7 @@
                         </p>
                     </div>
                     <div class="cardAcc">
-                        <h4 class="cardAcc__title radioTab__item" data-parent="#radioTab">Can I play on my phone or
+                        <h4 class="cardAcc__title radioBtn" data-parent="#radioTab">Can I play on my phone or
                             tablet?</h4>
                         <p class="cardAcc__para">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit nostrum placeat
@@ -668,7 +670,7 @@
                         </p>
                     </div>
                     <div class="cardAcc">
-                        <h4 class="cardAcc__title radioTab__item" data-parent="#radioTab">Do all my friends need to buy
+                        <h4 class="cardAcc__title radioBtn" data-parent="#radioTab">Do all my friends need to buy
                             a game key to play?</h4>
                         <p class="cardAcc__para">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit nostrum placeat
@@ -677,7 +679,7 @@
                         </p>
                     </div>
                     <div class="cardAcc">
-                        <h4 class="cardAcc__title radioTab__item" data-parent="#radioTab">What is online escape rooms?
+                        <h4 class="cardAcc__title radioBtn" data-parent="#radioTab">What is online escape rooms?
                         </h4>
                         <p class="cardAcc__para">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit nostrum placeat
@@ -777,7 +779,7 @@
                 <div class="footer__column">
                     <div class="footer__link-row" id="linksTab">
                         <div class="footer__link-col">
-                            <h6 class="footer__link-header  radioTab__item active" data-parent="#linksTab">Games</h6>
+                            <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Games</h6>
                             <div class="footer__link-body">
                                 <a href="#" class="footer__link">Escape rooms</a>
                                 <a href="#" class="footer__link">Online party games</a>
@@ -785,7 +787,7 @@
                             </div>
                         </div>
                         <div class="footer__link-col">
-                            <h6 class="footer__link-header  radioTab__item active" data-parent="#linksTab">Company</h6>
+                            <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Company</h6>
                             <div class="footer__link-body">
                                 <a href="#" class="footer__link">About us</a>
                                 <a href="#" class="footer__link">Careers</a>
@@ -794,7 +796,7 @@
                             </div>
                         </div>
                         <div class="footer__link-col">
-                            <h6 class="footer__link-header  radioTab__item active" data-parent="#linksTab">Resorces</h6>
+                            <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Resorces</h6>
                             <div class="footer__link-body">
                                 <a href="#" class="footer__link">Investor relations</a>
                                 <a href="#" class="footer__link">Press</a>
@@ -825,17 +827,29 @@
                         <h6 class="footer__social-title">Stay in touch</h6>
                         <div class="footer__social-links">
                             <a href="#" class="footer__social-link">
-                                <img src="images/icons/social1.svg" alt="">
+                                <svg width="31" height="23" viewBox="0 0 31 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.0281 4.17813C29.6844 2.87188 28.6531 1.84063 27.3469 1.47969C24.9922 0.84375 15.5391 0.84375 15.5391 0.84375C15.5391 0.84375 6.08594 0.84375 3.71406 1.47969C2.40781 1.82344 1.39375 2.85469 1.03281 4.17813C0.414063 6.55 0.414062 11.5 0.414062 11.5C0.414062 11.5 0.414062 16.45 1.05 18.8219C1.39375 20.1281 2.425 21.1594 3.73125 21.5203C6.08594 22.1563 15.5391 22.1563 15.5391 22.1563C15.5391 22.1563 24.9922 22.1563 27.3641 21.5203C28.6703 21.1766 29.6844 20.1453 30.0453 18.8219C30.6641 16.45 30.6641 11.5 30.6641 11.5C30.6641 11.5 30.6641 6.55 30.0281 4.17813Z" fill="currentColor" fill-opacity="0.36"/>
+                                    <path d="M12.4453 16.0033V6.99701L20.3516 11.5001L12.4453 16.0033Z" fill="currentColor" class="transparent"/>
+                                </svg>                                    
                             </a>
                             <a href="#" class="footer__social-link">
-                                <img src="images/icons/social2.svg" alt="">
+                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.9864 2.67903C25.9949 3.11874 24.9294 3.41592 23.8111 3.54958C24.9526 2.86533 25.8292 1.78187 26.242 0.490933C25.1738 1.12443 23.9906 1.58454 22.7313 1.83253C21.7227 0.758051 20.2859 0.0866089 18.6958 0.0866089C15.6425 0.0866089 13.1671 2.56193 13.1671 5.61506C13.1671 6.04837 13.2161 6.47033 13.3103 6.87495C8.71547 6.6444 4.64177 4.44339 1.915 1.0986C1.43912 1.91513 1.16648 2.86483 1.16648 3.87801C1.16648 5.79603 2.14259 7.48824 3.62603 8.47963C2.7197 8.45095 1.86729 8.20226 1.12183 7.78818C1.12143 7.81124 1.12143 7.83441 1.12143 7.85767C1.12143 10.5363 3.02714 12.7709 5.55628 13.2787C5.09232 13.405 4.60392 13.4726 4.09965 13.4726C3.74343 13.4726 3.39706 13.438 3.05957 13.3734C3.76304 15.5699 5.80477 17.1683 8.22401 17.2129C6.33191 18.6957 3.94805 19.5795 1.3579 19.5795C0.911681 19.5795 0.471577 19.5534 0.0390625 19.5023C2.48571 21.0709 5.39177 21.9861 8.5139 21.9861C18.6829 21.9861 24.2437 13.5619 24.2437 6.25615C24.2437 6.01643 24.2384 5.77799 24.2277 5.54094C25.3078 4.76147 26.2452 3.78772 26.9864 2.67903Z" fill="currentColor" fill-opacity="0.36"/>
+                                    </svg>
+                                    
                             </a>
                             <a href="#" class="footer__social-link">
-                                <img src="images/icons/social3.svg" alt="">
+                                <svg width="12" height="25" viewBox="0 0 12 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.39258 8.27602V5.26656C7.39258 4.43594 8.05495 3.76183 8.87109 3.76183H10.3496V0H7.39258C4.94268 0 2.95703 2.02085 2.95703 4.51419V8.27602H0V12.0378H2.95703V24.0757H7.39258V12.0378H10.3496L11.8281 8.27602H7.39258Z" fill="currentColor" fill-opacity="0.36"/>
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="footer__studio">
+                <p>©2021 Gaggle Studios, Inc. All rights resrved</p>
+                <p><a href="#">Privacy Policy</a> . <a href="#">Terms of use</a></p>
             </div>
         </div>
     </footer>

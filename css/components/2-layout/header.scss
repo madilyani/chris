@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   padding: 25px 0;
 
   &__inner {
@@ -19,36 +19,89 @@
       }
     }
   }
+
   &.sticky {
     position: fixed;
     background: $bgcolor2;
     animation: sticky 0.2s linear;
     z-index: 100;
   }
+
+  &.header--noborder {
+    border: 0 !important;
+  }
 }
+
+.dashHeader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 25px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &-logo {
+      display: none;
+      width: 45px;
+      height: 45px;
+      img{
+          @include fullImage
+      }
+    }
+    &-menu {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      .profilePhoto {
+        width: 40px;
+        height: 40px;
+
+        &__outer {
+          display: flex;
+          align-items: center;
+          margin-left: 50px;
+
+          .title {
+            font-size: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 @keyframes sticky {
   0% {
     top: -60px;
   }
+
   100% {
     top: 0;
   }
 }
+
 .burger {
   display: none;
 }
+
 @include light {
   .header__inner-logo {
     border-radius: 50%;
     overflow: hidden;
-    background: linear-gradient(
-      191.31deg,
-      #464961 17.14%,
-      #417d8e 46.62%,
-      #3bbec6 83.41%
-    );
+    background: linear-gradient(191.31deg,
+        #464961 17.14%,
+        #417d8e 46.62%,
+        #3bbec6 83.41%);
   }
 }
+
 .menu {
   width: 100%;
 
@@ -98,6 +151,11 @@
       }
     }
   }
+
+  .dashHeader{
+    border-bottom: 1px solid $border-color;
+
+  }
 }
 
 @mixin header1024 {
@@ -105,7 +163,23 @@
     &__inner {
       justify-content: space-between;
     }
+
     border-bottom: 1px solid $border-color;
+  }
+  
+  .dashHeader{
+    width: 100%;
+    background: $bgcolor2;
+    border: 0;
+    padding: 20px 0;
+    &__inner{
+      &-logo{
+        display: block;
+      }
+      &-menu{
+        display: none;
+      }
+    }
   }
 
   // // nav start
@@ -152,6 +226,7 @@
         justify-content: unset;
         align-items: unset;
         margin-top: 20px;
+
         .button--primary {
           margin: 0 0 20px 0;
         }
@@ -220,6 +295,7 @@
 
   // // nav end
 }
+
 @mixin header768 {
   .header {
     &__inner {
@@ -229,8 +305,18 @@
       }
     }
   }
+
   .menu {
     top: 67px;
     height: calc(100% - 67px);
+  }
+  .dashHeader{
+    padding: 15px 0;
+    &__inner{
+      &-logo{
+        width: 37px;
+        height: 37px;
+      }
+    }
   }
 }

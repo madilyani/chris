@@ -1,0 +1,104 @@
+.select__outer {
+  cursor: pointer;
+  label{
+    display: block;
+    color: $text3;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+}
+.custom-select select {
+  display: none;
+}
+.custom-select {
+  position: relative;
+}
+.select-selected {
+  background-color: $bgcolor2;
+  border-radius: 4px;
+
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  z-index: 4;
+  border-bottom: 2px solid $main;
+  border-right: 2px solid $main;
+  @include transition;
+}
+.select-selected.select-arrow-active:after {
+  transform: translateY(-50%) rotate(225deg);
+}
+.select-selected.select-arrow-active {
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+.select-selected {
+  box-sizing: border-box;
+  width: 100%;
+  background: $bgcolor2;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  color: $text;
+  font-family: $font_main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 18px 20px;
+  line-height: 1;
+  transition-property: border-color;
+}
+.select-items div {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: $text2;
+  padding: 10px;
+  cursor: pointer;
+  @include transition;
+}
+.select-items {
+  position: absolute;
+  background-color: $bgcolor;
+  border: 1px solid $border-color;
+  border-radius: 0 0 4px 4px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+  animation-name: select;
+  animation-duration: 0.3s;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: $bgcolor2;
+}
+.select-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.select-items::-webkit-scrollbar {
+  width: 6px;
+}
+.select-items::-webkit-scrollbar-track {
+  background: $bgcolor2;
+  border-radius: 10px;
+}
+.select-items::-webkit-scrollbar-thumb {
+  background: $bgcolor;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+  

@@ -27,6 +27,12 @@
   }
 }
 
+@mixin lightIn{
+  html[data-theme="light"] & {
+    @content;
+  }
+}
+
 @mixin ellipsis($line : 3){
   display: -webkit-box;
   -webkit-line-clamp: $line;
@@ -118,7 +124,7 @@
   }
 }
 @mixin sm-md {
-  @media (max-width: 700px) {
+  @media (max-width: 660px) {
     @content;
   }
 }
@@ -146,6 +152,12 @@
 }
 @mixin xxlg-xxxlg {
   @media (max-width: 1340px) {
+    @content;
+  }
+}
+
+@mixin xxxlg-xxxxlg {
+  @media (max-width: 1860px) {
     @content;
   }
 }

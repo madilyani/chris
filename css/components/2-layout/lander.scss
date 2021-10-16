@@ -136,7 +136,7 @@
         justify-content: center;
         cursor: pointer;
         @include transition;
-        z-index: 3;
+        z-index: 2;
         &::before {
           z-index: -1;
           width: 85px;
