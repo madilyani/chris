@@ -1676,6 +1676,89 @@ p.lg {
   -o-object-fit: fill;
      object-fit: fill;
 }
+.lander__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.lander__inner-column:nth-child(1) {
+  width: calc(45% - 50px);
+}
+.lander__inner-column:nth-child(1) .lander__inner-title {
+  text-align: left;
+}
+.lander__inner-column:nth-child(1) .lander__inner-para {
+  text-align: left;
+}
+.lander__inner-column:nth-child(1) .lander__inner-btns {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.lander__inner-column:nth-child(2) {
+  width: 45%;
+}
+.lander__dashFrame {
+  position: relative;
+  padding: 3%;
+}
+.lander__dashFrame-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px 0 40px 40px;
+  overflow: hidden;
+}
+.lander__dashFrame-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.lander__dashFrame-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -moz-ransform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+html[data-theme=light] .lander__dashFrame-frame {
+  opacity: 0.3;
+}
+.lander__dashFrame-frame img {
+  width: 100%;
+  height: 100%;
+}
+.lander__dashFrame-salute {
+  position: absolute;
+  top: 10%;
+  left: 1.5%;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  width: 30%;
+}
+.lander__dashFrame-salute img {
+  width: 100%;
+}
 .lander.other .lander__inner {
   max-width: 735px;
   margin: 0 auto;
@@ -4695,6 +4778,9 @@ html[data-theme=light] .login__messageImage {
   .lander__inner-btns .button--primary {
     margin-right: 15px;
   }
+  .lander__inner-column:nth-child(n+0) {
+    width: calc(50% - 25px);
+  }
   .lander.other .lander__salut.left {
     width: 80px;
   }
@@ -4714,6 +4800,15 @@ html[data-theme=light] .login__messageImage {
   }
   .lander.other-2 .lander__inner-person img {
     width: 100%;
+  }
+  .lander__dashFrame-image {
+    position: relative;
+    border-radius: 30px 0 30px 30px;
+    z-index: 1;
+  }
+  .lander__dashFrame-salute {
+    left: 10%;
+    width: 25%;
   }
 
   .cardLogo {
@@ -5567,6 +5662,18 @@ html[data-theme=light] .login__messageImage {
   .lander__inner-btns .button--primary {
     margin-right: 15px;
   }
+  .lander__inner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lander__inner-column:nth-child(1) {
+    margin-bottom: 60px;
+  }
+  .lander__inner-column:nth-child(n+0) {
+    width: 100%;
+  }
   .lander.other .lander__salut.right {
     transform: translate(0, 0);
     -moz-ransform: translate(0, 0);
@@ -6174,6 +6281,9 @@ html[data-theme=light] .login__messageImage {
   .lander__inner-btns .button--outline {
     border-color: #46a6f8;
   }
+  .lander__inner-column:nth-child(1) {
+    margin-bottom: 30px;
+  }
   .lander.other .lander__inner-title {
     text-align: left;
   }
@@ -6218,6 +6328,9 @@ html[data-theme=light] .login__messageImage {
   }
   .lander.other-2 .lander__inner-person {
     width: 145px;
+  }
+  .lander__dashFrame-image {
+    border-radius: 20px 0 20px 20px;
   }
 
   .cardLogo {
