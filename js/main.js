@@ -4,7 +4,12 @@ const toggleSwitch = document.querySelector(
 );
 
 document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
-if(localStorage.getItem("theme") == 'dark')
+
+if(toggleSwitch && localStorage.getItem("theme") == 'light'){
+  
+  toggleSwitch.checked = false;
+  
+}
  
 
 function switchTheme(e) {

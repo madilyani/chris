@@ -1,335 +1,327 @@
-
-.login{
-    &__messageImage{
-        height: 190px;
-        margin-bottom: 25px;
-        background: url('../images/email-dark.png');
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        @include lightIn{
-            background: url('../images/email-light.png');
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-        }
+.login {
+  &__messageImage {
+    height: 190px;
+    margin-bottom: 25px;
+    background: url("../images/email-dark.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    @include lightIn {
+      background: url("../images/email-light.png");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
     }
-    &__header{
-        &-title{
+  }
+  &__header {
+    &-title {
+      color: $text;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+    &-para {
+      margin-bottom: 40px;
+    }
+    &-google {
+      width: 100%;
+      padding: 17px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $bgcolor2;
+      border-radius: 10px;
+      border: 1px solid $border-color;
+      margin-bottom: 25px;
+      img {
+        margin-right: 10px;
+      }
+    }
+    &-btn {
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  &__form {
+    &-header {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+
+      &::after {
+        @include contentAbsolute;
+        top: calc(50% - 0.5px);
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $border-color;
+      }
+      p {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        background: $bgcolor;
+        color: $text3;
+        line-height: 1;
+        padding: 0 20px;
+      }
+    }
+    .input__item {
+      margin-bottom: 25px;
+    }
+    &-forget {
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        color: $text3;
+        font-family: $font_main;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        text-decoration-line: underline;
+        @include transition;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    &-submit {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      .button {
+        width: 100%;
+        padding: 13px 0;
+      }
+    }
+
+    &-row {
+      display: flex;
+      margin: 0 -8px;
+    }
+    &-column {
+      width: calc(50% - 16px);
+      margin: 0 8px;
+    }
+    &-checks {
+      margin-top: 30px;
+      .checkbox {
+        margin-bottom: 12px;
+
+        label {
+          color: $text3;
+          font-family: $font_mainSans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+
+          strong {
             color: $text;
             font-style: normal;
-            margin-bottom: 20px;
+            font-weight: normal;
+          }
         }
-        &-para{
-            margin-bottom: 40px;
-        }
-        &-google{
-            width: 100%;
-            padding: 17px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: $bgcolor2;
-            border-radius: 10px;
-            border: 1px solid $border-color; 
-            margin-bottom: 25px;
-            img{
-                margin-right: 10px;
-            }
-        }
-        &-btn{
-            .button{
-                width: 100%;
-            }
-        }
+      }
     }
-    &__form{
-        &-header{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 25px;
-            
-            &::after{
-                @include contentAbsolute;
-                top: calc(50% - .5px);
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background: $border-color;
+    &-btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
 
-            }
-            p{
-                position: relative;
-                display: inline-block;
-                z-index: 1;
-                background: $bgcolor;
-                color: $text3;
-                line-height: 1;
-                padding: 0 20px;
-            }
-        }
-        .input__item{
-            margin-bottom: 25px;
-        }
-        &-forget{
-            display: flex;
-            justify-content: flex-end;
-
-            a{
-                color: $text3;
-                font-family: $font_main;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 27px;
-                text-decoration-line: underline;
-                @include transition;
-                &:hover{
-                    opacity: .7;
-                }
-            }
-        }
-        &-submit{
-            margin-top: 30px;
-            margin-bottom: 20px;
-            .button{
-                width: 100%;
-                padding: 13px 0;
-            }
-        }
-        
-        &-row{
-            display: flex;
-            margin: 0 -8px;
-        }
-        &-column{
-            width: calc(50% - 16px);
-            margin: 0 8px;
-        }
-        &-checks{
-            margin-top: 30px;
-            .checkbox{
-                margin-bottom: 12px;
-
-                label{
-                    color: $text3;
-                    font-family: $font_mainSans;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 25px;
-                    
-                    strong{
-                        color: $text;
-                        font-style: normal;
-                        font-weight: normal;
-                    }
-                }
-            }
-        }
-        &-btns{
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 40px;
-
-            .button{
-                width: 130px;
-                font-size: 16px;
-                padding: 10px 0;
-                margin-left: 10px;
-            }
-        }
-        &-radio{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            .radiobutton{
-                width: calc(50% - 8px);
-            }
-        }
-        &-note{
-            position: relative;
-            padding: 15px 15px 15px 50px;
-            border-radius: 8px;
-            background: $bgcolor2;
-            margin-top: 45px;
-            svg{
-                position: absolute;
-                left: 20px;
-                top: 18px;
-                width: 20px;
-                height: auto;
-                color: $text2;
-            }
-
-            p{
-                color: $text2;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 20px;
-                letter-spacing: 0.2px;
-            }
-        }
+      .button {
+        width: 130px;
+        font-size: 16px;
+        padding: 10px 0;
+        margin-left: 10px;
+      }
     }
-    &__footer{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: $bgcolor2;
-        border-radius: 7px;
-        padding: 10px 20px;
-        p{
-            color: $text;
-            font-family: $font_mainSans;
-            font-style: normal;
-            font-weight: 600;
-        }
-    }   
+    &-radio {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .radiobutton {
+        width: calc(50% - 8px);
+      }
+    }
+    &-note {
+      position: relative;
+      padding: 15px 15px 15px 50px;
+      border-radius: 8px;
+      background: $bgcolor2;
+      margin-top: 45px;
+      @include lightIn {
+        background: $white;
+      }
+      svg {
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        width: 20px;
+        height: auto;
+        color: $text2;
+      }
+
+      p {
+        color: $text2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $bgcolor2;
+    border-radius: 7px;
+    padding: 10px 20px;
+    p {
+      color: $text;
+      font-family: $font_mainSans;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
 }
 
-@mixin  login1024{
-    
-    .login{
-        &__messageImage{
-            height: 170px;
-        }
-        &__header{
-            &-title{
-                margin-bottom: 15px;
-            }
-            &-para{
-                margin-bottom: 35px;
-            }
-            &-google{
-                padding: 14px 0;
-                margin-bottom: 20px;
-                img{
-                    margin-right: 10px;
-                }
-            }
-        }
-        &__form{
-            &-header{
-                margin-bottom: 20px;
-            }
-            .input__item{
-                margin-bottom: 20px;
-            }
-            &-forget{
-                a{
-                    font-size: 18px;
-                    line-height: 140%;
-                }
-            }
-        }
-        &__footer{
-            padding: 10px 18px;
-        }   
+@mixin login1024 {
+  .login {
+    &__messageImage {
+      height: 170px;
     }
-    
+    &__header {
+      &-title {
+        margin-bottom: 15px;
+      }
+      &-para {
+        margin-bottom: 35px;
+      }
+      &-google {
+        padding: 14px 0;
+        margin-bottom: 20px;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+    &__form {
+      &-header {
+        margin-bottom: 20px;
+      }
+      .input__item {
+        margin-bottom: 20px;
+      }
+      &-forget {
+        a {
+          font-size: 18px;
+          line-height: 140%;
+        }
+      }
+    }
+    &__footer {
+      padding: 10px 18px;
+    }
+  }
 }
 
-
-@mixin  login768{
-    
-    .login{
-        &__messageImage{
-            height: 160px;
-        }
-        &__header{
-            &-title{
-                font-size: 26px !important;
-                margin-bottom: 10px;
-            }
-            &-para{
-                margin-bottom: 30px;
-            }
-            &-google{
-                padding: 12px 0;
-            }
-        }
-        &__form{
-            .input__item{
-                margin-bottom: 15px;
-            }
-            &-forget{
-                a{
-                    font-size: 14px;
-                }
-            }
-            
-            &-submit{
-                .button{
-                    padding: 11px 0;
-                }
-            }
-            
-            &-checks{
-                margin-top: 25px;
-                .checkbox{
-                    label{
-                        font-size: 16px;
-                        line-height: 22px;
-                    }
-                }
-            }
-            &-note{
-                font-size: 14px;
-                line-height: 20px;
-            }
-
-        }
-        &__footer{
-            padding: 10px 14px;
-        }   
+@mixin login768 {
+  .login {
+    &__messageImage {
+      height: 160px;
     }
-    
+    &__header {
+      &-title {
+        font-size: 26px !important;
+        margin-bottom: 10px;
+      }
+      &-para {
+        margin-bottom: 30px;
+      }
+      &-google {
+        padding: 12px 0;
+      }
+    }
+    &__form {
+      .input__item {
+        margin-bottom: 15px;
+      }
+      &-forget {
+        a {
+          font-size: 14px;
+        }
+      }
+
+      &-submit {
+        .button {
+          padding: 11px 0;
+        }
+      }
+
+      &-checks {
+        margin-top: 25px;
+        .checkbox {
+          label {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+      &-note {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__footer {
+      padding: 10px 14px;
+    }
+  }
 }
 
-
-@mixin  login540{
-    
-    .login{
-        &__messageImage{
-            height: 145px;
-        }
-        &__header{
-            &-title{
-                margin-bottom: 5px;
-            }
-            &-google{
-                padding: 10px 0;
-            }
-        }
-        &__form{
-            .input__item{
-                margin-bottom: 150x;
-            }
-            &-forget{
-                margin-top: 15px;
-            }
-            
-            &-submit{
-                margin: 30px 0 25px 0 ;
-                .button{
-                    padding: 11px 0;
-                }
-            }
-                
-            &-row{
-                margin: 0 -5px;
-            }
-            &-column{
-                width: calc(50% - 10px);
-                margin: 0 5px;
-            }
-            &-btns{
-                justify-content: center;
-            }
-        }
-        &__footer{
-            padding: 12px 10px;
-        }   
+@mixin login540 {
+  .login {
+    &__messageImage {
+      height: 145px;
     }
-    
+    &__header {
+      &-title {
+        margin-bottom: 5px;
+      }
+      &-google {
+        padding: 10px 0;
+      }
+    }
+    &__form {
+      .input__item {
+        margin-bottom: 150x;
+      }
+      &-forget {
+        margin-top: 15px;
+      }
+
+      &-submit {
+        margin: 30px 0 25px 0;
+        .button {
+          padding: 11px 0;
+        }
+      }
+
+      &-row {
+        margin: 0 -5px;
+      }
+      &-column {
+        width: calc(50% - 10px);
+        margin: 0 5px;
+      }
+      &-btns {
+        justify-content: center;
+      }
+    }
+    &__footer {
+      padding: 12px 10px;
+    }
+  }
 }

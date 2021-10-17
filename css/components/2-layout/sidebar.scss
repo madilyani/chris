@@ -1,144 +1,151 @@
-.sidebar{
-    position: fixed;
-    left: 0;
-    top: 0;
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  overflow-y: auto;
+  @include hideScroll;
+  z-index: 5;
+
+  &__inner {
+    box-sizing: border-box;
+    position: relative;
+    background: $bgcolor2;
+    width: 100%;
+    min-height: 100%;
+    @include lightIn {
+      background: $white;
+    }
+    &-profile {
+      padding: 0 15px 0 15px;
+      .profilePhoto {
+        width: 95px;
+        height: 95px;
+        &__outer {
+          padding-left: 15px;
+          border-bottom: 1px solid $border-color;
+
+          .title {
+            font-size: 22px;
+            margin: 20px 0;
+          }
+        }
+      }
+      .profileStatus {
+        padding: 30px 15px;
+      }
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 21px 15px 80px 30px;
+      .logo {
+        width: 45px;
+        height: 45px;
+        img {
+          @include fullImage;
+        }
+      }
+      .close {
+        display: none;
+        color: $text2;
+      }
+    }
+  }
+  &-status {
+  }
+}
+
+@mixin sidebar1340 {
+  .sidebar {
+    width: 320px;
+    &__inner {
+      &-logo {
+        padding-bottom: 60px;
+      }
+    }
+  }
+}
+
+@mixin sidebar1024 {
+  .sidebar {
     width: 350px;
-    height: 100%;
-    overflow-y: auto;
-    @include hideScroll;
-    z-index: 5;
+    left: -400px;
+    @include transition;
+    transition-property: left;
+    &__inner {
+      transform: translateX(-100%);
+      width: 100%;
+      max-width: 350px;
+      @include transition;
 
+      &-logo {
+        padding: 20px 20px 50px 20px;
+      }
+    }
+    &.active {
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($diffRGB, 5%);
+      backdrop-filter: blur(2px);
+      transition-property: background-color;
+      .sidebar__inner {
+        transform: translateX(0);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .switch {
+      right: 15px;
+      top: 25px;
+    }
+  }
+}
 
-    &__inner{
-        box-sizing: border-box;
-        position: relative;
+@mixin sidebar768 {
+  .sidebar {
+    &__inner {
+      &-logo {
+        padding: 15px 20px;
+        margin-bottom: 20px;
+
+        .logo {
+          width: 37px;
+          height: 37px;
+        }
+      }
+    }
+    .switch {
+      top: 15px;
+    }
+  }
+}
+
+@mixin sidebar540 {
+  .sidebar {
+    &__inner {
+      background: $bgcolor;
+      &-logo {
         background: $bgcolor2;
-        width: 100%;
-        min-height: 100%;
-        
-        &-profile{
-            padding: 0 15px;
-            .profilePhoto{
-                width: 95px;
-                height: 95px;
-                &__outer{
-                    padding-left: 15px;
-                    border-bottom: 1px solid $border-color;
-                    
-                    .title{
-                    font-size: 22px;
-                    margin: 20px 0;
-                    }
-                }
-            }
-            .profileStatus{
-                padding: 30px 15px;
-            }
-
+        .close {
+          display: block;
         }
-        &-logo {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 21px 30px 80px 30px;
-            .logo{
-                width: 45px;
-                height: 45px;
-                img{
-                    @include fullImage
-                }
-            }
-            .close{
-                display: none;
-                color: $text2;
-            }
-        }
-        
-    }
-    &-status{
-
+      }
+      .navSidebar__item {
+        background: transparent;
+      }
     }
 
-}
-
-@mixin sidebar1340{
-    .sidebar{
-        width: 320px;
-        &__inner{
-            &-logo{
-                padding-bottom: 60px;
-            }
-        }
+    &.active {
+      background: transparent;
+      .sidebar__inner {
+        max-width: unset;
+      }
     }
-}
-
-@mixin sidebar1024{
-    .sidebar{
-        width: 350px;
-        left: -400px;
-        @include transition;
-        transition-property: left;
-        &__inner{
-            transform: translateX(-100%);
-            width: 100%;
-            max-width: 350px;
-            @include transition;
-
-            &-logo{
-                padding: 20px 20px 50px 20px;
-            }
-        }
-        &.active{
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba($diffRGB, 5%);
-            backdrop-filter: blur(2px);
-            transition-property: background-color;
-            .sidebar__inner{
-                transform: translateX(0); 
-                box-shadow: 0 10px 20px rgba(0,0,0,.15);
-            }
-        }
+    .switch {
+      top: 87px;
     }
-}
-
-@mixin sidebar768{
-    .sidebar{
-        &__inner{
-            &-logo{
-                padding: 15px 20px;
-                margin-bottom: 20px;
-
-                .logo{
-                    width: 37px;
-                    height: 37px;
-                }
-            }
-        }
-    }
-}
-
-@mixin sidebar540{
-    .sidebar{
-        &__inner{
-            background: $bgcolor;
-            &-logo{
-                background: $bgcolor2;
-                .close{
-                    display: block;
-                }
-            }
-            .navSidebar__item{
-                background: transparent;
-            }
-        }
-
-        &.active{
-            background: transparent;
-            .sidebar__inner{
-                max-width: unset;
-            }
-        }
-    }
+  }
 }
