@@ -68,7 +68,26 @@ body {
   background: $bgcolor;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-
+  &.dashboard {
+    @include lightIn {
+      background: #f6f8fa;
+    }
+    input {
+      @include lightIn {
+        background: $white;
+      }
+    }
+    .select-selected {
+      @include lightIn {
+        background: $white;
+      }
+    }
+    .radiobutton {
+      @include lightIn {
+        background: $white;
+      }
+    }
+  }
 }
 
 body.active {

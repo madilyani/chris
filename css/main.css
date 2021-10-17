@@ -132,6 +132,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
+html[data-theme=light] body.dashboard {
+  background: #f6f8fa;
+}
+html[data-theme=light] body.dashboard input {
+  background: #ffffff;
+}
+html[data-theme=light] body.dashboard .select-selected {
+  background: #ffffff;
+}
+html[data-theme=light] body.dashboard .radiobutton {
+  background: #ffffff;
+}
 
 body.active {
   overflow: hidden;
@@ -2651,8 +2663,11 @@ p.lg {
   width: 100%;
   min-height: 100%;
 }
+html[data-theme=light] .sidebar__inner {
+  background: #ffffff;
+}
 .sidebar__inner-profile {
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
 }
 .sidebar__inner-profile .profilePhoto {
   width: 95px;
@@ -2679,7 +2694,7 @@ p.lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 21px 30px 80px 30px;
+  padding: 21px 15px 80px 30px;
 }
 .sidebar__inner-logo .logo {
   width: 45px;
@@ -2955,6 +2970,9 @@ p.lg {
   padding: 20px;
   margin-bottom: 30px;
 }
+html[data-theme=light] .purchase__column {
+  background: #ffffff;
+}
 .purchase__column-image {
   width: 45%;
   height: 180px;
@@ -2985,6 +3003,7 @@ p.lg {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .gameKeys {
   background: var(--bgcolor2);
   border-radius: 10px;
@@ -2993,6 +3012,9 @@ p.lg {
   padding: 25px 20px 45px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+html[data-theme=light] .gameKeys {
+  background: #ffffff;
 }
 .gameKeys__item {
   position: relative;
@@ -3143,6 +3165,9 @@ p.lg {
   padding: 30px 25px;
   overflow: hidden;
 }
+html[data-theme=light] .twitch {
+  background: #ffffff;
+}
 .twitch__image {
   position: absolute;
   right: 125px;
@@ -3155,8 +3180,14 @@ p.lg {
 .twitch__image.light .twitch__image-inner-logo {
   color: #ffffff;
 }
+html[data-theme=light] .twitch__image.light .twitch__image-inner-logo {
+  color: #bebebe;
+}
 .twitch__image.light .twitch__image-inner::after {
   background: radial-gradient(39.81% 39.81% at 46.19% 46.49%, rgba(255, 255, 255, 0.25) 0%, rgba(26, 26, 26, 0) 100%);
+}
+html[data-theme=light] .twitch__image.light .twitch__image-inner::after {
+  background: radial-gradient(42.66% 42.66% at 46.19% 46.49%, rgba(255, 255, 255, 0.13) 0%, rgba(26, 26, 26, 0) 86.91%);
 }
 .twitch__image-inner {
   position: relative;
@@ -3172,7 +3203,7 @@ p.lg {
 }
 .twitch__image-inner-logo {
   position: absolute;
-  color: #00A372;
+  color: #00a372;
   left: 33.3%;
   top: 35%;
   width: 20%;
@@ -3234,8 +3265,8 @@ p.lg {
           transform-origin: center;
   height: 12px;
   width: 6px;
-  border-bottom: 2px solid #6FCF97;
-  border-right: 2px solid #6FCF97;
+  border-bottom: 2px solid #6fcf97;
+  border-right: 2px solid #6fcf97;
 }
 .twitch__content-list-item a {
   cursor: pointer;
@@ -3263,10 +3294,10 @@ p.lg {
 .twitch__content-button {
   width: 90%;
   padding: 13px 0;
-  background: #6D38DF;
+  background: #6d38df;
   margin-top: 30px;
   max-width: 430px;
-  font-family: "Nunito", sans-serif;
+  color: #ffffff;
   font-weight: bold;
   font-size: 22px;
   line-height: 1;
@@ -4038,7 +4069,7 @@ html[data-theme=light] .login__messageImage {
   content: "";
   display: block;
   position: absolute;
-  top: calc(50% - .5px);
+  top: calc(50% - 0.5px);
   left: 0;
   width: 100%;
   height: 1px;
@@ -4150,6 +4181,9 @@ html[data-theme=light] .login__messageImage {
   border-radius: 8px;
   background: var(--bgcolor2);
   margin-top: 45px;
+}
+html[data-theme=light] .login__form-note {
+  background: #ffffff;
 }
 .login__form-note svg {
   position: absolute;
@@ -4470,6 +4504,9 @@ html[data-theme=light] .login__messageImage {
     background: var(--bgcolor2);
     border: 0;
     padding: 20px 0;
+  }
+  html[data-theme=light] .dashHeader {
+    background: #ffffff;
   }
   .dashHeader__inner-logo {
     display: block;
@@ -5035,7 +5072,14 @@ html[data-theme=light] .login__messageImage {
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
+  .sidebar .switch {
+    right: 15px;
+    top: 25px;
+  }
 
+  .dashBody {
+    padding-top: 75px;
+  }
   .dashBody__inner-header-title {
     font-size: 30px;
   }
@@ -5112,6 +5156,13 @@ html[data-theme=light] .login__messageImage {
 
   .twitch__content {
     max-width: 500px;
+  }
+
+  .checkoutHeader {
+    background: var(--bgcolor2);
+  }
+  html[data-theme=light] .checkoutHeader {
+    background: #ffffff;
   }
 
   .checkout__row {
@@ -5544,6 +5595,9 @@ html[data-theme=light] .login__messageImage {
   .sidebar__inner-logo .logo {
     width: 37px;
     height: 37px;
+  }
+  .sidebar .switch {
+    top: 15px;
   }
 
   .lander.index::before {
@@ -6020,6 +6074,9 @@ html[data-theme=light] .login__messageImage {
   }
   .sidebar.active .sidebar__inner {
     max-width: unset;
+  }
+  .sidebar .switch {
+    top: 87px;
   }
 
   .footer {
