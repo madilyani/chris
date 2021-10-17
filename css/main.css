@@ -525,7 +525,7 @@ html[data-theme=light] .header__inner-logo {
   cursor: pointer;
 }
 .checkSlide input:checked ~ label {
-  background: #00B37A;
+  background: #00b37a;
 }
 .checkSlide input:checked ~ label:before {
   left: 24px;
@@ -643,7 +643,7 @@ html[data-theme=light] .header__inner-logo {
   padding-left: 30px;
 }
 .checkbox label::before {
-  border: 2px solid #B6BAC8;
+  border: 2px solid #b6bac8;
   border-radius: 3.75px;
   width: 14px;
   height: 14px;
@@ -670,6 +670,9 @@ html[data-theme=light] .header__inner-logo {
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
+}
+.checkbox label a {
+  color: #46a6f8;
 }
 .checkbox input:checked ~ label::after {
   opacity: 1;
@@ -1096,17 +1099,16 @@ html[data-theme=light] .header__inner-logo {
 
 .aloneCard {
   padding: 120px 0;
-  min-height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .aloneCard.bg--grd {
   background: rgba(var(--diffRGB), 8%);
-  background: linear-gradient(96.47deg, #362B49 -10.78%, #211F30 25.12%, #172447 110.03%);
+  background: linear-gradient(96.47deg, #362b49 -10.78%, #211f30 25.12%, #172447 110.03%);
 }
 html[data-theme=light] .aloneCard.bg--grd {
   background: rgba(var(--diffRGB), 8%);
-  background: linear-gradient(101.03deg, #F1FBFF -3.21%, #FFFFFF 38.25%, #FAFFE9 136.3%);
+  background: linear-gradient(101.03deg, #f1fbff -3.21%, #ffffff 38.25%, #faffe9 136.3%);
 }
 .aloneCard__inner {
   margin: 0 auto;
@@ -1121,7 +1123,7 @@ html[data-theme=light] .aloneCard.bg--grd {
           box-shadow: 0 1px 32px rgba(0, 0, 0, 0.03);
 }
 html[data-theme=light] .aloneCard__inner {
-  border: 1px solid #E6E6E8;
+  border: 1px solid #e6e6e8;
 }
 
 .profilePhoto {
@@ -4097,6 +4099,12 @@ html[data-theme=light] .how {
   border: 1px solid #46a6f8;
 }
 
+.headerLog {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .login__messageImage {
   height: 190px;
   margin-bottom: 25px;
@@ -5100,6 +5108,17 @@ html[data-theme=light] .login__form-note {
   }
   .soon__row .funs {
     width: 100%;
+  }
+
+  .headerLog .switch {
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: translate(0, 0);
+    -moz-ransform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
 
   .login__messageImage {
@@ -6840,7 +6859,7 @@ html[data-theme=light] .login__form-note {
   }
 
   .aloneCard {
-    padding: 80px 0 0 0;
+    padding: 80px 0 40px 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }

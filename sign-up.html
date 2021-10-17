@@ -1,1067 +1,1061 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-     <head>
-          <meta charset="UTF-8" />
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <link rel="stylesheet" href="css/main.css" />
-          <title>Sign up</title>
-     </head>
 
-     <body>
-          <!-- header start
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="css/main.css" />
+     <title>Sign up</title>
+</head>
+
+<body>
+     <!-- header start
     =========================================== -->
-          <header class="header header--noborder" id="header">
-               <div class="auto__container">
-                    <div class="header__inner">
-                         <a href="index.html" class="header__inner-logo">
-                              <img src="images/Gaggle-logo.png" alt="" />
-                         </a>
+     <header class="header header--noborder" id="header">
+          <div class="auto__container">
+               <div class="header__inner headerLog">
+                    <a href="index.html" class="header__inner-logo">
+                         <img src="images/Gaggle-logo.png" alt="">
+                    </a>
+                    <div class="switch">
+                         <input type="checkbox">
+                         <label for=""></label>
                     </div>
                </div>
-          </header>
-          <!-- header end
+          </div>
+     </header>
+     <!-- header end
     =========================================== -->
 
-          <!-- login 
+     <!-- login 
     =========================================== -->
-          <section class="aloneCard bg--grd">
-               <div class="auto__container">
-                    <div class="aloneCard__inner">
-                         <div class="login">
-                              <div class="login__header">
-                                   <h3 class="login__header-title sm">Sign up</h3>
-                                   <p class="login__header-para sm">
-                                        Social gaming to a whole new level!
-                                   </p>
-                                   <div class="login__header-google">
-                                        <img src="images/icons/google.svg" alt="" />
-                                        Sign In with Google
+     <section class="aloneCard bg--grd">
+          <div class="auto__container">
+               <div class="aloneCard__inner">
+                    <div class="login">
+                         <div class="login__header">
+                              <h3 class="login__header-title sm">Sign up</h3>
+                              <p class="login__header-para sm">
+                                   Social gaming to a whole new level!
+                              </p>
+                              <div class="login__header-google">
+                                   <img src="images/icons/google.svg" alt="" />
+                                   Sign In with Google
+                              </div>
+                         </div>
+                         <div class="login__form">
+                              <div class="login__form-header">
+                                   <p class="sm">Or sign in Email</p>
+                              </div>
+                              <form action="#">
+                                   <div class="input__item">
+                                        <label for="email">Email address*</label>
+                                        <div class="input__outer icoRight">
+                                             <input type="email" name="mail" id="email" required />
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M12.9999 2.91691C10.6353 2.68982 8.26703 3.31193 6.31929 4.67183C4.37155 6.03172 2.97153 8.04058 2.36994 10.3386C1.76835 12.6367 2.00449 15.0739 3.03608 17.2137C4.06766 19.3535 5.82731 21.0562 7.9999 22.0169C9.25812 22.5859 10.6192 22.8921 11.9999 22.9169C14.1979 22.9171 16.3347 22.1931 18.0799 20.8569C18.2905 20.6963 18.4288 20.4587 18.4644 20.1962C18.5001 19.9337 18.4301 19.6678 18.2699 19.4569C18.1903 19.3512 18.0905 19.2623 17.9763 19.1955C17.8621 19.1286 17.7357 19.0851 17.6046 19.0674C17.4734 19.0497 17.3401 19.0582 17.2122 19.0925C17.0844 19.1267 16.9646 19.186 16.8599 19.2669C15.8228 20.0503 14.6104 20.5692 13.3276 20.7787C12.0449 20.9883 10.7304 20.8821 9.4979 20.4694C8.26541 20.0567 7.15203 19.3499 6.25409 18.4102C5.35615 17.4705 4.70069 16.3261 4.34443 15.0762C3.98817 13.8262 3.94182 12.5082 4.20941 11.2363C4.477 9.96443 5.05046 8.77688 5.88018 7.77642C6.7099 6.77596 7.77089 5.99273 8.97135 5.49449C10.1718 4.99625 11.4756 4.798 12.7699 4.91691C14.7786 5.1494 16.6297 6.11855 17.9652 7.63691C19.3007 9.15527 20.0257 11.115 19.9999 13.1369V13.8169C19.9987 14.0466 19.9513 14.2738 19.8604 14.4848C19.7696 14.6958 19.6371 14.8863 19.471 15.045C19.3048 15.2036 19.1084 15.3272 18.8935 15.4083C18.6785 15.4894 18.4494 15.5263 18.2199 15.5169C17.7621 15.4666 17.3404 15.2447 17.0398 14.8958C16.7392 14.547 16.582 14.0971 16.5999 13.6369V9.31691C16.5999 9.05169 16.4945 8.79734 16.307 8.6098C16.1195 8.42226 15.8651 8.31691 15.5999 8.31691C15.3557 8.31484 15.1193 8.40217 14.935 8.56243C14.7508 8.72269 14.6316 8.94481 14.5999 9.18691C13.6693 8.31049 12.4383 7.82381 11.1599 7.82691C10.2911 7.83342 9.43838 8.06223 8.68301 8.49153C7.92764 8.92084 7.29474 9.53636 6.84456 10.2795C6.39439 11.0226 6.14193 11.8686 6.11123 12.7369C6.08053 13.6052 6.27261 14.4669 6.66917 15.24C7.06574 16.013 7.65359 16.6717 8.37676 17.1533C9.09992 17.6349 9.93432 17.9234 10.8005 17.9912C11.6667 18.0591 12.5359 17.9041 13.3252 17.541C14.1145 17.1779 14.7978 16.6188 15.3099 15.9169C15.6002 16.3659 15.9868 16.7447 16.4417 17.0256C16.8967 17.3065 17.4084 17.4826 17.9399 17.541C18.4714 17.5994 19.0092 17.5387 19.5143 17.3633C20.0194 17.1879 20.479 16.9022 20.8599 16.5269C21.2265 16.1782 21.5169 15.7574 21.7131 15.2911C21.9093 14.8247 22.0069 14.3228 21.9999 13.8169V13.1369C22.0223 10.6239 21.1161 8.19106 19.4552 6.30501C17.7943 4.41897 15.4956 3.21247 12.9999 2.91691ZM11.1799 16.0069C10.5688 16.0069 9.97133 15.8257 9.46318 15.4861C8.95504 15.1466 8.55898 14.664 8.32511 14.0994C8.09123 13.5348 8.03004 12.9135 8.14927 12.3141C8.2685 11.7147 8.56279 11.1641 8.99494 10.7319C9.42708 10.2998 9.97767 10.0055 10.5771 9.88628C11.1765 9.76705 11.7978 9.82824 12.3624 10.0621C12.927 10.296 13.4096 10.692 13.7491 11.2002C14.0887 11.7083 14.2699 12.3058 14.2699 12.9169C14.2673 13.7356 13.9409 14.52 13.3619 15.099C12.783 15.6779 11.9986 16.0043 11.1799 16.0069Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </div>
+                                        <div class="message"></div>
+                                   </div>
+                                   <div class="input__item">
+                                        <label for="password">Password*</label>
+                                        <div class="input__outer icoRight">
+                                             <input type="password" name="password" id="password" required />
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M17 8.91699H10V6.91699C10 6.38656 10.2107 5.87785 10.5858 5.50278C10.9609 5.12771 11.4696 4.91699 12 4.91699C12.5304 4.91699 13.0391 5.12771 13.4142 5.50278C13.7893 5.87785 14 6.38656 14 6.91699C14 7.18221 14.1054 7.43656 14.2929 7.6241C14.4804 7.81164 14.7348 7.91699 15 7.91699C15.2652 7.91699 15.5196 7.81164 15.7071 7.6241C15.8946 7.43656 16 7.18221 16 6.91699C16 5.85613 15.5786 4.83871 14.8284 4.08857C14.0783 3.33842 13.0609 2.91699 12 2.91699C10.9391 2.91699 9.92172 3.33842 9.17157 4.08857C8.42143 4.83871 8 5.85613 8 6.91699V8.91699H7C6.20435 8.91699 5.44129 9.23306 4.87868 9.79567C4.31607 10.3583 4 11.1213 4 11.917V19.917C4 20.7126 4.31607 21.4757 4.87868 22.0383C5.44129 22.6009 6.20435 22.917 7 22.917H17C17.7956 22.917 18.5587 22.6009 19.1213 22.0383C19.6839 21.4757 20 20.7126 20 19.917V11.917C20 11.1213 19.6839 10.3583 19.1213 9.79567C18.5587 9.23306 17.7956 8.91699 17 8.91699ZM18 19.917C18 20.1822 17.8946 20.4366 17.7071 20.6241C17.5196 20.8116 17.2652 20.917 17 20.917H7C6.73478 20.917 6.48043 20.8116 6.29289 20.6241C6.10536 20.4366 6 20.1822 6 19.917V11.917C6 11.6518 6.10536 11.3974 6.29289 11.2099C6.48043 11.0223 6.73478 10.917 7 10.917H17C17.2652 10.917 17.5196 11.0223 17.7071 11.2099C17.8946 11.3974 18 11.6518 18 11.917V19.917Z"
+                                                       fill="currentColor" />
+                                                  <path d="M12 12.917C11.4067 12.917 10.8266 13.0929 10.3333 13.4226C9.83994 13.7522 9.45543 14.2208 9.22836 14.7689C9.0013 15.3171 8.94189 15.9203 9.05765 16.5023C9.1734 17.0842 9.45912 17.6188 9.87868 18.0383C10.2982 18.4579 10.8328 18.7436 11.4147 18.8593C11.9967 18.9751 12.5999 18.9157 13.1481 18.6886C13.6962 18.4616 14.1648 18.077 14.4944 17.5837C14.8241 17.0904 15 16.5103 15 15.917C15 15.1213 14.6839 14.3583 14.1213 13.7957C13.5587 13.2331 12.7957 12.917 12 12.917ZM12 16.917C11.8022 16.917 11.6089 16.8583 11.4444 16.7485C11.28 16.6386 11.1518 16.4824 11.0761 16.2997C11.0004 16.1169 10.9806 15.9159 11.0192 15.7219C11.0578 15.5279 11.153 15.3497 11.2929 15.2099C11.4327 15.07 11.6109 14.9748 11.8049 14.9362C11.9989 14.8976 12.2 14.9174 12.3827 14.9931C12.5654 15.0688 12.7216 15.197 12.8315 15.3614C12.9414 15.5259 13 15.7192 13 15.917C13 16.1822 12.8946 16.4366 12.7071 16.6241C12.5196 16.8116 12.2652 16.917 12 16.917Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </div>
+                                        <div class="message"></div>
+                                   </div>
+
+                                   <div class="input__item">
+                                        <label for="repassword">Confirm password*</label>
+                                        <div class="input__outer icoRight">
+                                             <input type="password" name="repassword" id="repassword" required />
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M17 8.91699H10V6.91699C10 6.38656 10.2107 5.87785 10.5858 5.50278C10.9609 5.12771 11.4696 4.91699 12 4.91699C12.5304 4.91699 13.0391 5.12771 13.4142 5.50278C13.7893 5.87785 14 6.38656 14 6.91699C14 7.18221 14.1054 7.43656 14.2929 7.6241C14.4804 7.81164 14.7348 7.91699 15 7.91699C15.2652 7.91699 15.5196 7.81164 15.7071 7.6241C15.8946 7.43656 16 7.18221 16 6.91699C16 5.85613 15.5786 4.83871 14.8284 4.08857C14.0783 3.33842 13.0609 2.91699 12 2.91699C10.9391 2.91699 9.92172 3.33842 9.17157 4.08857C8.42143 4.83871 8 5.85613 8 6.91699V8.91699H7C6.20435 8.91699 5.44129 9.23306 4.87868 9.79567C4.31607 10.3583 4 11.1213 4 11.917V19.917C4 20.7126 4.31607 21.4757 4.87868 22.0383C5.44129 22.6009 6.20435 22.917 7 22.917H17C17.7956 22.917 18.5587 22.6009 19.1213 22.0383C19.6839 21.4757 20 20.7126 20 19.917V11.917C20 11.1213 19.6839 10.3583 19.1213 9.79567C18.5587 9.23306 17.7956 8.91699 17 8.91699ZM18 19.917C18 20.1822 17.8946 20.4366 17.7071 20.6241C17.5196 20.8116 17.2652 20.917 17 20.917H7C6.73478 20.917 6.48043 20.8116 6.29289 20.6241C6.10536 20.4366 6 20.1822 6 19.917V11.917C6 11.6518 6.10536 11.3974 6.29289 11.2099C6.48043 11.0223 6.73478 10.917 7 10.917H17C17.2652 10.917 17.5196 11.0223 17.7071 11.2099C17.8946 11.3974 18 11.6518 18 11.917V19.917Z"
+                                                       fill="currentColor" />
+                                                  <path d="M12 12.917C11.4067 12.917 10.8266 13.0929 10.3333 13.4226C9.83994 13.7522 9.45543 14.2208 9.22836 14.7689C9.0013 15.3171 8.94189 15.9203 9.05765 16.5023C9.1734 17.0842 9.45912 17.6188 9.87868 18.0383C10.2982 18.4579 10.8328 18.7436 11.4147 18.8593C11.9967 18.9751 12.5999 18.9157 13.1481 18.6886C13.6962 18.4616 14.1648 18.077 14.4944 17.5837C14.8241 17.0904 15 16.5103 15 15.917C15 15.1213 14.6839 14.3583 14.1213 13.7957C13.5587 13.2331 12.7957 12.917 12 12.917ZM12 16.917C11.8022 16.917 11.6089 16.8583 11.4444 16.7485C11.28 16.6386 11.1518 16.4824 11.0761 16.2997C11.0004 16.1169 10.9806 15.9159 11.0192 15.7219C11.0578 15.5279 11.153 15.3497 11.2929 15.2099C11.4327 15.07 11.6109 14.9748 11.8049 14.9362C11.9989 14.8976 12.2 14.9174 12.3827 14.9931C12.5654 15.0688 12.7216 15.197 12.8315 15.3614C12.9414 15.5259 13 15.7192 13 15.917C13 16.1822 12.8946 16.4366 12.7071 16.6241C12.5196 16.8116 12.2652 16.917 12 16.917Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </div>
+                                        <div class="message"></div>
+                                   </div>
+
+                                   <div class="input__item">
+                                        <label for="name">Your full name</label>
+                                        <div class="input__outer icoRight">
+                                             <input type="text" name="name" id="name" />
+                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M16 10.917H12V12.417H16V10.917Z" fill="currentColor" />
+                                                  <path d="M16 13.917H12V15.417H16V13.917Z" fill="currentColor" />
+                                                  <path d="M18 5.91699H13V2.91699C13 1.81699 12.1 0.916992 11 0.916992H9C7.9 0.916992 7 1.81699 7 2.91699V5.91699H2C0.9 5.91699 0 6.81699 0 7.91699V18.917C0 20.017 0.9 20.917 2 20.917H18C19.1 20.917 20 20.017 20 18.917V7.91699C20 6.81699 19.1 5.91699 18 5.91699ZM9 5.91699V2.91699H11V5.91699V7.91699H9V5.91699ZM18 18.917H2V7.91699H7C7 9.01699 7.9 9.91699 9 9.91699H11C12.1 9.91699 13 9.01699 13 7.91699H18V18.917Z"
+                                                       fill="currentColor" />
+                                                  <path d="M7 13.917C7.82843 13.917 8.5 13.2454 8.5 12.417C8.5 11.5886 7.82843 10.917 7 10.917C6.17157 10.917 5.5 11.5886 5.5 12.417C5.5 13.2454 6.17157 13.917 7 13.917Z"
+                                                       fill="currentColor" />
+                                                  <path d="M9.08 15.097C8.44 14.817 7.74 14.667 7 14.667C6.26 14.667 5.56 14.817 4.92 15.097C4.36 15.337 4 15.877 4 16.487V16.917H10V16.487C10 15.877 9.64 15.337 9.08 15.097Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </div>
+                                        <div class="message"></div>
+                                   </div>
+
+                                   <div class="input__item">
+                                        <label for="bday">Birthday*</label>
+                                        <div class="input__outer icoRight">
+                                             <input type="text" name="bday" id="bday" required />
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M20 3.91699H19V1.91699H17V3.91699H7V1.91699H5V3.91699H4C2.9 3.91699 2 4.81699 2 5.91699V21.917C2 23.017 2.9 23.917 4 23.917H20C21.1 23.917 22 23.017 22 21.917V5.91699C22 4.81699 21.1 3.91699 20 3.91699ZM20 21.917H4V10.917H20V21.917ZM20 8.91699H4V5.91699H20V8.91699Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </div>
+                                        <div class="message"></div>
+                                   </div>
+                                   <div class="login__form-row">
+                                        <div class="login__form-column">
+                                             <div class="input__item">
+                                                  <label for="nname">Nick name*</label>
+                                                  <div class="input__outer icoRight">
+                                                       <input type="text" name="nname" id="nname" required />
+                                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11.99 2.91699C6.47 2.91699 2 7.39699 2 12.917C2 18.437 6.47 22.917 11.99 22.917C17.52 22.917 22 18.437 22 12.917C22 7.39699 17.52 2.91699 11.99 2.91699ZM12 20.917C7.58 20.917 4 17.337 4 12.917C4 8.49699 7.58 4.91699 12 4.91699C16.42 4.91699 20 8.49699 20 12.917C20 17.337 16.42 20.917 12 20.917ZM15.5 11.917C16.33 11.917 17 11.247 17 10.417C17 9.58699 16.33 8.91699 15.5 8.91699C14.67 8.91699 14 9.58699 14 10.417C14 11.247 14.67 11.917 15.5 11.917ZM8.5 11.917C9.33 11.917 10 11.247 10 10.417C10 9.58699 9.33 8.91699 8.5 8.91699C7.67 8.91699 7 9.58699 7 10.417C7 11.247 7.67 11.917 8.5 11.917ZM12 18.417C14.33 18.417 16.31 16.957 17.11 14.917H6.89C7.69 16.957 9.67 18.417 12 18.417Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </div>
+                                                  <div class="message"></div>
+                                             </div>
+                                        </div>
+                                        <div class="login__form-column">
+                                             <div class="input__item">
+                                                  <label for="phone">Phone number</label>
+                                                  <div class="input__outer icoRight">
+                                                       <input type="text" name="bday" id="phone" />
+                                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M6.54 5.91699C6.6 6.80699 6.75 7.67699 6.99 8.50699L5.79 9.70699C5.38 8.50699 5.12 7.23699 5.03 5.91699H6.54ZM16.4 17.937C17.25 18.177 18.12 18.327 19 18.387V19.877C17.68 19.787 16.41 19.527 15.2 19.127L16.4 17.937ZM7.5 3.91699H4C3.45 3.91699 3 4.36699 3 4.91699C3 14.307 10.61 21.917 20 21.917C20.55 21.917 21 21.467 21 20.917V17.427C21 16.877 20.55 16.427 20 16.427C18.76 16.427 17.55 16.227 16.43 15.857C16.33 15.817 16.22 15.807 16.12 15.807C15.86 15.807 15.61 15.907 15.41 16.097L13.21 18.297C10.38 16.847 8.06 14.537 6.62 11.707L8.82 9.50699C9.1 9.22699 9.18 8.83699 9.07 8.48699C8.7 7.36699 8.5 6.16699 8.5 4.91699C8.5 4.36699 8.05 3.91699 7.5 3.91699Z"
+                                                                 fill="#46A6F8" />
+                                                       </svg>
+                                                  </div>
+                                                  <div class="message"></div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="login__form-row">
+                                        <div class="login__form-column">
+                                             <div class="select__outer">
+                                                  <label for="">Gender</label>
+                                                  <div class="custom-select">
+                                                       <select>
+                                                            <option value="0">Gender</option>
+                                                            <option value="1">Male</option>
+                                                            <option value="2">Female</option>
+                                                       </select>
+                                                  </div>
+                                                  <div class="message"></div>
+                                             </div>
+                                        </div>
+                                        <div class="login__form-column">
+                                             <div class="select__outer">
+                                                  <label for="">Country</label>
+                                                  <div class="custom-select">
+                                                       <select id="country" name="country">
+                                                            <option value="Afganistan">
+                                                                 Afghanistan
+                                                            </option>
+                                                            <option value="Albania">
+                                                                 Albania
+                                                            </option>
+                                                            <option value="Algeria">
+                                                                 Algeria
+                                                            </option>
+                                                            <option value="American Samoa">
+                                                                 American Samoa
+                                                            </option>
+                                                            <option value="Andorra">
+                                                                 Andorra
+                                                            </option>
+                                                            <option value="Angola">
+                                                                 Angola
+                                                            </option>
+                                                            <option value="Anguilla">
+                                                                 Anguilla
+                                                            </option>
+                                                            <option value="Antigua & Barbuda">
+                                                                 Antigua & Barbuda
+                                                            </option>
+                                                            <option value="Argentina">
+                                                                 Argentina
+                                                            </option>
+                                                            <option value="Armenia">
+                                                                 Armenia
+                                                            </option>
+                                                            <option value="Aruba">
+                                                                 Aruba
+                                                            </option>
+                                                            <option value="Australia">
+                                                                 Australia
+                                                            </option>
+                                                            <option value="Austria">
+                                                                 Austria
+                                                            </option>
+                                                            <option value="Azerbaijan">
+                                                                 Azerbaijan
+                                                            </option>
+                                                            <option value="Bahamas">
+                                                                 Bahamas
+                                                            </option>
+                                                            <option value="Bahrain">
+                                                                 Bahrain
+                                                            </option>
+                                                            <option value="Bangladesh">
+                                                                 Bangladesh
+                                                            </option>
+                                                            <option value="Barbados">
+                                                                 Barbados
+                                                            </option>
+                                                            <option value="Belarus">
+                                                                 Belarus
+                                                            </option>
+                                                            <option value="Belgium">
+                                                                 Belgium
+                                                            </option>
+                                                            <option value="Belize">
+                                                                 Belize
+                                                            </option>
+                                                            <option value="Benin">
+                                                                 Benin
+                                                            </option>
+                                                            <option value="Bermuda">
+                                                                 Bermuda
+                                                            </option>
+                                                            <option value="Bhutan">
+                                                                 Bhutan
+                                                            </option>
+                                                            <option value="Bolivia">
+                                                                 Bolivia
+                                                            </option>
+                                                            <option value="Bonaire">
+                                                                 Bonaire
+                                                            </option>
+                                                            <option value="Bosnia & Herzegovina">
+                                                                 Bosnia & Herzegovina
+                                                            </option>
+                                                            <option value="Botswana">
+                                                                 Botswana
+                                                            </option>
+                                                            <option value="Brazil">
+                                                                 Brazil
+                                                            </option>
+                                                            <option value="British Indian Ocean Ter">
+                                                                 British Indian Ocean Ter
+                                                            </option>
+                                                            <option value="Brunei">
+                                                                 Brunei
+                                                            </option>
+                                                            <option value="Bulgaria">
+                                                                 Bulgaria
+                                                            </option>
+                                                            <option value="Burkina Faso">
+                                                                 Burkina Faso
+                                                            </option>
+                                                            <option value="Burundi">
+                                                                 Burundi
+                                                            </option>
+                                                            <option value="Cambodia">
+                                                                 Cambodia
+                                                            </option>
+                                                            <option value="Cameroon">
+                                                                 Cameroon
+                                                            </option>
+                                                            <option value="Canada">
+                                                                 Canada
+                                                            </option>
+                                                            <option value="Canary Islands">
+                                                                 Canary Islands
+                                                            </option>
+                                                            <option value="Cape Verde">
+                                                                 Cape Verde
+                                                            </option>
+                                                            <option value="Cayman Islands">
+                                                                 Cayman Islands
+                                                            </option>
+                                                            <option value="Central African Republic">
+                                                                 Central African Republic
+                                                            </option>
+                                                            <option value="Chad">Chad</option>
+                                                            <option value="Channel Islands">
+                                                                 Channel Islands
+                                                            </option>
+                                                            <option value="Chile">
+                                                                 Chile
+                                                            </option>
+                                                            <option value="China">
+                                                                 China
+                                                            </option>
+                                                            <option value="Christmas Island">
+                                                                 Christmas Island
+                                                            </option>
+                                                            <option value="Cocos Island">
+                                                                 Cocos Island
+                                                            </option>
+                                                            <option value="Colombia">
+                                                                 Colombia
+                                                            </option>
+                                                            <option value="Comoros">
+                                                                 Comoros
+                                                            </option>
+                                                            <option value="Congo">
+                                                                 Congo
+                                                            </option>
+                                                            <option value="Cook Islands">
+                                                                 Cook Islands
+                                                            </option>
+                                                            <option value="Costa Rica">
+                                                                 Costa Rica
+                                                            </option>
+                                                            <option value="Cote DIvoire">
+                                                                 Cote DIvoire
+                                                            </option>
+                                                            <option value="Croatia">
+                                                                 Croatia
+                                                            </option>
+                                                            <option value="Cuba">Cuba</option>
+                                                            <option value="Curaco">
+                                                                 Curacao
+                                                            </option>
+                                                            <option value="Cyprus">
+                                                                 Cyprus
+                                                            </option>
+                                                            <option value="Czech Republic">
+                                                                 Czech Republic
+                                                            </option>
+                                                            <option value="Denmark">
+                                                                 Denmark
+                                                            </option>
+                                                            <option value="Djibouti">
+                                                                 Djibouti
+                                                            </option>
+                                                            <option value="Dominica">
+                                                                 Dominica
+                                                            </option>
+                                                            <option value="Dominican Republic">
+                                                                 Dominican Republic
+                                                            </option>
+                                                            <option value="East Timor">
+                                                                 East Timor
+                                                            </option>
+                                                            <option value="Ecuador">
+                                                                 Ecuador
+                                                            </option>
+                                                            <option value="Egypt">
+                                                                 Egypt
+                                                            </option>
+                                                            <option value="El Salvador">
+                                                                 El Salvador
+                                                            </option>
+                                                            <option value="Equatorial Guinea">
+                                                                 Equatorial Guinea
+                                                            </option>
+                                                            <option value="Eritrea">
+                                                                 Eritrea
+                                                            </option>
+                                                            <option value="Estonia">
+                                                                 Estonia
+                                                            </option>
+                                                            <option value="Ethiopia">
+                                                                 Ethiopia
+                                                            </option>
+                                                            <option value="Falkland Islands">
+                                                                 Falkland Islands
+                                                            </option>
+                                                            <option value="Faroe Islands">
+                                                                 Faroe Islands
+                                                            </option>
+                                                            <option value="Fiji">Fiji</option>
+                                                            <option value="Finland">
+                                                                 Finland
+                                                            </option>
+                                                            <option value="France">
+                                                                 France
+                                                            </option>
+                                                            <option value="French Guiana">
+                                                                 French Guiana
+                                                            </option>
+                                                            <option value="French Polynesia">
+                                                                 French Polynesia
+                                                            </option>
+                                                            <option value="French Southern Ter">
+                                                                 French Southern Ter
+                                                            </option>
+                                                            <option value="Gabon">
+                                                                 Gabon
+                                                            </option>
+                                                            <option value="Gambia">
+                                                                 Gambia
+                                                            </option>
+                                                            <option value="Georgia">
+                                                                 Georgia
+                                                            </option>
+                                                            <option value="Germany">
+                                                                 Germany
+                                                            </option>
+                                                            <option value="Ghana">
+                                                                 Ghana
+                                                            </option>
+                                                            <option value="Gibraltar">
+                                                                 Gibraltar
+                                                            </option>
+                                                            <option value="Great Britain">
+                                                                 Great Britain
+                                                            </option>
+                                                            <option value="Greece">
+                                                                 Greece
+                                                            </option>
+                                                            <option value="Greenland">
+                                                                 Greenland
+                                                            </option>
+                                                            <option value="Grenada">
+                                                                 Grenada
+                                                            </option>
+                                                            <option value="Guadeloupe">
+                                                                 Guadeloupe
+                                                            </option>
+                                                            <option value="Guam">Guam</option>
+                                                            <option value="Guatemala">
+                                                                 Guatemala
+                                                            </option>
+                                                            <option value="Guinea">
+                                                                 Guinea
+                                                            </option>
+                                                            <option value="Guyana">
+                                                                 Guyana
+                                                            </option>
+                                                            <option value="Haiti">
+                                                                 Haiti
+                                                            </option>
+                                                            <option value="Hawaii">
+                                                                 Hawaii
+                                                            </option>
+                                                            <option value="Honduras">
+                                                                 Honduras
+                                                            </option>
+                                                            <option value="Hong Kong">
+                                                                 Hong Kong
+                                                            </option>
+                                                            <option value="Hungary">
+                                                                 Hungary
+                                                            </option>
+                                                            <option value="Iceland">
+                                                                 Iceland
+                                                            </option>
+                                                            <option value="Indonesia">
+                                                                 Indonesia
+                                                            </option>
+                                                            <option value="India">
+                                                                 India
+                                                            </option>
+                                                            <option value="Iran">Iran</option>
+                                                            <option value="Iraq">Iraq</option>
+                                                            <option value="Ireland">
+                                                                 Ireland
+                                                            </option>
+                                                            <option value="Isle of Man">
+                                                                 Isle of Man
+                                                            </option>
+                                                            <option value="Israel">
+                                                                 Israel
+                                                            </option>
+                                                            <option value="Italy">
+                                                                 Italy
+                                                            </option>
+                                                            <option value="Jamaica">
+                                                                 Jamaica
+                                                            </option>
+                                                            <option value="Japan">
+                                                                 Japan
+                                                            </option>
+                                                            <option value="Jordan">
+                                                                 Jordan
+                                                            </option>
+                                                            <option value="Kazakhstan">
+                                                                 Kazakhstan
+                                                            </option>
+                                                            <option value="Kenya">
+                                                                 Kenya
+                                                            </option>
+                                                            <option value="Kiribati">
+                                                                 Kiribati
+                                                            </option>
+                                                            <option value="Korea North">
+                                                                 Korea North
+                                                            </option>
+                                                            <option value="Korea Sout">
+                                                                 Korea South
+                                                            </option>
+                                                            <option value="Kuwait">
+                                                                 Kuwait
+                                                            </option>
+                                                            <option value="Kyrgyzstan">
+                                                                 Kyrgyzstan
+                                                            </option>
+                                                            <option value="Laos">Laos</option>
+                                                            <option value="Latvia">
+                                                                 Latvia
+                                                            </option>
+                                                            <option value="Lebanon">
+                                                                 Lebanon
+                                                            </option>
+                                                            <option value="Lesotho">
+                                                                 Lesotho
+                                                            </option>
+                                                            <option value="Liberia">
+                                                                 Liberia
+                                                            </option>
+                                                            <option value="Libya">
+                                                                 Libya
+                                                            </option>
+                                                            <option value="Liechtenstein">
+                                                                 Liechtenstein
+                                                            </option>
+                                                            <option value="Lithuania">
+                                                                 Lithuania
+                                                            </option>
+                                                            <option value="Luxembourg">
+                                                                 Luxembourg
+                                                            </option>
+                                                            <option value="Macau">
+                                                                 Macau
+                                                            </option>
+                                                            <option value="Macedonia">
+                                                                 Macedonia
+                                                            </option>
+                                                            <option value="Madagascar">
+                                                                 Madagascar
+                                                            </option>
+                                                            <option value="Malaysia">
+                                                                 Malaysia
+                                                            </option>
+                                                            <option value="Malawi">
+                                                                 Malawi
+                                                            </option>
+                                                            <option value="Maldives">
+                                                                 Maldives
+                                                            </option>
+                                                            <option value="Mali">Mali</option>
+                                                            <option value="Malta">
+                                                                 Malta
+                                                            </option>
+                                                            <option value="Marshall Islands">
+                                                                 Marshall Islands
+                                                            </option>
+                                                            <option value="Martinique">
+                                                                 Martinique
+                                                            </option>
+                                                            <option value="Mauritania">
+                                                                 Mauritania
+                                                            </option>
+                                                            <option value="Mauritius">
+                                                                 Mauritius
+                                                            </option>
+                                                            <option value="Mayotte">
+                                                                 Mayotte
+                                                            </option>
+                                                            <option value="Mexico">
+                                                                 Mexico
+                                                            </option>
+                                                            <option value="Midway Islands">
+                                                                 Midway Islands
+                                                            </option>
+                                                            <option value="Moldova">
+                                                                 Moldova
+                                                            </option>
+                                                            <option value="Monaco">
+                                                                 Monaco
+                                                            </option>
+                                                            <option value="Mongolia">
+                                                                 Mongolia
+                                                            </option>
+                                                            <option value="Montserrat">
+                                                                 Montserrat
+                                                            </option>
+                                                            <option value="Morocco">
+                                                                 Morocco
+                                                            </option>
+                                                            <option value="Mozambique">
+                                                                 Mozambique
+                                                            </option>
+                                                            <option value="Myanmar">
+                                                                 Myanmar
+                                                            </option>
+                                                            <option value="Nambia">
+                                                                 Nambia
+                                                            </option>
+                                                            <option value="Nauru">
+                                                                 Nauru
+                                                            </option>
+                                                            <option value="Nepal">
+                                                                 Nepal
+                                                            </option>
+                                                            <option value="Netherland Antilles">
+                                                                 Netherland Antilles
+                                                            </option>
+                                                            <option value="Netherlands">
+                                                                 Netherlands (Holland, Europe)
+                                                            </option>
+                                                            <option value="Nevis">
+                                                                 Nevis
+                                                            </option>
+                                                            <option value="New Caledonia">
+                                                                 New Caledonia
+                                                            </option>
+                                                            <option value="New Zealand">
+                                                                 New Zealand
+                                                            </option>
+                                                            <option value="Nicaragua">
+                                                                 Nicaragua
+                                                            </option>
+                                                            <option value="Niger">
+                                                                 Niger
+                                                            </option>
+                                                            <option value="Nigeria">
+                                                                 Nigeria
+                                                            </option>
+                                                            <option value="Niue">Niue</option>
+                                                            <option value="Norfolk Island">
+                                                                 Norfolk Island
+                                                            </option>
+                                                            <option value="Norway">
+                                                                 Norway
+                                                            </option>
+                                                            <option value="Oman">Oman</option>
+                                                            <option value="Pakistan">
+                                                                 Pakistan
+                                                            </option>
+                                                            <option value="Palau Island">
+                                                                 Palau Island
+                                                            </option>
+                                                            <option value="Palestine">
+                                                                 Palestine
+                                                            </option>
+                                                            <option value="Panama">
+                                                                 Panama
+                                                            </option>
+                                                            <option value="Papua New Guinea">
+                                                                 Papua New Guinea
+                                                            </option>
+                                                            <option value="Paraguay">
+                                                                 Paraguay
+                                                            </option>
+                                                            <option value="Peru">Peru</option>
+                                                            <option value="Phillipines">
+                                                                 Philippines
+                                                            </option>
+                                                            <option value="Pitcairn Island">
+                                                                 Pitcairn Island
+                                                            </option>
+                                                            <option value="Poland">
+                                                                 Poland
+                                                            </option>
+                                                            <option value="Portugal">
+                                                                 Portugal
+                                                            </option>
+                                                            <option value="Puerto Rico">
+                                                                 Puerto Rico
+                                                            </option>
+                                                            <option value="Qatar">
+                                                                 Qatar
+                                                            </option>
+                                                            <option value="Republic of Montenegro">
+                                                                 Republic of Montenegro
+                                                            </option>
+                                                            <option value="Republic of Serbia">
+                                                                 Republic of Serbia
+                                                            </option>
+                                                            <option value="Reunion">
+                                                                 Reunion
+                                                            </option>
+                                                            <option value="Romania">
+                                                                 Romania
+                                                            </option>
+                                                            <option value="Russia">
+                                                                 Russia
+                                                            </option>
+                                                            <option value="Rwanda">
+                                                                 Rwanda
+                                                            </option>
+                                                            <option value="St Barthelemy">
+                                                                 St Barthelemy
+                                                            </option>
+                                                            <option value="St Eustatius">
+                                                                 St Eustatius
+                                                            </option>
+                                                            <option value="St Helena">
+                                                                 St Helena
+                                                            </option>
+                                                            <option value="St Kitts-Nevis">
+                                                                 St Kitts-Nevis
+                                                            </option>
+                                                            <option value="St Lucia">
+                                                                 St Lucia
+                                                            </option>
+                                                            <option value="St Maarten">
+                                                                 St Maarten
+                                                            </option>
+                                                            <option value="St Pierre & Miquelon">
+                                                                 St Pierre & Miquelon
+                                                            </option>
+                                                            <option value="St Vincent & Grenadines">
+                                                                 St Vincent & Grenadines
+                                                            </option>
+                                                            <option value="Saipan">
+                                                                 Saipan
+                                                            </option>
+                                                            <option value="Samoa">
+                                                                 Samoa
+                                                            </option>
+                                                            <option value="Samoa American">
+                                                                 Samoa American
+                                                            </option>
+                                                            <option value="San Marino">
+                                                                 San Marino
+                                                            </option>
+                                                            <option value="Sao Tome & Principe">
+                                                                 Sao Tome & Principe
+                                                            </option>
+                                                            <option value="Saudi Arabia">
+                                                                 Saudi Arabia
+                                                            </option>
+                                                            <option value="Senegal">
+                                                                 Senegal
+                                                            </option>
+                                                            <option value="Seychelles">
+                                                                 Seychelles
+                                                            </option>
+                                                            <option value="Sierra Leone">
+                                                                 Sierra Leone
+                                                            </option>
+                                                            <option value="Singapore">
+                                                                 Singapore
+                                                            </option>
+                                                            <option value="Slovakia">
+                                                                 Slovakia
+                                                            </option>
+                                                            <option value="Slovenia">
+                                                                 Slovenia
+                                                            </option>
+                                                            <option value="Solomon Islands">
+                                                                 Solomon Islands
+                                                            </option>
+                                                            <option value="Somalia">
+                                                                 Somalia
+                                                            </option>
+                                                            <option value="South Africa">
+                                                                 South Africa
+                                                            </option>
+                                                            <option value="Spain">
+                                                                 Spain
+                                                            </option>
+                                                            <option value="Sri Lanka">
+                                                                 Sri Lanka
+                                                            </option>
+                                                            <option value="Sudan">
+                                                                 Sudan
+                                                            </option>
+                                                            <option value="Suriname">
+                                                                 Suriname
+                                                            </option>
+                                                            <option value="Swaziland">
+                                                                 Swaziland
+                                                            </option>
+                                                            <option value="Sweden">
+                                                                 Sweden
+                                                            </option>
+                                                            <option value="Switzerland">
+                                                                 Switzerland
+                                                            </option>
+                                                            <option value="Syria">
+                                                                 Syria
+                                                            </option>
+                                                            <option value="Tahiti">
+                                                                 Tahiti
+                                                            </option>
+                                                            <option value="Taiwan">
+                                                                 Taiwan
+                                                            </option>
+                                                            <option value="Tajikistan">
+                                                                 Tajikistan
+                                                            </option>
+                                                            <option value="Tanzania">
+                                                                 Tanzania
+                                                            </option>
+                                                            <option value="Thailand">
+                                                                 Thailand
+                                                            </option>
+                                                            <option value="Togo">Togo</option>
+                                                            <option value="Tokelau">
+                                                                 Tokelau
+                                                            </option>
+                                                            <option value="Tonga">
+                                                                 Tonga
+                                                            </option>
+                                                            <option value="Trinidad & Tobago">
+                                                                 Trinidad & Tobago
+                                                            </option>
+                                                            <option value="Tunisia">
+                                                                 Tunisia
+                                                            </option>
+                                                            <option value="Turkey">
+                                                                 Turkey
+                                                            </option>
+                                                            <option value="Turkmenistan">
+                                                                 Turkmenistan
+                                                            </option>
+                                                            <option value="Turks & Caicos Is">
+                                                                 Turks & Caicos Is
+                                                            </option>
+                                                            <option value="Tuvalu">
+                                                                 Tuvalu
+                                                            </option>
+                                                            <option value="Uganda">
+                                                                 Uganda
+                                                            </option>
+                                                            <option value="United Kingdom">
+                                                                 United Kingdom
+                                                            </option>
+                                                            <option value="Ukraine">
+                                                                 Ukraine
+                                                            </option>
+                                                            <option value="United Arab Erimates">
+                                                                 United Arab Emirates
+                                                            </option>
+                                                            <option value="United States of America">
+                                                                 United States of America
+                                                            </option>
+                                                            <option value="Uraguay">
+                                                                 Uruguay
+                                                            </option>
+                                                            <option value="Uzbekistan">
+                                                                 Uzbekistan
+                                                            </option>
+                                                            <option value="Vanuatu">
+                                                                 Vanuatu
+                                                            </option>
+                                                            <option value="Vatican City State">
+                                                                 Vatican City State
+                                                            </option>
+                                                            <option value="Venezuela">
+                                                                 Venezuela
+                                                            </option>
+                                                            <option value="Vietnam">
+                                                                 Vietnam
+                                                            </option>
+                                                            <option value="Virgin Islands (Brit)">
+                                                                 Virgin Islands (Brit)
+                                                            </option>
+                                                            <option value="Virgin Islands (USA)">
+                                                                 Virgin Islands (USA)
+                                                            </option>
+                                                            <option value="Wake Island">
+                                                                 Wake Island
+                                                            </option>
+                                                            <option value="Wallis & Futana Is">
+                                                                 Wallis & Futana Is
+                                                            </option>
+                                                            <option value="Yemen">
+                                                                 Yemen
+                                                            </option>
+                                                            <option value="Zaire">
+                                                                 Zaire
+                                                            </option>
+                                                            <option value="Zambia">
+                                                                 Zambia
+                                                            </option>
+                                                            <option value="Zimbabwe">
+                                                                 Zimbabwe
+                                                            </option>
+                                                       </select>
+                                                  </div>
+                                                  <div class="message"></div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="login__form-checks">
+                                        <div class="checkbox">
+                                             <input type="checkbox" name="ageCheck" id="ageCheck" checked>
+                                             <label for="ageCheck">I am over the age of 13</label>
+                                        </div>
+                                        <div class="checkbox">
+                                             <input type="checkbox" name="ageCheck" id="termsCheck" checked>
+                                             <label for="termsCheck">I have read the <a href="#">Terms and
+                                                       Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                        </div>
+                                        <div class="checkbox">
+                                             <input type="checkbox" name="ageCheck" id="offersCheck">
+                                             <label for="offersCheck">Contact me with cool offers!</label>
+                                        </div>
+                                   </div>
+                                   <div class="login__form-submit">
+                                        <button type="submit" class="button button--primary">
+                                             Sign up
+                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg" class="right">
+                                                  <path d="M2.03976 11.3879L23.441 11.3879L18.761 16.0679C18.1273 16.7017 18.1273 17.7254 18.761 18.3592C19.3948 18.9929 20.4185 18.9929 21.0523 18.3592L28.511 10.9004C29.1448 10.2667 29.1448 9.24291 28.511 8.60916L21.0523 1.15042C20.4185 0.516668 19.3948 0.516667 18.761 1.15042C18.1273 1.78417 18.1273 2.80791 18.761 3.44166L23.441 8.13791L2.03976 8.13791C1.14601 8.13791 0.414761 8.86916 0.414761 9.76291C0.414761 10.6567 1.14601 11.3879 2.03976 11.3879Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                   </div>
+                              </form>
+                         </div>
+                         <div class="login__footer">
+                              <p>Already have an account?</p>
+                              <a href="login.html" class="button button--outline">Log in</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- login end
+    =========================================== -->
+     <!-- footer start
+    =========================================== -->
+     <footer class="footer">
+          <div class="auto__container">
+               <div class="footer__row">
+                    <div class="footer__column">
+                         <h4 class="footer__column-logo">Gaggle</h4>
+                         <div class="footer__column-content">
+                              <p class="footer__column-content-para">
+                                   The world's first video chat integrated gaming platform. See, hear, and play games
+                                   together!
+                                   It's unlike anything you've played before.
+                              </p>
+                              <p class="footer__column-content-para">
+                                   Contact details of <br>the company
+                              </p>
+                         </div>
+                    </div>
+                    <div class="footer__column">
+                         <div class="footer__link-row" id="linksTab">
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Games</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">Escape rooms</a>
+                                        <a href="#" class="footer__link">Online party games</a>
+                                        <a href="#" class="footer__link">Online card games</a>
                                    </div>
                               </div>
-                              <div class="login__form">
-                                   <div class="login__form-header">
-                                        <p class="sm">Or sign in Email</p>
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Company</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">About us</a>
+                                        <a href="#" class="footer__link">Careers</a>
+                                        <a href="#" class="footer__link">Team</a>
+                                        <a href="#" class="footer__link">Support</a>
                                    </div>
+                              </div>
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Resorces</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">Investor relations</a>
+                                        <a href="#" class="footer__link">Press</a>
+                                        <a href="#" class="footer__link">Terms & conditions</a>
+                                        <a href="#" class="footer__link">Privacy policy</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="footer__column">
+                         <div class="footer__form">
+                              <h6 class="footer__form-title">
+                                   Sign up for email newsletters and updates
+                              </h6>
+                              <div class="footer__form-content">
                                    <form action="#">
-                                        <div class="input__item">
-                                             <label for="email">Email address*</label>
-                                             <div class="input__outer icoRight">
-                                                  <input
-                                                       type="email"
-                                                       name="mail"
-                                                       id="email"
-                                                       required
-                                                  />
-                                                  <svg
-                                                       width="24"
-                                                       height="25"
-                                                       viewBox="0 0 24 25"
-                                                       fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                       <path
-                                                            d="M12.9999 2.91691C10.6353 2.68982 8.26703 3.31193 6.31929 4.67183C4.37155 6.03172 2.97153 8.04058 2.36994 10.3386C1.76835 12.6367 2.00449 15.0739 3.03608 17.2137C4.06766 19.3535 5.82731 21.0562 7.9999 22.0169C9.25812 22.5859 10.6192 22.8921 11.9999 22.9169C14.1979 22.9171 16.3347 22.1931 18.0799 20.8569C18.2905 20.6963 18.4288 20.4587 18.4644 20.1962C18.5001 19.9337 18.4301 19.6678 18.2699 19.4569C18.1903 19.3512 18.0905 19.2623 17.9763 19.1955C17.8621 19.1286 17.7357 19.0851 17.6046 19.0674C17.4734 19.0497 17.3401 19.0582 17.2122 19.0925C17.0844 19.1267 16.9646 19.186 16.8599 19.2669C15.8228 20.0503 14.6104 20.5692 13.3276 20.7787C12.0449 20.9883 10.7304 20.8821 9.4979 20.4694C8.26541 20.0567 7.15203 19.3499 6.25409 18.4102C5.35615 17.4705 4.70069 16.3261 4.34443 15.0762C3.98817 13.8262 3.94182 12.5082 4.20941 11.2363C4.477 9.96443 5.05046 8.77688 5.88018 7.77642C6.7099 6.77596 7.77089 5.99273 8.97135 5.49449C10.1718 4.99625 11.4756 4.798 12.7699 4.91691C14.7786 5.1494 16.6297 6.11855 17.9652 7.63691C19.3007 9.15527 20.0257 11.115 19.9999 13.1369V13.8169C19.9987 14.0466 19.9513 14.2738 19.8604 14.4848C19.7696 14.6958 19.6371 14.8863 19.471 15.045C19.3048 15.2036 19.1084 15.3272 18.8935 15.4083C18.6785 15.4894 18.4494 15.5263 18.2199 15.5169C17.7621 15.4666 17.3404 15.2447 17.0398 14.8958C16.7392 14.547 16.582 14.0971 16.5999 13.6369V9.31691C16.5999 9.05169 16.4945 8.79734 16.307 8.6098C16.1195 8.42226 15.8651 8.31691 15.5999 8.31691C15.3557 8.31484 15.1193 8.40217 14.935 8.56243C14.7508 8.72269 14.6316 8.94481 14.5999 9.18691C13.6693 8.31049 12.4383 7.82381 11.1599 7.82691C10.2911 7.83342 9.43838 8.06223 8.68301 8.49153C7.92764 8.92084 7.29474 9.53636 6.84456 10.2795C6.39439 11.0226 6.14193 11.8686 6.11123 12.7369C6.08053 13.6052 6.27261 14.4669 6.66917 15.24C7.06574 16.013 7.65359 16.6717 8.37676 17.1533C9.09992 17.6349 9.93432 17.9234 10.8005 17.9912C11.6667 18.0591 12.5359 17.9041 13.3252 17.541C14.1145 17.1779 14.7978 16.6188 15.3099 15.9169C15.6002 16.3659 15.9868 16.7447 16.4417 17.0256C16.8967 17.3065 17.4084 17.4826 17.9399 17.541C18.4714 17.5994 19.0092 17.5387 19.5143 17.3633C20.0194 17.1879 20.479 16.9022 20.8599 16.5269C21.2265 16.1782 21.5169 15.7574 21.7131 15.2911C21.9093 14.8247 22.0069 14.3228 21.9999 13.8169V13.1369C22.0223 10.6239 21.1161 8.19106 19.4552 6.30501C17.7943 4.41897 15.4956 3.21247 12.9999 2.91691ZM11.1799 16.0069C10.5688 16.0069 9.97133 15.8257 9.46318 15.4861C8.95504 15.1466 8.55898 14.664 8.32511 14.0994C8.09123 13.5348 8.03004 12.9135 8.14927 12.3141C8.2685 11.7147 8.56279 11.1641 8.99494 10.7319C9.42708 10.2998 9.97767 10.0055 10.5771 9.88628C11.1765 9.76705 11.7978 9.82824 12.3624 10.0621C12.927 10.296 13.4096 10.692 13.7491 11.2002C14.0887 11.7083 14.2699 12.3058 14.2699 12.9169C14.2673 13.7356 13.9409 14.52 13.3619 15.099C12.783 15.6779 11.9986 16.0043 11.1799 16.0069Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
-                                             </div>
-                                             <div class="message"></div>
-                                        </div>
-                                        <div class="input__item">
-                                             <label for="password">Password*</label>
-                                             <div class="input__outer icoRight">
-                                                  <input
-                                                       type="password"
-                                                       name="password"
-                                                       id="password"
-                                                       required
-                                                  />
-                                                  <svg
-                                                       width="24"
-                                                       height="25"
-                                                       viewBox="0 0 24 25"
-                                                       fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                       <path
-                                                            d="M17 8.91699H10V6.91699C10 6.38656 10.2107 5.87785 10.5858 5.50278C10.9609 5.12771 11.4696 4.91699 12 4.91699C12.5304 4.91699 13.0391 5.12771 13.4142 5.50278C13.7893 5.87785 14 6.38656 14 6.91699C14 7.18221 14.1054 7.43656 14.2929 7.6241C14.4804 7.81164 14.7348 7.91699 15 7.91699C15.2652 7.91699 15.5196 7.81164 15.7071 7.6241C15.8946 7.43656 16 7.18221 16 6.91699C16 5.85613 15.5786 4.83871 14.8284 4.08857C14.0783 3.33842 13.0609 2.91699 12 2.91699C10.9391 2.91699 9.92172 3.33842 9.17157 4.08857C8.42143 4.83871 8 5.85613 8 6.91699V8.91699H7C6.20435 8.91699 5.44129 9.23306 4.87868 9.79567C4.31607 10.3583 4 11.1213 4 11.917V19.917C4 20.7126 4.31607 21.4757 4.87868 22.0383C5.44129 22.6009 6.20435 22.917 7 22.917H17C17.7956 22.917 18.5587 22.6009 19.1213 22.0383C19.6839 21.4757 20 20.7126 20 19.917V11.917C20 11.1213 19.6839 10.3583 19.1213 9.79567C18.5587 9.23306 17.7956 8.91699 17 8.91699ZM18 19.917C18 20.1822 17.8946 20.4366 17.7071 20.6241C17.5196 20.8116 17.2652 20.917 17 20.917H7C6.73478 20.917 6.48043 20.8116 6.29289 20.6241C6.10536 20.4366 6 20.1822 6 19.917V11.917C6 11.6518 6.10536 11.3974 6.29289 11.2099C6.48043 11.0223 6.73478 10.917 7 10.917H17C17.2652 10.917 17.5196 11.0223 17.7071 11.2099C17.8946 11.3974 18 11.6518 18 11.917V19.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M12 12.917C11.4067 12.917 10.8266 13.0929 10.3333 13.4226C9.83994 13.7522 9.45543 14.2208 9.22836 14.7689C9.0013 15.3171 8.94189 15.9203 9.05765 16.5023C9.1734 17.0842 9.45912 17.6188 9.87868 18.0383C10.2982 18.4579 10.8328 18.7436 11.4147 18.8593C11.9967 18.9751 12.5999 18.9157 13.1481 18.6886C13.6962 18.4616 14.1648 18.077 14.4944 17.5837C14.8241 17.0904 15 16.5103 15 15.917C15 15.1213 14.6839 14.3583 14.1213 13.7957C13.5587 13.2331 12.7957 12.917 12 12.917ZM12 16.917C11.8022 16.917 11.6089 16.8583 11.4444 16.7485C11.28 16.6386 11.1518 16.4824 11.0761 16.2997C11.0004 16.1169 10.9806 15.9159 11.0192 15.7219C11.0578 15.5279 11.153 15.3497 11.2929 15.2099C11.4327 15.07 11.6109 14.9748 11.8049 14.9362C11.9989 14.8976 12.2 14.9174 12.3827 14.9931C12.5654 15.0688 12.7216 15.197 12.8315 15.3614C12.9414 15.5259 13 15.7192 13 15.917C13 16.1822 12.8946 16.4366 12.7071 16.6241C12.5196 16.8116 12.2652 16.917 12 16.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
-                                             </div>
-                                             <div class="message"></div>
-                                        </div>
-
-                                        <div class="input__item">
-                                             <label for="repassword">Confirm password*</label>
-                                             <div class="input__outer icoRight">
-                                                  <input
-                                                       type="password"
-                                                       name="repassword"
-                                                       id="repassword"
-                                                       required
-                                                  />
-                                                  <svg
-                                                       width="24"
-                                                       height="25"
-                                                       viewBox="0 0 24 25"
-                                                       fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                       <path
-                                                            d="M17 8.91699H10V6.91699C10 6.38656 10.2107 5.87785 10.5858 5.50278C10.9609 5.12771 11.4696 4.91699 12 4.91699C12.5304 4.91699 13.0391 5.12771 13.4142 5.50278C13.7893 5.87785 14 6.38656 14 6.91699C14 7.18221 14.1054 7.43656 14.2929 7.6241C14.4804 7.81164 14.7348 7.91699 15 7.91699C15.2652 7.91699 15.5196 7.81164 15.7071 7.6241C15.8946 7.43656 16 7.18221 16 6.91699C16 5.85613 15.5786 4.83871 14.8284 4.08857C14.0783 3.33842 13.0609 2.91699 12 2.91699C10.9391 2.91699 9.92172 3.33842 9.17157 4.08857C8.42143 4.83871 8 5.85613 8 6.91699V8.91699H7C6.20435 8.91699 5.44129 9.23306 4.87868 9.79567C4.31607 10.3583 4 11.1213 4 11.917V19.917C4 20.7126 4.31607 21.4757 4.87868 22.0383C5.44129 22.6009 6.20435 22.917 7 22.917H17C17.7956 22.917 18.5587 22.6009 19.1213 22.0383C19.6839 21.4757 20 20.7126 20 19.917V11.917C20 11.1213 19.6839 10.3583 19.1213 9.79567C18.5587 9.23306 17.7956 8.91699 17 8.91699ZM18 19.917C18 20.1822 17.8946 20.4366 17.7071 20.6241C17.5196 20.8116 17.2652 20.917 17 20.917H7C6.73478 20.917 6.48043 20.8116 6.29289 20.6241C6.10536 20.4366 6 20.1822 6 19.917V11.917C6 11.6518 6.10536 11.3974 6.29289 11.2099C6.48043 11.0223 6.73478 10.917 7 10.917H17C17.2652 10.917 17.5196 11.0223 17.7071 11.2099C17.8946 11.3974 18 11.6518 18 11.917V19.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M12 12.917C11.4067 12.917 10.8266 13.0929 10.3333 13.4226C9.83994 13.7522 9.45543 14.2208 9.22836 14.7689C9.0013 15.3171 8.94189 15.9203 9.05765 16.5023C9.1734 17.0842 9.45912 17.6188 9.87868 18.0383C10.2982 18.4579 10.8328 18.7436 11.4147 18.8593C11.9967 18.9751 12.5999 18.9157 13.1481 18.6886C13.6962 18.4616 14.1648 18.077 14.4944 17.5837C14.8241 17.0904 15 16.5103 15 15.917C15 15.1213 14.6839 14.3583 14.1213 13.7957C13.5587 13.2331 12.7957 12.917 12 12.917ZM12 16.917C11.8022 16.917 11.6089 16.8583 11.4444 16.7485C11.28 16.6386 11.1518 16.4824 11.0761 16.2997C11.0004 16.1169 10.9806 15.9159 11.0192 15.7219C11.0578 15.5279 11.153 15.3497 11.2929 15.2099C11.4327 15.07 11.6109 14.9748 11.8049 14.9362C11.9989 14.8976 12.2 14.9174 12.3827 14.9931C12.5654 15.0688 12.7216 15.197 12.8315 15.3614C12.9414 15.5259 13 15.7192 13 15.917C13 16.1822 12.8946 16.4366 12.7071 16.6241C12.5196 16.8116 12.2652 16.917 12 16.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
-                                             </div>
-                                             <div class="message"></div>
-                                        </div>
-
-                                        <div class="input__item">
-                                             <label for="name">Your full name</label>
-                                             <div class="input__outer icoRight">
-                                                  <input type="text" name="name" id="name" />
-                                                  <svg
-                                                       width="20"
-                                                       height="21"
-                                                       viewBox="0 0 20 21"
-                                                       fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                       <path
-                                                            d="M16 10.917H12V12.417H16V10.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M16 13.917H12V15.417H16V13.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M18 5.91699H13V2.91699C13 1.81699 12.1 0.916992 11 0.916992H9C7.9 0.916992 7 1.81699 7 2.91699V5.91699H2C0.9 5.91699 0 6.81699 0 7.91699V18.917C0 20.017 0.9 20.917 2 20.917H18C19.1 20.917 20 20.017 20 18.917V7.91699C20 6.81699 19.1 5.91699 18 5.91699ZM9 5.91699V2.91699H11V5.91699V7.91699H9V5.91699ZM18 18.917H2V7.91699H7C7 9.01699 7.9 9.91699 9 9.91699H11C12.1 9.91699 13 9.01699 13 7.91699H18V18.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M7 13.917C7.82843 13.917 8.5 13.2454 8.5 12.417C8.5 11.5886 7.82843 10.917 7 10.917C6.17157 10.917 5.5 11.5886 5.5 12.417C5.5 13.2454 6.17157 13.917 7 13.917Z"
-                                                            fill="currentColor"
-                                                       />
-                                                       <path
-                                                            d="M9.08 15.097C8.44 14.817 7.74 14.667 7 14.667C6.26 14.667 5.56 14.817 4.92 15.097C4.36 15.337 4 15.877 4 16.487V16.917H10V16.487C10 15.877 9.64 15.337 9.08 15.097Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
-                                             </div>
-                                             <div class="message"></div>
-                                        </div>
-
-                                        <div class="input__item">
-                                             <label for="bday">Birthday*</label>
-                                             <div class="input__outer icoRight">
-                                                  <input type="text" name="bday" id="bday" required />
-                                                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                                                       <path
-                                                            d="M20 3.91699H19V1.91699H17V3.91699H7V1.91699H5V3.91699H4C2.9 3.91699 2 4.81699 2 5.91699V21.917C2 23.017 2.9 23.917 4 23.917H20C21.1 23.917 22 23.017 22 21.917V5.91699C22 4.81699 21.1 3.91699 20 3.91699ZM20 21.917H4V10.917H20V21.917ZM20 8.91699H4V5.91699H20V8.91699Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
-                                             </div>
-                                             <div class="message"></div>
-                                        </div>
-                                        <div class="login__form-row">
-                                             <div class="login__form-column">
-                                                  <div class="input__item">
-                                                       <label for="nname">Nick name*</label>
-                                                       <div class="input__outer icoRight">
-                                                            <input
-                                                                 type="text"
-                                                                 name="nname"
-                                                                 id="nname"
-                                                                 required
-                                                            />
-                                                            <svg
-                                                                 width="24"
-                                                                 height="25"
-                                                                 viewBox="0 0 24 25"
-                                                                 fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                            >
-                                                                 <path
-                                                                      d="M11.99 2.91699C6.47 2.91699 2 7.39699 2 12.917C2 18.437 6.47 22.917 11.99 22.917C17.52 22.917 22 18.437 22 12.917C22 7.39699 17.52 2.91699 11.99 2.91699ZM12 20.917C7.58 20.917 4 17.337 4 12.917C4 8.49699 7.58 4.91699 12 4.91699C16.42 4.91699 20 8.49699 20 12.917C20 17.337 16.42 20.917 12 20.917ZM15.5 11.917C16.33 11.917 17 11.247 17 10.417C17 9.58699 16.33 8.91699 15.5 8.91699C14.67 8.91699 14 9.58699 14 10.417C14 11.247 14.67 11.917 15.5 11.917ZM8.5 11.917C9.33 11.917 10 11.247 10 10.417C10 9.58699 9.33 8.91699 8.5 8.91699C7.67 8.91699 7 9.58699 7 10.417C7 11.247 7.67 11.917 8.5 11.917ZM12 18.417C14.33 18.417 16.31 16.957 17.11 14.917H6.89C7.69 16.957 9.67 18.417 12 18.417Z"
-                                                                      fill="currentColor"
-                                                                 />
-                                                            </svg>
-                                                       </div>
-                                                       <div class="message"></div>
-                                                  </div>
-                                             </div>
-                                             <div class="login__form-column">
-                                                  <div class="input__item">
-                                                       <label for="phone">Phone number</label>
-                                                       <div class="input__outer icoRight">
-                                                            <input
-                                                                 type="text"
-                                                                 name="bday"
-                                                                 id="phone"
-                                                  
-                                                            />
-                                                            <svg
-                                                                 width="24"
-                                                                 height="25"
-                                                                 viewBox="0 0 24 25"
-                                                                 fill="none"
-                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                            >
-                                                                 <path
-                                                                      d="M6.54 5.91699C6.6 6.80699 6.75 7.67699 6.99 8.50699L5.79 9.70699C5.38 8.50699 5.12 7.23699 5.03 5.91699H6.54ZM16.4 17.937C17.25 18.177 18.12 18.327 19 18.387V19.877C17.68 19.787 16.41 19.527 15.2 19.127L16.4 17.937ZM7.5 3.91699H4C3.45 3.91699 3 4.36699 3 4.91699C3 14.307 10.61 21.917 20 21.917C20.55 21.917 21 21.467 21 20.917V17.427C21 16.877 20.55 16.427 20 16.427C18.76 16.427 17.55 16.227 16.43 15.857C16.33 15.817 16.22 15.807 16.12 15.807C15.86 15.807 15.61 15.907 15.41 16.097L13.21 18.297C10.38 16.847 8.06 14.537 6.62 11.707L8.82 9.50699C9.1 9.22699 9.18 8.83699 9.07 8.48699C8.7 7.36699 8.5 6.16699 8.5 4.91699C8.5 4.36699 8.05 3.91699 7.5 3.91699Z"
-                                                                      fill="#46A6F8"
-                                                                 />
-                                                            </svg>
-                                                       </div>
-                                                       <div class="message"></div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                        <div class="login__form-row">
-                                             <div class="login__form-column">
-                                                  <div class="select__outer">
-                                                       <label for="">Gender</label>
-                                                       <div class="custom-select">
-                                                            <select>
-                                                                 <option value="0">Gender</option>
-                                                                 <option value="1">Male</option>
-                                                                 <option value="2">Female</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="message"></div>
-                                                  </div>
-                                             </div>
-                                             <div class="login__form-column">
-                                                  <div class="select__outer">
-                                                       <label for="">Country</label>
-                                                       <div class="custom-select">
-                                                            <select id="country" name="country">
-                                                                 <option value="Afganistan">
-                                                                      Afghanistan
-                                                                 </option>
-                                                                 <option value="Albania">
-                                                                      Albania
-                                                                 </option>
-                                                                 <option value="Algeria">
-                                                                      Algeria
-                                                                 </option>
-                                                                 <option value="American Samoa">
-                                                                      American Samoa
-                                                                 </option>
-                                                                 <option value="Andorra">
-                                                                      Andorra
-                                                                 </option>
-                                                                 <option value="Angola">
-                                                                      Angola
-                                                                 </option>
-                                                                 <option value="Anguilla">
-                                                                      Anguilla
-                                                                 </option>
-                                                                 <option value="Antigua & Barbuda">
-                                                                      Antigua & Barbuda
-                                                                 </option>
-                                                                 <option value="Argentina">
-                                                                      Argentina
-                                                                 </option>
-                                                                 <option value="Armenia">
-                                                                      Armenia
-                                                                 </option>
-                                                                 <option value="Aruba">
-                                                                      Aruba
-                                                                 </option>
-                                                                 <option value="Australia">
-                                                                      Australia
-                                                                 </option>
-                                                                 <option value="Austria">
-                                                                      Austria
-                                                                 </option>
-                                                                 <option value="Azerbaijan">
-                                                                      Azerbaijan
-                                                                 </option>
-                                                                 <option value="Bahamas">
-                                                                      Bahamas
-                                                                 </option>
-                                                                 <option value="Bahrain">
-                                                                      Bahrain
-                                                                 </option>
-                                                                 <option value="Bangladesh">
-                                                                      Bangladesh
-                                                                 </option>
-                                                                 <option value="Barbados">
-                                                                      Barbados
-                                                                 </option>
-                                                                 <option value="Belarus">
-                                                                      Belarus
-                                                                 </option>
-                                                                 <option value="Belgium">
-                                                                      Belgium
-                                                                 </option>
-                                                                 <option value="Belize">
-                                                                      Belize
-                                                                 </option>
-                                                                 <option value="Benin">
-                                                                      Benin
-                                                                 </option>
-                                                                 <option value="Bermuda">
-                                                                      Bermuda
-                                                                 </option>
-                                                                 <option value="Bhutan">
-                                                                      Bhutan
-                                                                 </option>
-                                                                 <option value="Bolivia">
-                                                                      Bolivia
-                                                                 </option>
-                                                                 <option value="Bonaire">
-                                                                      Bonaire
-                                                                 </option>
-                                                                 <option
-                                                                      value="Bosnia & Herzegovina"
-                                                                 >
-                                                                      Bosnia & Herzegovina
-                                                                 </option>
-                                                                 <option value="Botswana">
-                                                                      Botswana
-                                                                 </option>
-                                                                 <option value="Brazil">
-                                                                      Brazil
-                                                                 </option>
-                                                                 <option
-                                                                      value="British Indian Ocean Ter"
-                                                                 >
-                                                                      British Indian Ocean Ter
-                                                                 </option>
-                                                                 <option value="Brunei">
-                                                                      Brunei
-                                                                 </option>
-                                                                 <option value="Bulgaria">
-                                                                      Bulgaria
-                                                                 </option>
-                                                                 <option value="Burkina Faso">
-                                                                      Burkina Faso
-                                                                 </option>
-                                                                 <option value="Burundi">
-                                                                      Burundi
-                                                                 </option>
-                                                                 <option value="Cambodia">
-                                                                      Cambodia
-                                                                 </option>
-                                                                 <option value="Cameroon">
-                                                                      Cameroon
-                                                                 </option>
-                                                                 <option value="Canada">
-                                                                      Canada
-                                                                 </option>
-                                                                 <option value="Canary Islands">
-                                                                      Canary Islands
-                                                                 </option>
-                                                                 <option value="Cape Verde">
-                                                                      Cape Verde
-                                                                 </option>
-                                                                 <option value="Cayman Islands">
-                                                                      Cayman Islands
-                                                                 </option>
-                                                                 <option
-                                                                      value="Central African Republic"
-                                                                 >
-                                                                      Central African Republic
-                                                                 </option>
-                                                                 <option value="Chad">Chad</option>
-                                                                 <option value="Channel Islands">
-                                                                      Channel Islands
-                                                                 </option>
-                                                                 <option value="Chile">
-                                                                      Chile
-                                                                 </option>
-                                                                 <option value="China">
-                                                                      China
-                                                                 </option>
-                                                                 <option value="Christmas Island">
-                                                                      Christmas Island
-                                                                 </option>
-                                                                 <option value="Cocos Island">
-                                                                      Cocos Island
-                                                                 </option>
-                                                                 <option value="Colombia">
-                                                                      Colombia
-                                                                 </option>
-                                                                 <option value="Comoros">
-                                                                      Comoros
-                                                                 </option>
-                                                                 <option value="Congo">
-                                                                      Congo
-                                                                 </option>
-                                                                 <option value="Cook Islands">
-                                                                      Cook Islands
-                                                                 </option>
-                                                                 <option value="Costa Rica">
-                                                                      Costa Rica
-                                                                 </option>
-                                                                 <option value="Cote DIvoire">
-                                                                      Cote DIvoire
-                                                                 </option>
-                                                                 <option value="Croatia">
-                                                                      Croatia
-                                                                 </option>
-                                                                 <option value="Cuba">Cuba</option>
-                                                                 <option value="Curaco">
-                                                                      Curacao
-                                                                 </option>
-                                                                 <option value="Cyprus">
-                                                                      Cyprus
-                                                                 </option>
-                                                                 <option value="Czech Republic">
-                                                                      Czech Republic
-                                                                 </option>
-                                                                 <option value="Denmark">
-                                                                      Denmark
-                                                                 </option>
-                                                                 <option value="Djibouti">
-                                                                      Djibouti
-                                                                 </option>
-                                                                 <option value="Dominica">
-                                                                      Dominica
-                                                                 </option>
-                                                                 <option value="Dominican Republic">
-                                                                      Dominican Republic
-                                                                 </option>
-                                                                 <option value="East Timor">
-                                                                      East Timor
-                                                                 </option>
-                                                                 <option value="Ecuador">
-                                                                      Ecuador
-                                                                 </option>
-                                                                 <option value="Egypt">
-                                                                      Egypt
-                                                                 </option>
-                                                                 <option value="El Salvador">
-                                                                      El Salvador
-                                                                 </option>
-                                                                 <option value="Equatorial Guinea">
-                                                                      Equatorial Guinea
-                                                                 </option>
-                                                                 <option value="Eritrea">
-                                                                      Eritrea
-                                                                 </option>
-                                                                 <option value="Estonia">
-                                                                      Estonia
-                                                                 </option>
-                                                                 <option value="Ethiopia">
-                                                                      Ethiopia
-                                                                 </option>
-                                                                 <option value="Falkland Islands">
-                                                                      Falkland Islands
-                                                                 </option>
-                                                                 <option value="Faroe Islands">
-                                                                      Faroe Islands
-                                                                 </option>
-                                                                 <option value="Fiji">Fiji</option>
-                                                                 <option value="Finland">
-                                                                      Finland
-                                                                 </option>
-                                                                 <option value="France">
-                                                                      France
-                                                                 </option>
-                                                                 <option value="French Guiana">
-                                                                      French Guiana
-                                                                 </option>
-                                                                 <option value="French Polynesia">
-                                                                      French Polynesia
-                                                                 </option>
-                                                                 <option
-                                                                      value="French Southern Ter"
-                                                                 >
-                                                                      French Southern Ter
-                                                                 </option>
-                                                                 <option value="Gabon">
-                                                                      Gabon
-                                                                 </option>
-                                                                 <option value="Gambia">
-                                                                      Gambia
-                                                                 </option>
-                                                                 <option value="Georgia">
-                                                                      Georgia
-                                                                 </option>
-                                                                 <option value="Germany">
-                                                                      Germany
-                                                                 </option>
-                                                                 <option value="Ghana">
-                                                                      Ghana
-                                                                 </option>
-                                                                 <option value="Gibraltar">
-                                                                      Gibraltar
-                                                                 </option>
-                                                                 <option value="Great Britain">
-                                                                      Great Britain
-                                                                 </option>
-                                                                 <option value="Greece">
-                                                                      Greece
-                                                                 </option>
-                                                                 <option value="Greenland">
-                                                                      Greenland
-                                                                 </option>
-                                                                 <option value="Grenada">
-                                                                      Grenada
-                                                                 </option>
-                                                                 <option value="Guadeloupe">
-                                                                      Guadeloupe
-                                                                 </option>
-                                                                 <option value="Guam">Guam</option>
-                                                                 <option value="Guatemala">
-                                                                      Guatemala
-                                                                 </option>
-                                                                 <option value="Guinea">
-                                                                      Guinea
-                                                                 </option>
-                                                                 <option value="Guyana">
-                                                                      Guyana
-                                                                 </option>
-                                                                 <option value="Haiti">
-                                                                      Haiti
-                                                                 </option>
-                                                                 <option value="Hawaii">
-                                                                      Hawaii
-                                                                 </option>
-                                                                 <option value="Honduras">
-                                                                      Honduras
-                                                                 </option>
-                                                                 <option value="Hong Kong">
-                                                                      Hong Kong
-                                                                 </option>
-                                                                 <option value="Hungary">
-                                                                      Hungary
-                                                                 </option>
-                                                                 <option value="Iceland">
-                                                                      Iceland
-                                                                 </option>
-                                                                 <option value="Indonesia">
-                                                                      Indonesia
-                                                                 </option>
-                                                                 <option value="India">
-                                                                      India
-                                                                 </option>
-                                                                 <option value="Iran">Iran</option>
-                                                                 <option value="Iraq">Iraq</option>
-                                                                 <option value="Ireland">
-                                                                      Ireland
-                                                                 </option>
-                                                                 <option value="Isle of Man">
-                                                                      Isle of Man
-                                                                 </option>
-                                                                 <option value="Israel">
-                                                                      Israel
-                                                                 </option>
-                                                                 <option value="Italy">
-                                                                      Italy
-                                                                 </option>
-                                                                 <option value="Jamaica">
-                                                                      Jamaica
-                                                                 </option>
-                                                                 <option value="Japan">
-                                                                      Japan
-                                                                 </option>
-                                                                 <option value="Jordan">
-                                                                      Jordan
-                                                                 </option>
-                                                                 <option value="Kazakhstan">
-                                                                      Kazakhstan
-                                                                 </option>
-                                                                 <option value="Kenya">
-                                                                      Kenya
-                                                                 </option>
-                                                                 <option value="Kiribati">
-                                                                      Kiribati
-                                                                 </option>
-                                                                 <option value="Korea North">
-                                                                      Korea North
-                                                                 </option>
-                                                                 <option value="Korea Sout">
-                                                                      Korea South
-                                                                 </option>
-                                                                 <option value="Kuwait">
-                                                                      Kuwait
-                                                                 </option>
-                                                                 <option value="Kyrgyzstan">
-                                                                      Kyrgyzstan
-                                                                 </option>
-                                                                 <option value="Laos">Laos</option>
-                                                                 <option value="Latvia">
-                                                                      Latvia
-                                                                 </option>
-                                                                 <option value="Lebanon">
-                                                                      Lebanon
-                                                                 </option>
-                                                                 <option value="Lesotho">
-                                                                      Lesotho
-                                                                 </option>
-                                                                 <option value="Liberia">
-                                                                      Liberia
-                                                                 </option>
-                                                                 <option value="Libya">
-                                                                      Libya
-                                                                 </option>
-                                                                 <option value="Liechtenstein">
-                                                                      Liechtenstein
-                                                                 </option>
-                                                                 <option value="Lithuania">
-                                                                      Lithuania
-                                                                 </option>
-                                                                 <option value="Luxembourg">
-                                                                      Luxembourg
-                                                                 </option>
-                                                                 <option value="Macau">
-                                                                      Macau
-                                                                 </option>
-                                                                 <option value="Macedonia">
-                                                                      Macedonia
-                                                                 </option>
-                                                                 <option value="Madagascar">
-                                                                      Madagascar
-                                                                 </option>
-                                                                 <option value="Malaysia">
-                                                                      Malaysia
-                                                                 </option>
-                                                                 <option value="Malawi">
-                                                                      Malawi
-                                                                 </option>
-                                                                 <option value="Maldives">
-                                                                      Maldives
-                                                                 </option>
-                                                                 <option value="Mali">Mali</option>
-                                                                 <option value="Malta">
-                                                                      Malta
-                                                                 </option>
-                                                                 <option value="Marshall Islands">
-                                                                      Marshall Islands
-                                                                 </option>
-                                                                 <option value="Martinique">
-                                                                      Martinique
-                                                                 </option>
-                                                                 <option value="Mauritania">
-                                                                      Mauritania
-                                                                 </option>
-                                                                 <option value="Mauritius">
-                                                                      Mauritius
-                                                                 </option>
-                                                                 <option value="Mayotte">
-                                                                      Mayotte
-                                                                 </option>
-                                                                 <option value="Mexico">
-                                                                      Mexico
-                                                                 </option>
-                                                                 <option value="Midway Islands">
-                                                                      Midway Islands
-                                                                 </option>
-                                                                 <option value="Moldova">
-                                                                      Moldova
-                                                                 </option>
-                                                                 <option value="Monaco">
-                                                                      Monaco
-                                                                 </option>
-                                                                 <option value="Mongolia">
-                                                                      Mongolia
-                                                                 </option>
-                                                                 <option value="Montserrat">
-                                                                      Montserrat
-                                                                 </option>
-                                                                 <option value="Morocco">
-                                                                      Morocco
-                                                                 </option>
-                                                                 <option value="Mozambique">
-                                                                      Mozambique
-                                                                 </option>
-                                                                 <option value="Myanmar">
-                                                                      Myanmar
-                                                                 </option>
-                                                                 <option value="Nambia">
-                                                                      Nambia
-                                                                 </option>
-                                                                 <option value="Nauru">
-                                                                      Nauru
-                                                                 </option>
-                                                                 <option value="Nepal">
-                                                                      Nepal
-                                                                 </option>
-                                                                 <option
-                                                                      value="Netherland Antilles"
-                                                                 >
-                                                                      Netherland Antilles
-                                                                 </option>
-                                                                 <option value="Netherlands">
-                                                                      Netherlands (Holland, Europe)
-                                                                 </option>
-                                                                 <option value="Nevis">
-                                                                      Nevis
-                                                                 </option>
-                                                                 <option value="New Caledonia">
-                                                                      New Caledonia
-                                                                 </option>
-                                                                 <option value="New Zealand">
-                                                                      New Zealand
-                                                                 </option>
-                                                                 <option value="Nicaragua">
-                                                                      Nicaragua
-                                                                 </option>
-                                                                 <option value="Niger">
-                                                                      Niger
-                                                                 </option>
-                                                                 <option value="Nigeria">
-                                                                      Nigeria
-                                                                 </option>
-                                                                 <option value="Niue">Niue</option>
-                                                                 <option value="Norfolk Island">
-                                                                      Norfolk Island
-                                                                 </option>
-                                                                 <option value="Norway">
-                                                                      Norway
-                                                                 </option>
-                                                                 <option value="Oman">Oman</option>
-                                                                 <option value="Pakistan">
-                                                                      Pakistan
-                                                                 </option>
-                                                                 <option value="Palau Island">
-                                                                      Palau Island
-                                                                 </option>
-                                                                 <option value="Palestine">
-                                                                      Palestine
-                                                                 </option>
-                                                                 <option value="Panama">
-                                                                      Panama
-                                                                 </option>
-                                                                 <option value="Papua New Guinea">
-                                                                      Papua New Guinea
-                                                                 </option>
-                                                                 <option value="Paraguay">
-                                                                      Paraguay
-                                                                 </option>
-                                                                 <option value="Peru">Peru</option>
-                                                                 <option value="Phillipines">
-                                                                      Philippines
-                                                                 </option>
-                                                                 <option value="Pitcairn Island">
-                                                                      Pitcairn Island
-                                                                 </option>
-                                                                 <option value="Poland">
-                                                                      Poland
-                                                                 </option>
-                                                                 <option value="Portugal">
-                                                                      Portugal
-                                                                 </option>
-                                                                 <option value="Puerto Rico">
-                                                                      Puerto Rico
-                                                                 </option>
-                                                                 <option value="Qatar">
-                                                                      Qatar
-                                                                 </option>
-                                                                 <option
-                                                                      value="Republic of Montenegro"
-                                                                 >
-                                                                      Republic of Montenegro
-                                                                 </option>
-                                                                 <option value="Republic of Serbia">
-                                                                      Republic of Serbia
-                                                                 </option>
-                                                                 <option value="Reunion">
-                                                                      Reunion
-                                                                 </option>
-                                                                 <option value="Romania">
-                                                                      Romania
-                                                                 </option>
-                                                                 <option value="Russia">
-                                                                      Russia
-                                                                 </option>
-                                                                 <option value="Rwanda">
-                                                                      Rwanda
-                                                                 </option>
-                                                                 <option value="St Barthelemy">
-                                                                      St Barthelemy
-                                                                 </option>
-                                                                 <option value="St Eustatius">
-                                                                      St Eustatius
-                                                                 </option>
-                                                                 <option value="St Helena">
-                                                                      St Helena
-                                                                 </option>
-                                                                 <option value="St Kitts-Nevis">
-                                                                      St Kitts-Nevis
-                                                                 </option>
-                                                                 <option value="St Lucia">
-                                                                      St Lucia
-                                                                 </option>
-                                                                 <option value="St Maarten">
-                                                                      St Maarten
-                                                                 </option>
-                                                                 <option
-                                                                      value="St Pierre & Miquelon"
-                                                                 >
-                                                                      St Pierre & Miquelon
-                                                                 </option>
-                                                                 <option
-                                                                      value="St Vincent & Grenadines"
-                                                                 >
-                                                                      St Vincent & Grenadines
-                                                                 </option>
-                                                                 <option value="Saipan">
-                                                                      Saipan
-                                                                 </option>
-                                                                 <option value="Samoa">
-                                                                      Samoa
-                                                                 </option>
-                                                                 <option value="Samoa American">
-                                                                      Samoa American
-                                                                 </option>
-                                                                 <option value="San Marino">
-                                                                      San Marino
-                                                                 </option>
-                                                                 <option
-                                                                      value="Sao Tome & Principe"
-                                                                 >
-                                                                      Sao Tome & Principe
-                                                                 </option>
-                                                                 <option value="Saudi Arabia">
-                                                                      Saudi Arabia
-                                                                 </option>
-                                                                 <option value="Senegal">
-                                                                      Senegal
-                                                                 </option>
-                                                                 <option value="Seychelles">
-                                                                      Seychelles
-                                                                 </option>
-                                                                 <option value="Sierra Leone">
-                                                                      Sierra Leone
-                                                                 </option>
-                                                                 <option value="Singapore">
-                                                                      Singapore
-                                                                 </option>
-                                                                 <option value="Slovakia">
-                                                                      Slovakia
-                                                                 </option>
-                                                                 <option value="Slovenia">
-                                                                      Slovenia
-                                                                 </option>
-                                                                 <option value="Solomon Islands">
-                                                                      Solomon Islands
-                                                                 </option>
-                                                                 <option value="Somalia">
-                                                                      Somalia
-                                                                 </option>
-                                                                 <option value="South Africa">
-                                                                      South Africa
-                                                                 </option>
-                                                                 <option value="Spain">
-                                                                      Spain
-                                                                 </option>
-                                                                 <option value="Sri Lanka">
-                                                                      Sri Lanka
-                                                                 </option>
-                                                                 <option value="Sudan">
-                                                                      Sudan
-                                                                 </option>
-                                                                 <option value="Suriname">
-                                                                      Suriname
-                                                                 </option>
-                                                                 <option value="Swaziland">
-                                                                      Swaziland
-                                                                 </option>
-                                                                 <option value="Sweden">
-                                                                      Sweden
-                                                                 </option>
-                                                                 <option value="Switzerland">
-                                                                      Switzerland
-                                                                 </option>
-                                                                 <option value="Syria">
-                                                                      Syria
-                                                                 </option>
-                                                                 <option value="Tahiti">
-                                                                      Tahiti
-                                                                 </option>
-                                                                 <option value="Taiwan">
-                                                                      Taiwan
-                                                                 </option>
-                                                                 <option value="Tajikistan">
-                                                                      Tajikistan
-                                                                 </option>
-                                                                 <option value="Tanzania">
-                                                                      Tanzania
-                                                                 </option>
-                                                                 <option value="Thailand">
-                                                                      Thailand
-                                                                 </option>
-                                                                 <option value="Togo">Togo</option>
-                                                                 <option value="Tokelau">
-                                                                      Tokelau
-                                                                 </option>
-                                                                 <option value="Tonga">
-                                                                      Tonga
-                                                                 </option>
-                                                                 <option value="Trinidad & Tobago">
-                                                                      Trinidad & Tobago
-                                                                 </option>
-                                                                 <option value="Tunisia">
-                                                                      Tunisia
-                                                                 </option>
-                                                                 <option value="Turkey">
-                                                                      Turkey
-                                                                 </option>
-                                                                 <option value="Turkmenistan">
-                                                                      Turkmenistan
-                                                                 </option>
-                                                                 <option value="Turks & Caicos Is">
-                                                                      Turks & Caicos Is
-                                                                 </option>
-                                                                 <option value="Tuvalu">
-                                                                      Tuvalu
-                                                                 </option>
-                                                                 <option value="Uganda">
-                                                                      Uganda
-                                                                 </option>
-                                                                 <option value="United Kingdom">
-                                                                      United Kingdom
-                                                                 </option>
-                                                                 <option value="Ukraine">
-                                                                      Ukraine
-                                                                 </option>
-                                                                 <option
-                                                                      value="United Arab Erimates"
-                                                                 >
-                                                                      United Arab Emirates
-                                                                 </option>
-                                                                 <option
-                                                                      value="United States of America"
-                                                                 >
-                                                                      United States of America
-                                                                 </option>
-                                                                 <option value="Uraguay">
-                                                                      Uruguay
-                                                                 </option>
-                                                                 <option value="Uzbekistan">
-                                                                      Uzbekistan
-                                                                 </option>
-                                                                 <option value="Vanuatu">
-                                                                      Vanuatu
-                                                                 </option>
-                                                                 <option value="Vatican City State">
-                                                                      Vatican City State
-                                                                 </option>
-                                                                 <option value="Venezuela">
-                                                                      Venezuela
-                                                                 </option>
-                                                                 <option value="Vietnam">
-                                                                      Vietnam
-                                                                 </option>
-                                                                 <option
-                                                                      value="Virgin Islands (Brit)"
-                                                                 >
-                                                                      Virgin Islands (Brit)
-                                                                 </option>
-                                                                 <option
-                                                                      value="Virgin Islands (USA)"
-                                                                 >
-                                                                      Virgin Islands (USA)
-                                                                 </option>
-                                                                 <option value="Wake Island">
-                                                                      Wake Island
-                                                                 </option>
-                                                                 <option value="Wallis & Futana Is">
-                                                                      Wallis & Futana Is
-                                                                 </option>
-                                                                 <option value="Yemen">
-                                                                      Yemen
-                                                                 </option>
-                                                                 <option value="Zaire">
-                                                                      Zaire
-                                                                 </option>
-                                                                 <option value="Zambia">
-                                                                      Zambia
-                                                                 </option>
-                                                                 <option value="Zimbabwe">
-                                                                      Zimbabwe
-                                                                 </option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="message"></div>
-                                                  </div>
-                                             </div>
-                                        </div>
-                                        
-                                        <div class="login__form-checks">
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="ageCheck" id="ageCheck" checked>
-                                                <label for="ageCheck">I am over the age of 13</label>
-                                            </div>  
-                                            <div class="checkbox">
-                                                  <input type="checkbox" name="ageCheck" id="termsCheck" checked>
-                                                  <label for="termsCheck">I have read the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
-                                            </div>  
-                                            <div class="checkbox">
-                                                <input type="checkbox" name="ageCheck" id="offersCheck">
-                                                <label for="offersCheck">Contact me with cool offers!</label>
-                                            </div>  
-                                        </div>
-                                        <div class="login__form-submit">
-                                             <button type="submit" class="button button--primary">
-                                                  Sign up
-                                                  <svg
-                                                       width="29"
-                                                       height="19"
-                                                       viewBox="0 0 29 19"
-                                                       fill="none"
-                                                       xmlns="http://www.w3.org/2000/svg"
-                                                       class="right"
-                                                  >
-                                                       <path
-                                                            d="M2.03976 11.3879L23.441 11.3879L18.761 16.0679C18.1273 16.7017 18.1273 17.7254 18.761 18.3592C19.3948 18.9929 20.4185 18.9929 21.0523 18.3592L28.511 10.9004C29.1448 10.2667 29.1448 9.24291 28.511 8.60916L21.0523 1.15042C20.4185 0.516668 19.3948 0.516667 18.761 1.15042C18.1273 1.78417 18.1273 2.80791 18.761 3.44166L23.441 8.13791L2.03976 8.13791C1.14601 8.13791 0.414761 8.86916 0.414761 9.76291C0.414761 10.6567 1.14601 11.3879 2.03976 11.3879Z"
-                                                            fill="currentColor"
-                                                       />
-                                                  </svg>
+                                        <div class="customInput img--left">
+                                             <img src="images/icons/searchPerson.svg" alt="">
+                                             <input type="text" placeholder="Email address" />
+                                             <button type="submit">
+                                                  <span>Subscribe</span>
                                              </button>
                                         </div>
                                    </form>
                               </div>
-                              <div class="login__footer">
-                                   <p>Already have an account?</p>
-                                   <a href="login.html" class="button button--outline">Log in</a>
+                         </div>
+                         <div class="footer__social">
+                              <h6 class="footer__social-title">Stay in touch</h6>
+                              <div class="footer__social-links">
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M30.0281 4.17813C29.6844 2.87188 28.6531 1.84063 27.3469 1.47969C24.9922 0.84375 15.5391 0.84375 15.5391 0.84375C15.5391 0.84375 6.08594 0.84375 3.71406 1.47969C2.40781 1.82344 1.39375 2.85469 1.03281 4.17813C0.414063 6.55 0.414062 11.5 0.414062 11.5C0.414062 11.5 0.414062 16.45 1.05 18.8219C1.39375 20.1281 2.425 21.1594 3.73125 21.5203C6.08594 22.1563 15.5391 22.1563 15.5391 22.1563C15.5391 22.1563 24.9922 22.1563 27.3641 21.5203C28.6703 21.1766 29.6844 20.1453 30.0453 18.8219C30.6641 16.45 30.6641 11.5 30.6641 11.5C30.6641 11.5 30.6641 6.55 30.0281 4.17813Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                             <path d="M12.4453 16.0033V6.99701L20.3516 11.5001L12.4453 16.0033Z"
+                                                  fill="currentColor" class="transparent" />
+                                        </svg>
+                                   </a>
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M26.9864 2.67903C25.9949 3.11874 24.9294 3.41592 23.8111 3.54958C24.9526 2.86533 25.8292 1.78187 26.242 0.490933C25.1738 1.12443 23.9906 1.58454 22.7313 1.83253C21.7227 0.758051 20.2859 0.0866089 18.6958 0.0866089C15.6425 0.0866089 13.1671 2.56193 13.1671 5.61506C13.1671 6.04837 13.2161 6.47033 13.3103 6.87495C8.71547 6.6444 4.64177 4.44339 1.915 1.0986C1.43912 1.91513 1.16648 2.86483 1.16648 3.87801C1.16648 5.79603 2.14259 7.48824 3.62603 8.47963C2.7197 8.45095 1.86729 8.20226 1.12183 7.78818C1.12143 7.81124 1.12143 7.83441 1.12143 7.85767C1.12143 10.5363 3.02714 12.7709 5.55628 13.2787C5.09232 13.405 4.60392 13.4726 4.09965 13.4726C3.74343 13.4726 3.39706 13.438 3.05957 13.3734C3.76304 15.5699 5.80477 17.1683 8.22401 17.2129C6.33191 18.6957 3.94805 19.5795 1.3579 19.5795C0.911681 19.5795 0.471577 19.5534 0.0390625 19.5023C2.48571 21.0709 5.39177 21.9861 8.5139 21.9861C18.6829 21.9861 24.2437 13.5619 24.2437 6.25615C24.2437 6.01643 24.2384 5.77799 24.2277 5.54094C25.3078 4.76147 26.2452 3.78772 26.9864 2.67903Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                        </svg>
+
+                                   </a>
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="12" height="25" viewBox="0 0 12 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M7.39258 8.27602V5.26656C7.39258 4.43594 8.05495 3.76183 8.87109 3.76183H10.3496V0H7.39258C4.94268 0 2.95703 2.02085 2.95703 4.51419V8.27602H0V12.0378H2.95703V24.0757H7.39258V12.0378H10.3496L11.8281 8.27602H7.39258Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                        </svg>
+                                   </a>
                               </div>
                          </div>
                     </div>
                </div>
-          </section>
+               <div class="footer__studio">
+                    <p>©2021 Gaggle Studios, Inc. All rights resrved</p>
+                    <p><a href="#">Privacy Policy</a> . <a href="#">Terms of use</a></p>
+               </div>
+          </div>
+     </footer>
+     <!-- footer end
+ =========================================== -->
 
-          <!-- login end
-    =========================================== -->
+     <script src="js/main.js"></script>
+     <script src="js/jquery-3.1.1.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
+     <script src="js/litepicker.js"></script>
+     <script src="js/customSelect.js"></script>
+     <script>
+          $('form').validate({
+               errorPlacement: function (error, element) {
+                    error.appendTo(element.parent().parent().find('.message'));
+               },
+               highlight: function (element) {
+                    $(element).parent().parent().addClass('error');
+               },
+               unhighlight: function (element) {
+                    $(element).parent().parent().removeClass('error');
+               },
+          });
+          const picker = new Litepicker({
+               element: document.getElementById('bday'),
+               format: 'DD/MM/YYYY',
+          });
+     </script>
+</body>
 
-          <script src="js/main.js"></script>
-          <script src="js/jquery-3.1.1.js"></script>
-          <script src="js/jquery.validate.min.js"></script>
-          <script src="js/litepicker.js"></script>
-          <script src="js/customSelect.js"></script>
-          <script>
-               $('form').validate({
-                    errorPlacement: function (error, element) {
-                         error.appendTo(element.parent().parent().find('.message'));
-                    },
-                    highlight: function (element) {
-                         $(element).parent().parent().addClass('error');
-                    },
-                    unhighlight: function (element) {
-                         $(element).parent().parent().removeClass('error');
-                    },
-               });
-               const picker = new Litepicker({
-                    element: document.getElementById('bday'),
-                    format: 'DD/MM/YYYY',
-               });
-          </script>
-     </body>
 </html>

@@ -1,3 +1,6 @@
+.headerLog {
+  justify-content: space-between;
+}
 .login {
   &__messageImage {
     height: 190px;
@@ -189,6 +192,14 @@
 }
 
 @mixin login1024 {
+  .headerLog {
+    .switch {
+      position: relative;
+      top: unset;
+      right: unset;
+      @include transformReset;
+    }
+  }
   .login {
     &__messageImage {
       height: 170px;
