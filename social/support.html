@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="../css/main.css" />
+     <title>Sign up</title>
+</head>
+
+<body>
+     <!-- header start
+    =========================================== -->
+     <header class="header header--noborder" id="header">
+          <div class="auto__container">
+               <div class="header__inner headerLog">
+                    <a href="index.html" class="header__inner-logo">
+                         <img src="../images/Gaggle-logo.png" alt="">
+                    </a>
+                    <div class="switch">
+                         <input type="checkbox">
+                         <label for=""></label>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!-- header end
+    =========================================== -->
+
+     <!-- login 
+    =========================================== -->
+     <section class="aloneCard bg--grd">
+          <div class="auto__container">
+               <div class="aloneCard__inner">
+                    <div class="login">
+                         <div class="login__header">
+                              <h3 class="login__header-title sm">Customer support</h3>
+                            <p class="login__header-para sm">
+                                Just send us your doubt/concern. We will get it solved by 24 hours
+                              </p>
+                         </div>
+                         <div class="login__form">
+                              <form action="#">
+                                  
+                                <div class="input__item">
+                                    <label for="name">Your full name*</label>
+                                    <div class="input__outer icoRight">
+                                         <input type="text" name="name" id="name" />
+                                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M16 10.917H12V12.417H16V10.917Z" fill="currentColor" />
+                                              <path d="M16 13.917H12V15.417H16V13.917Z" fill="currentColor" />
+                                              <path d="M18 5.91699H13V2.91699C13 1.81699 12.1 0.916992 11 0.916992H9C7.9 0.916992 7 1.81699 7 2.91699V5.91699H2C0.9 5.91699 0 6.81699 0 7.91699V18.917C0 20.017 0.9 20.917 2 20.917H18C19.1 20.917 20 20.017 20 18.917V7.91699C20 6.81699 19.1 5.91699 18 5.91699ZM9 5.91699V2.91699H11V5.91699V7.91699H9V5.91699ZM18 18.917H2V7.91699H7C7 9.01699 7.9 9.91699 9 9.91699H11C12.1 9.91699 13 9.01699 13 7.91699H18V18.917Z"
+                                                   fill="currentColor" />
+                                              <path d="M7 13.917C7.82843 13.917 8.5 13.2454 8.5 12.417C8.5 11.5886 7.82843 10.917 7 10.917C6.17157 10.917 5.5 11.5886 5.5 12.417C5.5 13.2454 6.17157 13.917 7 13.917Z"
+                                                   fill="currentColor" />
+                                              <path d="M9.08 15.097C8.44 14.817 7.74 14.667 7 14.667C6.26 14.667 5.56 14.817 4.92 15.097C4.36 15.337 4 15.877 4 16.487V16.917H10V16.487C10 15.877 9.64 15.337 9.08 15.097Z"
+                                                   fill="currentColor" />
+                                         </svg>
+                                    </div>
+                                    <div class="message"></div>
+                                </div>
+                                <div class="input__item">
+                                    <label for="email">Email address*</label>
+                                    <div class="input__outer icoRight">
+                                            <input type="email" name="mail" id="email" required />
+                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9999 2.91691C10.6353 2.68982 8.26703 3.31193 6.31929 4.67183C4.37155 6.03172 2.97153 8.04058 2.36994 10.3386C1.76835 12.6367 2.00449 15.0739 3.03608 17.2137C4.06766 19.3535 5.82731 21.0562 7.9999 22.0169C9.25812 22.5859 10.6192 22.8921 11.9999 22.9169C14.1979 22.9171 16.3347 22.1931 18.0799 20.8569C18.2905 20.6963 18.4288 20.4587 18.4644 20.1962C18.5001 19.9337 18.4301 19.6678 18.2699 19.4569C18.1903 19.3512 18.0905 19.2623 17.9763 19.1955C17.8621 19.1286 17.7357 19.0851 17.6046 19.0674C17.4734 19.0497 17.3401 19.0582 17.2122 19.0925C17.0844 19.1267 16.9646 19.186 16.8599 19.2669C15.8228 20.0503 14.6104 20.5692 13.3276 20.7787C12.0449 20.9883 10.7304 20.8821 9.4979 20.4694C8.26541 20.0567 7.15203 19.3499 6.25409 18.4102C5.35615 17.4705 4.70069 16.3261 4.34443 15.0762C3.98817 13.8262 3.94182 12.5082 4.20941 11.2363C4.477 9.96443 5.05046 8.77688 5.88018 7.77642C6.7099 6.77596 7.77089 5.99273 8.97135 5.49449C10.1718 4.99625 11.4756 4.798 12.7699 4.91691C14.7786 5.1494 16.6297 6.11855 17.9652 7.63691C19.3007 9.15527 20.0257 11.115 19.9999 13.1369V13.8169C19.9987 14.0466 19.9513 14.2738 19.8604 14.4848C19.7696 14.6958 19.6371 14.8863 19.471 15.045C19.3048 15.2036 19.1084 15.3272 18.8935 15.4083C18.6785 15.4894 18.4494 15.5263 18.2199 15.5169C17.7621 15.4666 17.3404 15.2447 17.0398 14.8958C16.7392 14.547 16.582 14.0971 16.5999 13.6369V9.31691C16.5999 9.05169 16.4945 8.79734 16.307 8.6098C16.1195 8.42226 15.8651 8.31691 15.5999 8.31691C15.3557 8.31484 15.1193 8.40217 14.935 8.56243C14.7508 8.72269 14.6316 8.94481 14.5999 9.18691C13.6693 8.31049 12.4383 7.82381 11.1599 7.82691C10.2911 7.83342 9.43838 8.06223 8.68301 8.49153C7.92764 8.92084 7.29474 9.53636 6.84456 10.2795C6.39439 11.0226 6.14193 11.8686 6.11123 12.7369C6.08053 13.6052 6.27261 14.4669 6.66917 15.24C7.06574 16.013 7.65359 16.6717 8.37676 17.1533C9.09992 17.6349 9.93432 17.9234 10.8005 17.9912C11.6667 18.0591 12.5359 17.9041 13.3252 17.541C14.1145 17.1779 14.7978 16.6188 15.3099 15.9169C15.6002 16.3659 15.9868 16.7447 16.4417 17.0256C16.8967 17.3065 17.4084 17.4826 17.9399 17.541C18.4714 17.5994 19.0092 17.5387 19.5143 17.3633C20.0194 17.1879 20.479 16.9022 20.8599 16.5269C21.2265 16.1782 21.5169 15.7574 21.7131 15.2911C21.9093 14.8247 22.0069 14.3228 21.9999 13.8169V13.1369C22.0223 10.6239 21.1161 8.19106 19.4552 6.30501C17.7943 4.41897 15.4956 3.21247 12.9999 2.91691ZM11.1799 16.0069C10.5688 16.0069 9.97133 15.8257 9.46318 15.4861C8.95504 15.1466 8.55898 14.664 8.32511 14.0994C8.09123 13.5348 8.03004 12.9135 8.14927 12.3141C8.2685 11.7147 8.56279 11.1641 8.99494 10.7319C9.42708 10.2998 9.97767 10.0055 10.5771 9.88628C11.1765 9.76705 11.7978 9.82824 12.3624 10.0621C12.927 10.296 13.4096 10.692 13.7491 11.2002C14.0887 11.7083 14.2699 12.3058 14.2699 12.9169C14.2673 13.7356 13.9409 14.52 13.3619 15.099C12.783 15.6779 11.9986 16.0043 11.1799 16.0069Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                    </div>
+                                    <div class="message"></div>
+                                </div>
+                                <div class="input__item">
+                                    <div class="select__outer">
+                                        <label for="">Report Type*</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="0">Bug Report</option>
+                                                <option value="1">Another Report</option>
+                                                <option value="2">Extra Report</option>
+                                            </select>
+                                        </div>
+                                        <div class="message"></div>
+                                    </div>
+                                </div>
+                                <div class="input__item">
+                                    <div class="select__outer">
+                                        <label for="">Game Title*</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="0">Crazy 8’s</option>
+                                                <option value="1">Crazy 7’s</option>
+                                                <option value="2">Crazy 6’s</option>
+                                            </select>
+                                        </div>
+                                        <div class="message"></div>
+                                    </div>
+                                </div>
+
+
+                                
+                                <div class="input__item">
+                                    <label for="bday">System Specifications</label>
+                                    <div class="input__outer icoRight">
+                                        <textarea name="" id=""  rows="4">Crazy 8’s</textarea>
+                                    </div>
+                                    <div class="message"></div>
+                                    <div class="input__item-note">
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.47012 17.9999H17.5301C19.0701 17.9999 20.0301 16.3299 19.2601 14.9999L11.7301 1.98993C10.9601 0.659932 9.04012 0.659932 8.27012 1.98993L0.740121 14.9999C-0.0298788 16.3299 0.930121 17.9999 2.47012 17.9999ZM10.0001 10.9999C9.45012 10.9999 9.00012 10.5499 9.00012 9.99993V7.99993C9.00012 7.44993 9.45012 6.99993 10.0001 6.99993C10.5501 6.99993 11.0001 7.44993 11.0001 7.99993V9.99993C11.0001 10.5499 10.5501 10.9999 10.0001 10.9999ZM11.0001 14.9999H9.00012V12.9999H11.0001V14.9999Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        <p>To play Goose Goose Duck, your CPU or GPU needs to support directX 11 or higher.</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="input__item">
+                                    <label for="bday">What's on your mind?*</label>
+                                    <div class="input__outer icoRight">
+                                        <textarea name="" id=""  rows="6" placeholder="Wow, that was amazing..."></textarea>
+                                    </div>
+                                    <div class="message"></div>
+                                </div>
+                                
+                                <div class="login__form-submit">
+                                    <button type="submit" class="button button--primary">
+                                            Sign up
+                                            <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="right">
+                                                <path d="M2.03976 11.3879L23.441 11.3879L18.761 16.0679C18.1273 16.7017 18.1273 17.7254 18.761 18.3592C19.3948 18.9929 20.4185 18.9929 21.0523 18.3592L28.511 10.9004C29.1448 10.2667 29.1448 9.24291 28.511 8.60916L21.0523 1.15042C20.4185 0.516668 19.3948 0.516667 18.761 1.15042C18.1273 1.78417 18.1273 2.80791 18.761 3.44166L23.441 8.13791L2.03976 8.13791C1.14601 8.13791 0.414761 8.86916 0.414761 9.76291C0.414761 10.6567 1.14601 11.3879 2.03976 11.3879Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                    </button>
+                                </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- login end
+    =========================================== -->
+     <!-- footer start
+    =========================================== -->
+     <footer class="footer">
+          <div class="auto__container">
+               <div class="footer__row">
+                    <div class="footer__column">
+                         <h4 class="footer__column-logo">Gaggle</h4>
+                         <div class="footer__column-content">
+                              <p class="footer__column-content-para">
+                                   The world's first video chat integrated gaming platform. See, hear, and play games
+                                   together!
+                                   It's unlike anything you've played before.
+                              </p>
+                              <p class="footer__column-content-para">
+                                   Contact details of <br>the company
+                              </p>
+                         </div>
+                    </div>
+                    <div class="footer__column">
+                         <div class="footer__link-row" id="linksTab">
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Games</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">Escape rooms</a>
+                                        <a href="#" class="footer__link">Online party games</a>
+                                        <a href="#" class="footer__link">Online card games</a>
+                                   </div>
+                              </div>
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Company</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">About us</a>
+                                        <a href="#" class="footer__link">Careers</a>
+                                        <a href="#" class="footer__link">Team</a>
+                                        <a href="#" class="footer__link">Support</a>
+                                   </div>
+                              </div>
+                              <div class="footer__link-col">
+                                   <h6 class="footer__link-header  radioBtn" data-parent="#linksTab">Resorces</h6>
+                                   <div class="footer__link-body">
+                                        <a href="#" class="footer__link">Investor relations</a>
+                                        <a href="#" class="footer__link">Press</a>
+                                        <a href="#" class="footer__link">Terms & conditions</a>
+                                        <a href="#" class="footer__link">Privacy policy</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="footer__column">
+                         <div class="footer__form">
+                              <h6 class="footer__form-title">
+                                   Sign up for email newsletters and updates
+                              </h6>
+                              <div class="footer__form-content">
+                                   <form action="#">
+                                        <div class="customInput img--left">
+                                             <img src="../images/icons/searchPerson.svg" alt="">
+                                             <input type="text" placeholder="Email address" />
+                                             <button type="submit">
+                                                  <span>Subscribe</span>
+                                             </button>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                         <div class="footer__social">
+                              <h6 class="footer__social-title">Stay in touch</h6>
+                              <div class="footer__social-links">
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="31" height="23" viewBox="0 0 31 23" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M30.0281 4.17813C29.6844 2.87188 28.6531 1.84063 27.3469 1.47969C24.9922 0.84375 15.5391 0.84375 15.5391 0.84375C15.5391 0.84375 6.08594 0.84375 3.71406 1.47969C2.40781 1.82344 1.39375 2.85469 1.03281 4.17813C0.414063 6.55 0.414062 11.5 0.414062 11.5C0.414062 11.5 0.414062 16.45 1.05 18.8219C1.39375 20.1281 2.425 21.1594 3.73125 21.5203C6.08594 22.1563 15.5391 22.1563 15.5391 22.1563C15.5391 22.1563 24.9922 22.1563 27.3641 21.5203C28.6703 21.1766 29.6844 20.1453 30.0453 18.8219C30.6641 16.45 30.6641 11.5 30.6641 11.5C30.6641 11.5 30.6641 6.55 30.0281 4.17813Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                             <path d="M12.4453 16.0033V6.99701L20.3516 11.5001L12.4453 16.0033Z"
+                                                  fill="currentColor" class="transparent" />
+                                        </svg>
+                                   </a>
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M26.9864 2.67903C25.9949 3.11874 24.9294 3.41592 23.8111 3.54958C24.9526 2.86533 25.8292 1.78187 26.242 0.490933C25.1738 1.12443 23.9906 1.58454 22.7313 1.83253C21.7227 0.758051 20.2859 0.0866089 18.6958 0.0866089C15.6425 0.0866089 13.1671 2.56193 13.1671 5.61506C13.1671 6.04837 13.2161 6.47033 13.3103 6.87495C8.71547 6.6444 4.64177 4.44339 1.915 1.0986C1.43912 1.91513 1.16648 2.86483 1.16648 3.87801C1.16648 5.79603 2.14259 7.48824 3.62603 8.47963C2.7197 8.45095 1.86729 8.20226 1.12183 7.78818C1.12143 7.81124 1.12143 7.83441 1.12143 7.85767C1.12143 10.5363 3.02714 12.7709 5.55628 13.2787C5.09232 13.405 4.60392 13.4726 4.09965 13.4726C3.74343 13.4726 3.39706 13.438 3.05957 13.3734C3.76304 15.5699 5.80477 17.1683 8.22401 17.2129C6.33191 18.6957 3.94805 19.5795 1.3579 19.5795C0.911681 19.5795 0.471577 19.5534 0.0390625 19.5023C2.48571 21.0709 5.39177 21.9861 8.5139 21.9861C18.6829 21.9861 24.2437 13.5619 24.2437 6.25615C24.2437 6.01643 24.2384 5.77799 24.2277 5.54094C25.3078 4.76147 26.2452 3.78772 26.9864 2.67903Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                        </svg>
+
+                                   </a>
+                                   <a href="#" class="footer__social-link">
+                                        <svg width="12" height="25" viewBox="0 0 12 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M7.39258 8.27602V5.26656C7.39258 4.43594 8.05495 3.76183 8.87109 3.76183H10.3496V0H7.39258C4.94268 0 2.95703 2.02085 2.95703 4.51419V8.27602H0V12.0378H2.95703V24.0757H7.39258V12.0378H10.3496L11.8281 8.27602H7.39258Z"
+                                                  fill="currentColor" fill-opacity="0.36" />
+                                        </svg>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="footer__studio">
+                    <p>©2021 Gaggle Studios, Inc. All rights resrved</p>
+                    <p><a href="#">Privacy Policy</a> . <a href="#">Terms of use</a></p>
+               </div>
+          </div>
+     </footer>
+     <!-- footer end
+ =========================================== -->
+
+     <script src="../js/main.js"></script>
+     <script src="../js/jquery-3.1.1.js"></script>
+     <script src="../js/jquery.validate.min.js"></script>
+     <script src="../js/litepicker.js"></script>
+     <script src="../js/customSelect.js"></script>
+     <script>
+          $('form').validate({
+               errorPlacement: function (error, element) {
+                    error.appendTo(element.parent().parent().find('.message'));
+               },
+               highlight: function (element) {
+                    $(element).parent().parent().addClass('error');
+               },
+               unhighlight: function (element) {
+                    $(element).parent().parent().removeClass('error');
+               },
+          });
+          const picker = new Litepicker({
+               element: document.getElementById('bday'),
+               format: 'DD/MM/YYYY',
+          });
+     </script>
+</body>
+
+</html>

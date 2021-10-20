@@ -1,0 +1,258 @@
+.keyTakeaways {
+    padding: 70px 0 40px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        &:nth-child(1) {
+            width: calc(45% - 35px);
+        }
+
+        &:nth-child(2) {
+            width: calc(55% - 35px);
+        }
+
+        &-title {
+            color: $text;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 120%;
+            margin-bottom: 15px;
+        }
+
+        &-para {
+            color: $text2;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.investorTabs{
+    overflow: hidden;
+    padding-bottom: 110px;
+    &__inner{
+        &-btns{
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 35px;
+
+            &::after{
+                @include contentAbsolute;
+                left: 50%;
+                bottom: 0;
+                height: 1px;
+                width: 100vw;
+                background: $border-color;
+                @include transformX;
+            }
+
+            button{
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-bottom: 12px;
+                margin-right: 45px;
+
+                color: $text2;
+                font-family: $font_main;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                @include transition;
+
+                svg{
+                    height: 1em;
+                    width: auto;
+                    margin-right: 10px;
+                    @include transition;
+                }
+
+                &::after{
+                    @include contentAbsolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 0;
+                    width: 100%;
+                    z-index: 1;
+                    background: $text2;
+                    @include transition;
+                }
+                &:hover{
+                    svg{
+                        color: $text;
+                    }
+                    &::after{
+                        height: 3px;
+                    }    
+                }
+                &.active{
+                    color: $text;
+                    svg{
+                        color: $main;
+                    }
+                    &::after{ 
+                        height: 3px;
+                        background: $main;
+                        // transition-property: height;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin investor1024 {
+    .keyTakeaways {
+        padding: 60px 0 40px 0;
+
+        &__column {
+            &:nth-child(1) {
+                width: calc(45% - 20px);
+            }
+
+            &:nth-child(2) {
+                width: calc(55% - 20px);
+            }
+
+            &-title {
+                font-size: 34px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+
+    .investorTabs{
+        padding-bottom: 90px;
+        &__inner{
+            &-btns{
+                margin-bottom: 30px;
+                button{
+                    font-size: 16px;
+                    line-height: 1;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin investor840 {
+    .keyTakeaways {
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__column {
+
+            &-title {
+                font-size: 28px;
+            }
+            &-para{
+                font-size: 16px;
+            }
+
+            &:nth-child(1) { 
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+            }
+
+            &-title {
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+
+            &-para {
+                line-height: 140%;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
+@mixin investor768 {
+    .keyTakeaways {
+        padding: 50px 0;
+
+        &__column {
+            &:nth-child(1) { 
+                margin-bottom: 35px;
+            }
+
+            &-title {
+                font-size: 24px;
+            }
+            &-para{
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .investorTabs{
+        padding-bottom: 70px;
+        &__inner{
+            &-btns{
+                margin-bottom: 25px;
+                button{
+                    font-size: 14px;
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+}
+
+@mixin investor540 {
+    .keyTakeaways {
+        padding: 40px 0;
+        &__column {
+            &:nth-child(1) { 
+                margin-bottom: 30px;
+            }
+            &-title {
+                font-size: 20px;
+            }
+            &-btns{
+                .button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .investorTabs{
+        padding-bottom: 60px;
+        &__inner{
+            &-btns{
+                margin-bottom: 20px;
+                button{
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

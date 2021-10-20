@@ -1,6 +1,6 @@
 // max-width: 1860px
 @include xxxlg-xxxxlg {
-  
+
   .dash__container {
     max-width: 1010px;
     width: calc(100% - 400px);
@@ -15,16 +15,19 @@
   .auto__container {
     padding: 0 30px;
   }
-  .dash__container{
+
+  .dash__container {
     padding: 0 25px 0 345px;
     width: calc(100% - 370px);
   }
 
   @include header1340;
   @include lander1340;
+  @include index1340;
   @include checkout1340;
   @include sidebar1340;
   @include dashboard1340;
+  @include guide1340;
 
   /* Typography */
   h1 {
@@ -61,6 +64,7 @@
   @include footer1180;
   @include dashboard1180;
   @include checkout1180;
+  @include guide1180;
 }
 
 // max-width: 1024px
@@ -75,6 +79,11 @@
   @include sidebar1024;
   @include dashboard1024;
   @include checkout1024;
+  @include commonContent1024;
+  @include video1024;
+  @include investor1024;
+  @include tab1024;
+  @include guide1024;
 
   .dash__container {
     width: unset;
@@ -92,18 +101,20 @@
     }
 
     &__outer {
-      &.icoRight{
-        input{
+      &.icoRight {
+        input {
           padding: 14px 40px 14px 20px;
         }
       }
-      &.btnRight{
-        input{
+
+      &.btnRight {
+        input {
           padding: 14px 85px 14px 20px;
         }
       }
 
-      input {
+      input,
+      textarea {
         font-size: 18px;
         padding: 14px 20px;
 
@@ -115,7 +126,8 @@
       svg {
         right: 18px;
       }
-      button{
+
+      button {
         font-size: 18px;
       }
     }
@@ -203,12 +215,19 @@
   }
 }
 
+// max-width: 980px
+@include lg-lg {
+  @include index980;
+}
+
 // max-width: 840px
 @include md-lg {
   @include index840;
   @include card840;
   @include blog840;
   @include dashboard840;
+  @include investor840;
+  
 }
 
 // max-width: 768px
@@ -216,8 +235,8 @@
   .auto__container {
     padding: 0 20px;
   }
-  
-  .dash__container{
+
+  .dash__container {
     padding: 0 20px;
   }
 
@@ -231,7 +250,11 @@
   @include login768;
   @include dashboard768;
   @include checkout768;
-
+  @include video768;
+  @include commonContent768;
+  @include investor768;
+  @include tab768;
+  @include guide768;
 
   .input {
     &__item {
@@ -239,17 +262,20 @@
     }
 
     &__outer {
-      &.icoRight{
-        input{
+      &.icoRight {
+        input {
           padding: 14px 40px 14px 18px;
         }
       }
-      &.btnRight{
-        input{
+
+      &.btnRight {
+        input {
           padding: 14px 78px 14px 18px;
         }
       }
-      input {
+
+      input,
+      textarea {
         font-size: 16px;
         padding: 14px 18px;
 
@@ -261,8 +287,8 @@
       svg {
         right: 16px;
       }
-      
-      button{
+
+      button {
         font-size: 16px;
       }
     }
@@ -310,6 +336,7 @@
 
 // max-width: 660px
 @include sm-md {
+  @include index660;
   @include dashboard660;
   @include checkout660;
 }
@@ -326,6 +353,11 @@
   @include login540;
   @include dashboard540;
   @include checkout540;
+  @include video540;
+  @include commonContent540;
+  @include investor540;
+  @include tab540;
+  @include guide540;
 
   /* Typography */
   h1 {
@@ -394,17 +426,20 @@
   .input {
 
     &__outer {
-      &.icoRight{
-        input{
+      &.icoRight {
+        input {
           padding: 10px 38px 10px 12px;
         }
       }
-      &.btnRight{
-        input{
+
+      &.btnRight {
+        input {
           padding: 10px 70px 10px 12px;
         }
       }
-      input {
+
+      input,
+      textarea {
         font-size: 14px;
         padding: 10px 12px;
         border-radius: 8px;
@@ -417,8 +452,8 @@
       svg {
         right: 14px;
       }
-      
-      button{
+
+      button {
         font-size: 14px;
       }
     }

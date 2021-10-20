@@ -93,12 +93,13 @@
   .header__inner-logo {
     border-radius: 50%;
     overflow: hidden;
-    background: linear-gradient(
-      191.31deg,
-      #464961 17.14%,
-      #417d8e 46.62%,
-      #3bbec6 83.41%
-    );
+    background: #464961;
+    // background: linear-gradient(
+    //   191.31deg,
+    //   #464961 17.14%,
+    //   #417d8e 46.62%,
+    //   #3bbec6 83.41%
+    // );
   }
 }
 

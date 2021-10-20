@@ -26,18 +26,21 @@
     &-column {
       width: calc(100% / 3 - 40px);
       margin: 0 20px;
+
       &:nth-child(1) {
         .cardSimple {
           background: rgba($diffRGB, 8%);
           background: $card-grd-1;
         }
       }
+
       &:nth-child(2) {
         .cardSimple {
           background: rgba($diffRGB, 8%);
           background: $card-grd-2;
         }
       }
+
       &:nth-child(3) {
         .cardSimple {
           background: rgba($diffRGB, 8%);
@@ -106,6 +109,7 @@
 
       .button--secondary {
         border-color: $main;
+
         svg {
           margin-left: 10px;
           height: auto;
@@ -115,50 +119,118 @@
     }
   }
 }
+
+.team {
+  position: relative;
+  padding: 50px 0 65px 0;
+  background: linear-gradient(96.47deg, #362B49 -10.78%, #211F30 25.12%, #172447 110.03%);
+  margin-bottom: 100px;
+  overflow: hidden;
+
+  @include lightIn {
+    background: linear-gradient(194.8deg, rgba(222, 245, 254, 0.4) 2.19%, rgba(255, 255, 255, 0) 72.19%);
+        
+  }
+
+  &__inner {
+    &-header {
+      margin-bottom: 50px;
+
+      &-title {
+        color: $text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 120%;
+        margin-bottom: 20px;
+      }
+
+      &-para {
+        color: $text2;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+    }
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -20px;
+    }
+
+    &-column {
+      width: calc(25% - 40px);
+      margin: 0 20px 30px 20px;
+    }
+  }
+
+  .salute {
+    position: absolute;
+    right: -45px;
+    top: 50px;
+    width: 120px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @include light {
   .how::before {
     display: none;
   }
+
   .how {
-    background: linear-gradient(
-      197.54deg,
-      rgba(240, 251, 255, 0.4) 2.52%,
-      rgba(255, 255, 255, 0) 44.27%
-    );
+    background: linear-gradient(197.54deg,
+        rgba(240, 251, 255, 0.4) 2.52%,
+        rgba(255, 255, 255, 0) 44.27%);
   }
 }
+
 .how {
   padding: 80px 0 110px 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   &__lines {
     position: absolute;
     top: 20px;
     right: 0;
   }
+
   &__salut {
     &-right {
       position: absolute;
       right: 0;
+
       &.top {
         top: 30%;
       }
+
       &.bottom {
         bottom: 20%;
       }
     }
+
     &-left {
       position: absolute;
       left: 0;
+
       &.top {
         top: 40%;
       }
+
       &.bottom {
         bottom: 0;
       }
     }
   }
+
   &::before {
     position: absolute;
     content: "";
@@ -172,6 +244,7 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+
   &__inner {
     max-width: 1240px;
     margin: 0 auto;
@@ -185,8 +258,7 @@
         margin-bottom: 15px;
       }
 
-      &-para {
-      }
+      &-para {}
     }
 
     &-row {
@@ -217,6 +289,7 @@
           }
         }
       }
+
       &:last-child {
         padding-bottom: 0;
       }
@@ -227,11 +300,13 @@
       max-width: 530px;
       width: calc(50% - 60px);
       z-index: 1;
+
       &-salut {
         position: absolute;
         right: 0;
         bottom: -40px;
       }
+
       &-ico {
         display: flex;
         justify-content: center;
@@ -241,11 +316,17 @@
         background-color: $bgcolor2;
         border-radius: 10px;
         margin-bottom: 30px;
+
+        &.circle {
+          border-radius: 50%;
+        }
+
         &-salut {
           position: absolute;
           left: 160px;
           top: 0;
         }
+
         &.yellow {
           background-color: rgba($color: #f9dd99, $alpha: 15%);
         }
@@ -263,7 +344,8 @@
         }
 
         img {
-          width: 55%;
+          max-height: 65%;
+          max-width: 55%;
         }
       }
 
@@ -274,6 +356,19 @@
       &-para {
         font-weight: 600;
         padding-bottom: 40px;
+      }
+
+      &-image {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 28px;
+        border: 1px solid $border-color;
+        box-shadow: 5px 0 50px 6px rgba(0, 0, 0, 4%);
+
+        img {
+          @include fullImage;
+        }
       }
     }
 
@@ -289,6 +384,7 @@
 
 .questions {
   padding: 70px 0 100px 0;
+
   &__inner {
     max-width: 1060px;
     margin: 0 auto;
@@ -302,16 +398,19 @@
         margin-bottom: 20px;
       }
     }
+
     &-body {
       margin-bottom: 50px;
 
       .cardAcc {
         margin-bottom: 20px;
+
         &__para {
           font-size: 22px;
         }
       }
     }
+
     &-footer {
       &-btns {
         width: 100%;
@@ -321,6 +420,7 @@
 
         .button {
           width: 230px;
+
           &--primary {
             margin-right: 15px;
           }
@@ -329,13 +429,14 @@
     }
   }
 }
+
 .fun {
   background: $bgcolor2;
   padding: 50px 0 80px 0;
-
   &.fun--transparent {
     background: transparent;
   }
+
   &__inner {
     &-header {
       max-width: 680px;
@@ -346,13 +447,16 @@
         margin-bottom: 20px;
       }
     }
+
     &-body {
       max-width: 1025px;
+
       &-row {
         display: flex;
         align-items: flex-start;
         margin-bottom: 50px;
       }
+
       &-ico {
         display: flex;
         align-items: center;
@@ -366,27 +470,49 @@
         &.green {
           background: rgba($color: #12d589, $alpha: 15%);
         }
+
         &.darkblue {
           background: rgba($color: #2b4568, $alpha: 70%);
+          @include lightIn{
+            background: #E9F0FF;
+          }
         }
+
         &.red {
           background: rgba($color: #fc6647, $alpha: 15%);
         }
+
         img {
           max-width: 50%;
         }
       }
+
       &-content {
         &-title {
           font-size: 32px;
           font-weight: 600;
           margin-bottom: 15px;
         }
-        &-para {
+
+        &-para {}
+      }
+    }
+  }
+}
+
+@mixin index1340 {
+
+  .team {
+    &__inner {
+      &-header {
+        &-title {
+          font-size: 46px;
+          margin-bottom: 15px;
         }
       }
     }
   }
+
 }
 
 @mixin index1180 {
@@ -422,6 +548,19 @@
 
       &-column {
         width: calc(50% - 40px);
+      }
+    }
+  }
+
+  .team {
+    &__inner {
+      &-row {
+        margin: 0 -10px;
+      }
+
+      &-column {
+        margin: 0 10px 30px 10px;
+        width: calc(25% - 20px);
       }
     }
   }
@@ -487,14 +626,17 @@
     &__lines {
       display: none;
     }
+
     &__salut {
       &-right {
         display: none;
       }
+
       &-left {
         display: none;
       }
     }
+
     &__inner {
       &-line {
         display: none;
@@ -506,9 +648,11 @@
 
       &-column {
         width: calc(50% - 20px);
+
         &-salut {
           display: none;
         }
+
         &-ico {
           &-salut {
             display: none;
@@ -520,28 +664,75 @@
 
   .fun {
     padding: 40px 0 70px 0;
+
     &__inner {
       &-header {
         margin: 0 auto 45px auto;
+
         &-title {
           margin-bottom: 15px;
         }
       }
+
       &-body {
         &-row {
           margin-bottom: 40px;
         }
+
         &-ico {
           width: 70px;
           height: 70px;
           margin-right: 25px;
         }
+
         &-content {
           &-title {
             font-size: 26px;
             margin-bottom: 15px;
           }
         }
+      }
+    }
+  }
+
+  .team {
+    &__inner {
+      
+      &-header {
+        margin-bottom: 40px;
+
+        &-title {
+          font-size: 36px;
+          line-height: 1;
+        }
+        &-para{
+          font-size: 16px;
+        }
+      }
+
+      &-row {
+        margin: 0 -5px;
+      }
+
+      &-column {
+        margin: 0 5px 20px 5px;
+        width: calc(25% - 10px);
+      }
+    }
+  }
+}
+
+@mixin index980 {
+  .team {
+    &__inner {
+      &-row {
+        margin: 0 -10px;
+        justify-content: center;
+      }
+
+      &-column {
+        margin: 0 10px 20px 10px;
+        width: calc(100%/3 - 20px);
       }
     }
   }
@@ -648,17 +839,22 @@
 
   .questions {
     padding: 60px 0 80px 0;
+
     &__inner {
       &-header {
         margin-bottom: 35px;
+
         &-title {
           margin-bottom: 20px;
         }
       }
+
       &-body {
         margin-bottom: 35px;
+
         .cardAcc {
           margin-bottom: 15px;
+
           &__para {
             font-size: 18px;
           }
@@ -669,25 +865,48 @@
 
   .fun {
     padding: 20px 0 50px 0;
+
     &__inner {
       &-header {
         margin-bottom: 40px;
       }
+
       &-body {
         &-row {
           margin-bottom: 30px;
         }
+
         &-ico {
           width: 55px;
           height: 55px;
           margin-right: 20px;
         }
+
         &-content {
           &-title {
             font-size: 22px;
             margin-bottom: 10px;
           }
         }
+      }
+    }
+  }
+  .team{
+    &-header {
+      margin-bottom: 30px;
+
+      &-title {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@mixin index660 {
+  .team {
+    &__inner {
+      &-column {
+        width: calc(50% - 20px);
       }
     }
   }
@@ -752,36 +971,44 @@
 
   .questions {
     padding: 40px 0 25px 0;
+
     &__inner {
       &-header {
         margin-bottom: 20px;
+
         &-title {
           margin-bottom: 10px;
         }
       }
+
       &-body {
         margin-bottom: 20px;
+
         .cardAcc {
           padding: 14px 10px;
           margin-bottom: 10px;
+
           &__title {
             font-size: 14px;
             line-height: 140%;
             padding-right: 20px;
+
             &::after {
               width: 24px;
               height: 24px;
             }
 
-            &.active + .cardAcc__para {
+            &.active+.cardAcc__para {
               margin-top: 10px;
             }
           }
+
           &__para {
             font-size: 14px;
           }
         }
       }
+
       &-footer {
         &-btns {
           flex-direction: column;
@@ -797,23 +1024,28 @@
 
   .fun {
     padding: 15px 0 30px 0;
+
     &__inner {
       &-header {
         text-align: left;
         margin-bottom: 30px;
+
         &-title {
           margin-bottom: 10px;
         }
       }
+
       &-body {
         &-row {
           margin-bottom: 20px;
         }
+
         &-ico {
           width: 40px;
           height: 40px;
           margin-right: 15px;
         }
+
         &-content {
           &-title {
             font-size: 18px;
@@ -821,6 +1053,32 @@
           }
         }
       }
+    }
+  }
+
+  .team {
+    &__inner {
+      &-header {
+        &-title {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+        &-para{
+          font-size: 14px;
+        }
+      }
+      &-row {
+        margin: 0 -7px;
+      }
+
+      &-column {
+        margin: 0 7px 15px 7px;
+        width: calc(50% - 14px);
+      }
+    }
+    .salute{
+      right: -20px;
+      width: 70px;
     }
   }
 }

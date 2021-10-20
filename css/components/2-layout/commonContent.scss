@@ -1,0 +1,205 @@
+.commonContent {
+    &__para {
+        color: $text2;
+        font-family: $font_main;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+
+        a {
+            color: $text2;
+            font-family: $font_main;
+            font-style: normal;
+            font-weight: 600;
+            text-decoration-line: underline;
+            @include transition;
+
+            &:hover {
+                color: $text;
+            }
+
+            &.reverse {
+                color: $text;
+
+                &:hover {
+                    color: $text2;
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: $text;
+        font-family: $font_main;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    ul {
+        padding-left: 30px;
+        list-style: dotted;
+
+        li {
+            @extend .commonContent__para;
+            list-style: disc;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.tickList {
+            padding-left: 0;
+
+            li {
+                position: relative;
+                list-style: none;
+                padding-left: 35px;
+
+                &::before {
+                    @include contentAbsolute;
+                    width: 1em;
+                    height: .45em;
+                    left: 5px;
+                    top: .2em;
+                    border-bottom: 2px solid #6FCF97;
+                    border-left: 2px solid #6FCF97;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    &.investor {
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 120%;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $text2;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@mixin commonContent1024 {
+    .commonContent {
+        &__para {
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 25px;
+            }
+        }
+
+        &.investor {
+            h4 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
+}
+
+@mixin commonContent768 {
+    .commonContent {
+        &__para {
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+        &.investor {
+            h4 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 15px;
+
+                    &::before {
+                        width: 12px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@mixin commonContent540 {
+    .commonContent {
+        &__para {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 15px;
+            }
+        }
+
+        &.investor {
+            h4 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

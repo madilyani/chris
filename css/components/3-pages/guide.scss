@@ -1,0 +1,273 @@
+.videoSlider {
+    padding: 50px 0 90px 0;
+
+    &__inner {
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-banner {
+                position: relative;
+                display: flex;
+                background: red;
+                max-height: 563px;
+                max-width: 1000px;
+                width: calc(100vw - 100px);
+                height: calc((100vw - 100px) * 0.563);
+                margin: 0 auto;
+                border-radius: 10px 10px 0 0;
+                overflow: hidden;
+
+                &::before {
+                    @include contentAbsolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.4);
+                    opacity: 1;
+                    @include transition;
+                    z-index: 1;
+                }
+
+                &.paused {
+                    &::before {
+                        opacity: 0;
+                    }
+                }
+
+                video {
+                    @include fullImage;
+                    background: $bgcolor2;
+                }
+
+                video[poster] {
+                    @include fullImage;
+                    object-fit: fill;
+                }
+
+                .videoPlay {
+                    background: #fff;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    @include transform;
+                    width: 46px;
+                    height: 46px;
+                    display: flex;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    @include transition;
+                    z-index: 3;
+
+                    &::before {
+                        z-index: -1;
+                        width: 85px;
+                        height: 85px;
+                        position: absolute;
+                        content: "";
+                        left: 50%;
+                        top: 50%;
+                        @include transform;
+                        background: rgba($color: #fff, $alpha: 0.3);
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        margin-left: 3px;
+                        border: 0;
+                        background: transparent;
+                        box-sizing: border-box;
+                        width: 0;
+                        height: 20px;
+                        display: block;
+                        border-color: transparent transparent transparent #397ef6;
+                        transition: 100ms all ease;
+                        pointer-events: none;
+                        border-style: solid;
+                        border-width: 10px 0 10px 20px;
+                    }
+
+                    &.paused {
+                        opacity: 0;
+
+                        span {
+                            margin-left: 0;
+                            border-style: double;
+                            border-width: 0px 0 0px 15px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.playerInfo {
+    padding: 0 0 40px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column {
+        width: calc(50% - 20px);
+
+        .commonContent {
+            h4 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@mixin guide1340 {
+    .videoSlider {
+        .slick-next {
+            right: calc(50% - 525px);
+        }
+
+        .slick-prev {
+            left: calc(50% - 525px);
+        }
+    }
+}
+
+@mixin guide1180 {
+    .videoSlider {
+        .slick-next {
+            right: -20px;
+        }
+
+        .slick-prev {
+            left: -20px;
+        }
+    }
+}
+
+@mixin guide1024 {
+    .playerInfo {
+        padding: 0 0 40px 0;
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__column {
+            width: 100%;
+
+            .commonContent {
+                p {
+                    margin-bottom: 25px;
+                }
+
+                ul {
+                    li {
+                        line-height: 140%;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .videoSlider {
+        padding: 30px 0 70px 0;
+
+        .slick-arrow {
+            width: 50px;
+            height: 50px;
+
+            &::before {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        .slick-next {
+            right: -15px;
+        }
+
+        .slick-prev {
+            left: -15px;
+        }
+    }
+}
+
+@mixin guide768 {
+
+    .videoSlider {
+        padding: 25px 0 35px 0;
+
+        &__inner {
+            &-item {
+                &-banner {
+                    width: calc(100vw - 65px);
+                    height: calc((100vw - 65px) * 0.563);
+                }
+            }
+        }
+
+        .slick-arrow {
+            width: 40px;
+            height: 40px;
+        }
+
+        .slick-next {
+            right: -10px;
+        }
+
+        .slick-prev {
+            left: -10px;
+        }
+
+        .slick-dots li {
+            margin: 0 7px;
+
+            button {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+}
+
+@mixin guide540 {
+    .playerInfo{
+        &__column{
+            .commonContent {
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .videoSlider {
+        padding: 25px 0;
+        .slick-arrow {
+            width: 35px;
+            height: 35px;
+
+            &::before {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
